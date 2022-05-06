@@ -4,7 +4,7 @@
 
 ## Инструменты
 
-- Gulp, scss, pug
+- Gulp, scss
 
 ## Версии
 
