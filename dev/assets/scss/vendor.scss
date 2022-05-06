@@ -1,0 +1,33 @@
+/*  Подключение нужных SCSS исходников Bootstrap 4 */
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../../node_modules/bootstrap/scss/_reboot.scss";
+@import "../../../node_modules/bootstrap/scss/_grid.scss";
+@import "../../../node_modules/bootstrap/scss/_tables.scss";
+@import "../../../node_modules/bootstrap/scss/_forms.scss";
+@import "../../../node_modules/bootstrap/scss/_buttons.scss";
+@import "../../../node_modules/bootstrap/scss/_transitions.scss";
+@import "../../../node_modules/bootstrap/scss/_dropdown.scss";
+@import "../../../node_modules/bootstrap/scss/_input-group.scss";
+@import "../../../node_modules/bootstrap/scss/_nav.scss";
+@import "../../../node_modules/bootstrap/scss/_navbar.scss";
+@import "../../../node_modules/bootstrap/scss/_card.scss";
+@import "../../../node_modules/bootstrap/scss/_pagination.scss";
+@import "../../../node_modules/bootstrap/scss/_badge.scss";
+@import "../../../node_modules/bootstrap/scss/_alert.scss";
+@import "../../../node_modules/bootstrap/scss/_close.scss";
+@import "../../../node_modules/bootstrap/scss/_modal.scss";
+@import "../../../node_modules/bootstrap/scss/_utilities.scss";
+@import "../../../node_modules/bootstrap/scss/_carousel.scss";
+@import "../../../node_modules/bootstrap/scss/_popover.scss";
+@import "../../../node_modules/bootstrap/scss/_breadcrumb.scss";
+
+/* Подключаем необходимые CSS для jQuery-UI */
+@import "../../../node_modules/jquery-ui/themes/base/core.css";
+@import "../../../node_modules/jquery-ui/themes/base/button.css";
+@import "../../../node_modules/jquery-ui/themes/base/autocomplete.css";
+@import "../../../node_modules/jquery-ui/themes/base/menu.css";
+@import "../../../node_modules/jquery-ui/themes/base/selectmenu.css";
+@import "../../../node_modules/jquery-ui/themes/base/datepicker.css";
+@import "../../../node_modules/jquery-ui/themes/base/theme.css";
