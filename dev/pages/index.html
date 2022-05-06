@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "Main page"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page main-page">
+            <!-- @include('./include/components/name.html') -->
+            <h2>Main</h2>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>
