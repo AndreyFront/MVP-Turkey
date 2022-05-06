@@ -161,7 +161,7 @@ gulp.task('browser-sync', () => {
 
     watch(`${pathSrc.scripts}**/*.js`, series('scripts'))
     watch(`${pathSrc.pages}**/**/*.html`, series(['full-inclusions', 'master-inclusions']))
-    watch(`${pathSrc.styles}**/*.scss`, parallel('styles'))
+    watch(`${pathSrc.styles}**/**/*.scss`, parallel('styles'))
     watch(`${pathSrc.images}**/*.{jpg,jpeg,png}`, series('images'))
     watch(`${pathSrc.icons}*.svg`, series('sprite-svg'))
     watch(`${pathSrc.static}`, series('static'))

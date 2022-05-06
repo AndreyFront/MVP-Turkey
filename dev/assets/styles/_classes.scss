@@ -31,12 +31,32 @@
 }
 
 .dev {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
 
-    &__box-title {}
+    &__box-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-    &__title {}
+    &__title {
+        text-transform: uppercase;
+    }
 
-    &__box {}
+    &__box {
+        margin: 50px;
+    }
 
-    &__link {}
+    &__link {
+        font-size: 20px;
+        border-bottom: 1px solid;
+        border-bottom-color: transparent;
+        transition: border-bottom $transition-time;
+
+        &:hover {
+            border-bottom-color: $main-color;
+        }
+    }
 }
