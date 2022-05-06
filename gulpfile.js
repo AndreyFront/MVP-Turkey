@@ -47,13 +47,13 @@ var path = {
         }
     },
     dist: {
-        html: './www/',
-        css: './www/assets/css/',
-        js: './www/assets/js/',
-        images: './www/assets/images/',
-        svg: './www/assets/images/svg/',
+        html: './dist/',
+        css: './dist/assets/css/',
+        js: './dist/assets/js/',
+        images: './dist/assets/images/',
+        svg: './dist/assets/images/svg/',
         fonts: {
-            fts: './www/assets/css/fonts/'
+            fts: './dist/assets/css/fonts/'
         }
     }
 }
