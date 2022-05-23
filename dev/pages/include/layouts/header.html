@@ -1,1 +1,17 @@
-<h2>Header</h2>
+<div class="header__block-insight">
+    <div class="main-container max-width">
+        @include('../components/main-nav.html')
+        <div class="header__wrapper-contacts">
+            <div class="header__block-contact">
+                <span class="header__contact-text">Contact Us</span>
+                <a href="tel:4033034210" target="_self" class="header__contact-link link-reset">(403) 303-4210</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header__block-search">
+    <div class="main-container max-width">
+        @include('../ui/logo.html')
+        @include('../components/search.html')
+    </div>
+</div>

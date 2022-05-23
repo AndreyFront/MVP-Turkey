@@ -33,9 +33,11 @@ const pathDist = {
     fonts: './dist/assets/fonts/',
     styles: './dist/assets/styles/',
     scripts: './dist/assets/scripts/',
-    pages: './dist/pages/',
+    pages: './dist/',
     static: './dist/assets/static/',
 }
+
+const isProd = false
 
 gulp.task('scripts', () => {
     return src([`${pathSrc.scripts}main.js`], { sourcemaps: true })
@@ -62,7 +64,7 @@ gulp.task('scripts', () => {
                 ]
             }
         }))
-        .pipe(uglify().on('error', notify.onError()))
+        .pipe(gulpif(isProd, uglify().on('error', notify.onError())))
         .pipe(rename({ extname: '.min.js' }))
         .pipe(dest(`${pathDist.scripts}`, { sourcemaps: true }))
         .pipe(browserSync.stream());
@@ -79,7 +81,7 @@ gulp.task('full-inclusions', () => {
             basepath: '@file',
         })
     )
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulpif(isProd, htmlmin({ collapseWhitespace: true })))
     .pipe(browserSync.stream());
 })
 
@@ -91,7 +93,7 @@ gulp.task('master-inclusions', () => {
                 basepath: '@file',
             })
         )
-        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulpif(isProd, htmlmin({ collapseWhitespace: true })))
         .pipe(rename({dirname: ''}))
         .pipe(dest(`${pathDist.pages}`))
         .pipe(browserSync.stream());
@@ -107,7 +109,7 @@ gulp.task('styles', () => {
                 cascade: false,
             })
         )
-        .pipe(cleanCSS({ level: 2 }))
+        .pipe(gulpif(isProd, cleanCSS({ level: 2 })))
         .pipe(rename({ extname: '.min.css' }))
         .pipe(dest(`${pathDist.styles}`, { sourcemaps: true }))
         .pipe(browserSync.stream());
@@ -131,7 +133,7 @@ gulp.task('images', () => {
         `${pathSrc.images}**/*.jpeg`,
         `${pathSrc.images}**/*.gif`
       ])
-        .pipe(imagemin({ verbose: true }))
+        .pipe(gulpif(isProd, imagemin({ verbose: true })))
         .pipe(dest(`${pathDist.images}`))
         .pipe(browserSync.stream());
 })
@@ -155,7 +157,7 @@ gulp.task('sprite-svg', () => {
 gulp.task('browser-sync', () => {
     browserSync.init({
         server: {
-            baseDir: `${pathDist.root}`,
+            baseDir: `${pathDist.pages}`,
         },
     })
 
@@ -184,4 +186,4 @@ const defaultTasks = [
     'browser-sync'
 ]
 
-exports.start = series(defaultTasks)
+exports.default = series(defaultTasks)

@@ -1,0 +1,13 @@
+.social-buttons {
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__li {
+        &:not(:first-child) {
+            margin-left: 16px;
+        }
+    }
+}

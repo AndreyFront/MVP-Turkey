@@ -1,0 +1,44 @@
+.header {
+    flex: 0 0 auto;
+
+    &__block-insight {
+        padding: 12px 0;
+        background-color: $white;
+
+        .max-width {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    &__wrapper-contacts {}
+
+    &__block-contact {}
+
+    &__contact-text {
+        font-weight: 500;
+    }
+
+    &__contact-link {
+        margin-left: 12px;
+        font-weight: 600;
+        color: $navy-blue;
+    }
+
+    &__block-search {
+        padding: 9px 0;
+        background: $blue-gradient;
+
+        .max-width {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .search {
+            margin-left: 46px;
+        }
+    }
+}

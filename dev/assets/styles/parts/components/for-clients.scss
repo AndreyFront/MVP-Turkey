@@ -1,0 +1,17 @@
+.for-clients {
+
+    &__list {
+        margin-top: 16px;
+    }
+
+    &__li {
+        &:not(:first-child) {
+            margin-top: 14px;
+        }
+    }
+
+    &__link {
+        color: $white;
+        font-weight: 500;
+    }
+}

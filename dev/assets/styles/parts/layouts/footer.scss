@@ -1,0 +1,71 @@
+.footer {
+    flex: 0 0 auto;
+    background: $blue-gradient;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: $shadow-one;
+
+    &__wrapper-contacts {
+        padding: 70px 0;
+    }
+
+    &__block-logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__block-signature {
+        margin-top: 12px;
+        width: 80%;
+    }
+
+    &__signature {
+        font-size: 14px;
+        color: $white;
+    }
+
+    &__wrapper-copyright {
+        padding: 24px 0;
+
+        .main-container {
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__block-copyright {}
+
+    &__copyright,
+    &__copyright-link {
+        font-weight: 500px;
+        color: $white;
+    }
+
+    &__block-copyright-links {}
+
+    &__copyright-link {
+        &:not(:first-child) {
+            margin-left: 154px;
+        }
+    }
+
+    .main-container {
+        display: flex;
+    }
+
+    .social-buttons {
+        margin-top: auto;
+        padding-top: 20px;
+    }
+
+    .for-clients {
+        margin-left: 120px;
+    }
+
+    .contact-info {
+        margin-left: 100px;
+    }
+
+    .back-top {
+        margin-left: auto;
+    }
+}

@@ -1,7 +1,28 @@
 // Colors
 
-$main-color: #000;
+$black-text: #081621;
+$light-text: #7D93B2;
+
+$white: #fff;
+$navy-blue: #2F80ED;
+$coral: #FF5B4E;
+$pink: #FFC7C7;
+$blue: #B7D5FF;
+$light-blue: #DEECFF;
+$light-colar: #FFE9E9;
+$very-light-blue: #DEECFF;
+$very-light-colar: #FFE9E9;
+$blue-gradient: linear-gradient(103.54deg, #2595FF 11.1%, #025DD8 94.12%);
+$red-gradient: linear-gradient(106.04deg, #FFC187 -18.07%, #F6483A 75.4%);
+
+// Fonts
+
+$main-font: 'Urbanist';
 
 // Other
 
 $transition-time: 0.3s;
+
+$shadow-one: 0px 4px 20px rgba(183, 213, 255, 0.2);
+$shadow-two: 0px 4px 20px #F2F2F2;
+$shadow-three: 0px 4px 20px rgba(44, 47, 56, 0.08);

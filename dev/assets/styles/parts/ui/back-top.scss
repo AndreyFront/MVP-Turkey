@@ -1,0 +1,37 @@
+.back-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: $white;
+        border-radius: 8px;
+        transition: background-color $transition-time;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:hover > .back-top__icon {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        transition: filter $transition-time;
+    }
+
+    &__text {
+        font-weight: 500;
+        color: $white;
+        writing-mode: vertical-rl;
+        margin-top: 16px;
+    }
+}

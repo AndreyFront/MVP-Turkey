@@ -1,0 +1,47 @@
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    border-radius: 100px;
+    transition: background-color $transition-time;
+
+    &:hover {
+        background-color: $navy-blue;
+    }
+
+    &:hover > .social-button__icon use {
+        fill: $white;
+    }
+
+    &--theme--blue {
+        background-color: $navy-blue;
+
+        .social-button__icon {
+            use {
+                fill: $white;
+                transition: fill $transition-time;
+            }
+        }
+
+        &:hover {
+            background-color: $white;
+        }
+    
+        &:hover > .social-button__icon use {
+            fill: $navy-blue;
+        }
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+
+        use {
+            fill: $navy-blue;
+            transition: fill $transition-time;
+        }
+    }
+}
