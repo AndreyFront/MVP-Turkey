@@ -6,12 +6,52 @@
                 <span class="header__contact-text">Contact Us</span>
                 <a href="tel:4033034210" target="_self" class="header__contact-link link-reset">(403) 303-4210</a>
             </div>
+            @include('../components/contact-info.html')
+            <div class="social-buttons">
+                <ul class="social-buttons__list list-reset">
+                    <li class="social-buttons__li">
+                        <a href="#" class="social-button social-button--theme--blue">
+                            <svg class="social-button__icon">
+                                <use xlink:href="./assets/icons/sprite-svg.svg#facebook"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-buttons__li">
+                        <a href="#" class="social-button social-button--theme--blue">
+                            <svg class="social-button__icon">
+                                <use xlink:href="./assets/icons/sprite-svg.svg#facebook"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-buttons__li">
+                        <a href="#" class="social-button social-button--theme--blue">
+                            <svg class="social-button__icon">
+                                <use xlink:href="./assets/icons/sprite-svg.svg#facebook"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-buttons__li">
+                        <a href="#" class="social-button social-button--theme--blue">
+                            <svg class="social-button__icon">
+                                <use xlink:href="./assets/icons/sprite-svg.svg#facebook"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 <div class="header__block-search">
     <div class="main-container max-width">
-        @include('../ui/logo.html')
+        <div class="header__block-logo">
+            @include('../ui/logo.html')
+            <button type="button" class="header__burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
         @include('../components/search.html')
     </div>
 </div>

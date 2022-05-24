@@ -27,6 +27,12 @@
         color: $navy-blue;
     }
 
+    &__block-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &__block-search {
         padding: 9px 0;
         background: $blue-gradient;
@@ -36,9 +42,47 @@
             align-items: center;
             width: 100%;
         }
+    }
 
-        .search {
-            margin-left: 46px;
+    &__burger-menu {
+        position: relative;
+        z-index: 1;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 6px 3px;
+        background-color: transparent;
+        border: none;
+
+        & span {
+            width: 100%;
+            border: 1px solid $white;
+            border-radius: 30px;
+            transition: transform $transition-time, margin-top $transition-time, opacity $transition-time;
+
+            &:not(:first-child) {
+                margin-top: 5px;
+            }
         }
+    }
+
+    .contact-info {
+        display: none;
+    }
+
+    .specific-title {
+        display: none;
+    }
+
+    .search {
+        margin-left: 46px;
+    }
+
+    .social-buttons {
+        display: none;
+        margin-top: 30px;
     }
 }
