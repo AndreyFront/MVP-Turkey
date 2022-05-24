@@ -1,0 +1,57 @@
+.select {
+    &:hover &__btn {
+        background-color: $light-blue;
+    }
+
+    &.active {
+        .select {
+            &__btn {
+                background-color: $very-light-blue;
+            }
+
+            &__btn-text {
+                color: $navy-blue;
+            }
+
+            &__btn-icon {
+                transform: rotate(-180deg);
+
+                use {
+                    fill: $navy-blue;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border: none;
+        border-radius: 10px;
+        min-height: 48px;
+        padding: 5px 24px;
+        cursor: pointer;
+        transition: background-color $transition-time;
+    }
+
+    &__btn-text {
+        font-weight: 500;
+        transition: color $transition-time;
+    }
+
+    &__btn-icon {
+        width: 13px;
+        height: 13px;
+        margin-left: 10px;
+        transition: transform $transition-time;
+
+        use {
+            fill: $black-text;
+            transition: fill $transition-time;
+        }
+    }
+
+
+}

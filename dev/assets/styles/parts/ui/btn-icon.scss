@@ -1,0 +1,79 @@
+.btn-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 48px;
+    background-color: $white;
+    border: 1px solid;
+    border-color: $light-blue;
+    border-radius: 10px;
+    transition: border-color $transition-time, background-color $transition-time;
+
+    &:hover {
+        background-color: $light-blue;
+    }
+
+    &.active {
+        border-color: $navy-blue;
+        background-color: $navy-blue;
+
+        .btn-icon__icon use {
+            fill: $white;
+            stroke: $white;
+        }
+    }
+
+    &__icon {
+        pointer-events: none;
+        width: 20px;
+        height: 20px;
+
+        use {
+            fill: $navy-blue;
+            stroke: $navy-blue;
+            transition: fill $transition-time, stroke $transition-time;
+        }
+    }
+
+    &--theme--navy-blue {
+        position: relative;
+        border: none;
+        background-color: $navy-blue;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            opacity: 0;
+            background: $blue-gradient;
+            transition: opacity 0.4s;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &:hover .btn-icon use {
+            fill: $navy-blue;
+            stroke: $navy-blue;
+        }
+
+        .btn-icon {
+            &__icon {
+                position: relative;
+                z-index: 1;
+
+                use {
+                    fill: $white;
+                    stroke: $white;
+                }
+            }
+        }
+    }
+}

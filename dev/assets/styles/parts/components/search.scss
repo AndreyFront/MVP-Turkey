@@ -1,8 +1,13 @@
 .search {
 
+    &--link-map &__block-input {
+        grid-template-columns: 44px 1fr 36px;
+    }
+
     &__block-input {
         display: grid;
         grid-template-columns: 44px 1fr;
+        align-items: center;
         width: 362px;
         height: 48px;
         background-color: $white;
@@ -19,6 +24,11 @@
         border: none;
         cursor: pointer;
         background-color: transparent;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__btn-icon {
@@ -32,9 +42,24 @@
         padding-right: 18px;
         outline: none;
         border: none;
+        @include adaptiv-font(16, 14);
 
         &::placeholder {
             color: $light-text;
         }
+    }
+
+    &__link-map {
+        display: flex;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__link-map-icon {
+        width: 20px;
+        height: 20px;
     }
 }

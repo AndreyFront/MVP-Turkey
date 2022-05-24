@@ -1,0 +1,168 @@
+.btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 3px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color $transition-time;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    &__text,
+    &__icon {
+        position: relative;
+        z-index: 1;
+    }
+
+    &--size-bg {
+        width: 180px;
+    }
+
+    &--size-md {
+        width: 162px;
+    }
+
+    &--size-bg,
+    &--size-md {
+        min-height: 57px;
+
+        .btn {
+            &__text {
+                font-weight: 600;
+                @include adaptiv-font(18, 16);
+            }
+        }
+    }
+
+    &--size-sm {
+        width: 144px;
+        min-height: 43px;
+
+        .btn {
+            &__text {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &--theme--navy-blue,
+    &--theme--coral,
+    &--theme--light-blue,
+    &--theme--light-colar,
+    &--theme--white {
+        border: none;
+    }
+
+    &--theme--navy-blue {
+        background-color: $navy-blue;
+
+        &::before {
+            background: $blue-gradient;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        .btn {
+            &__text {
+                color: $white;
+            }
+        }
+    }
+
+    &--theme--coral {
+        background-color: $coral;
+
+        &::before {
+            background: $red-gradient;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        .btn {
+            &__text {
+                color: $white;
+            }
+        }
+    }
+
+    &--theme--light-blue {
+        background-color: $light-blue;
+
+        &:hover {
+            background-color: $blue;
+        }
+
+        .btn {
+            &__text {
+                color: $navy-blue;
+            }
+        }
+    }
+    
+    &--theme--light-colar {
+        background-color: $light-colar;
+
+        &:hover {
+            background-color: $pink;
+        }
+
+        .btn {
+            &__text {
+                color: $coral;
+            }
+        }
+    }
+
+    &--theme--white {
+        background-color: $white;
+
+        &:hover {
+            background-color: $light-blue;
+        }
+
+        .btn {
+            &__text {
+                color: $navy-blue;
+            }
+        }
+    }
+
+    &--theme--transparent {
+        border: 1px solid $light-blue;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $light-blue;
+        }
+
+        .btn {
+            &__text {
+                color: $navy-blue;
+            }
+        }
+    }
+}

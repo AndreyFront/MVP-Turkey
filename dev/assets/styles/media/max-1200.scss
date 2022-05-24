@@ -1,1 +1,9 @@
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .search-bar {
+        .search {
+            &__block-input {
+                width: 450px;
+            }
+        }
+    }
+}

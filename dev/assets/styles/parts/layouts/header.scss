@@ -1,6 +1,10 @@
 .header {
     flex: 0 0 auto;
 
+    .max-width {
+        max-width: 1760px;
+    }
+
     &__block-insight {
         padding: 12px 0;
         background-color: $white;
