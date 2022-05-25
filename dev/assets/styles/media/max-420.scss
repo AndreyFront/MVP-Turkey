@@ -1,1 +1,7 @@
-@media screen and (max-width: 420px) {}
+@media screen and (max-width: 420px) {
+    .search-bar {
+        &__block-buttons {
+            width: 100%;
+        }
+    }
+}

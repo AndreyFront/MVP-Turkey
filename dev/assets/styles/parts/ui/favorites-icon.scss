@@ -1,0 +1,33 @@
+.favorites-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: opacity $transition-time;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &.active {
+        animation: bounce 0.5s linear;
+
+        .favorites-icon__icon use {
+            fill: $white;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+
+        use {
+            fill: transparent;
+            transition: fill $transition-time;
+        }
+    }
+}

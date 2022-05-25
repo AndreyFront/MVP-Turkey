@@ -1,0 +1,17 @@
+.status-labels {
+    margin-top: -3px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__li {
+        margin-top: 3px;
+
+        &:not(:first-child) {
+            margin-left: 3px;
+        }
+    }
+}

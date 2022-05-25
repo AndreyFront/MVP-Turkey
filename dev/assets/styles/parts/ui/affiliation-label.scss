@@ -1,0 +1,29 @@
+.affiliation-label {
+    width: max-content;
+    height: max-content;
+    padding: 3px 6px;
+    border-radius: 6px;
+
+    &__text {
+        @include adaptiv-font(14, 12);
+        font-weight: 600;
+        line-height: 1em;
+        white-space: nowrap;
+    }
+
+    &--theme--light-blue {
+        background-color: $light-blue;
+
+        .affiliation-label__text {
+            color: $navy-blue;
+        }
+    }
+
+    &--theme--light-colar {
+        background-color: $light-colar;
+
+        .affiliation-label__text {
+            color: $coral;
+        }
+    }
+}

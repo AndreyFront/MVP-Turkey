@@ -1,0 +1,65 @@
+<div class="product-card">
+    <div class="product-card__block-images">
+        @include('../ui/favorites-icon.html')
+        @include('../components/status-labels.html')
+        <div class="product-card__wrapper-label-quantity">
+            <div class="product-card__block-label-quantity">
+                <div class="product-card__label-quantity">
+                    <svg class="product-card__label-quantity-icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                    </svg>
+                    <span class="product-card__label-quantity-count">12</span>
+                </div>
+            </div>
+            <div class="product-card__block-label-quantity">
+                <div class="product-card__label-quantity">
+                    <svg class="product-card__label-quantity-icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                    </svg>
+                    <span class="product-card__label-quantity-count">8</span>
+                </div>
+                <div class="product-card__label-quantity">
+                    <svg class="product-card__label-quantity-icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                    </svg>
+                    <span class="product-card__label-quantity-count">3</span>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+        <!-- Slider -->
+    </div>
+    <div class="product-card__block-content">
+        <div class="product-card__block-info">
+            <span class="product-card__price">5,125,000 TL</span>
+            <div class="affiliation-label affiliation-label--theme--light-colar">
+                <span class="affiliation-label__text">For Rent</span>
+            </div>
+            <span class="product-card__address">227 Major Macke</span>
+        </div>
+        <div class="product-card__block-links">
+            <ul class="product-card__list-links list-reset">
+                <li class="product-card__li-link">
+                    <a href="#" class="product-card__links-link link-reset">Harding</a>
+                </li>
+                <li class="product-card__li-link">
+                    <a href="#" class="product-card__links-link link-reset">Richmond Hill</a>
+                </li>
+            </ul>
+        </div>
+        <div class="product-card__wrapper-employee">
+            <div class="product-card__block-employee">
+                <div class="product-card__block-employee-avatar">
+                    <img src="./assets/images/employee-avatar-1.jpg" class="product-card__employee-avatar" alt="">
+                </div>
+                <div class="product-card__block-info-employee">
+                    <span class="product-card__employee-name">Mickey Todd</span>
+                    <span class="product-card__employee-post">Realtor</span>
+                </div>
+            </div>
+            <button type="button" class="btn btn--size-sm btn--theme--transparent">
+                <span class="btn__text">Contact</span>
+            </button>
+        </div>
+    </div>
+</div>

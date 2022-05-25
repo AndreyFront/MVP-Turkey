@@ -1,0 +1,27 @@
+.status-label {
+    display: flex;
+    padding: 4px 7px;
+    border-radius: 6px;
+
+    &__text {
+        @include adaptiv-font(12, 10);
+        font-weight: 500;
+        color: $white;
+    }
+
+    &--theme--coral {
+        background-color: $coral;
+    }
+
+    &--theme--green {
+        background-color: $green;
+    }
+
+    &--theme--navy-blue {
+        background-color: $navy-blue;
+    }
+
+    &--theme--purple {
+        background-color: $purple;
+    }    
+}
