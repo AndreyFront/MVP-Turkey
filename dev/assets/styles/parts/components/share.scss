@@ -1,0 +1,47 @@
+.share {
+    position: relative;
+
+    &:hover &__block-content {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 5px);
+    }
+
+    &__block-content {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 16px;
+        border-radius: 10px;
+        background-color: $white;
+        opacity: 0;
+        visibility: hidden;
+        transition: 
+            opacity $transition-time,
+            visibility $transition-time,
+            transform $transition-time;
+    }
+
+    &__block-link {}
+
+    &__input-link {}
+
+    &__link {
+        margin-top: 10px;
+        color: $navy-blue;
+        font-weight: 600;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    .social-button {
+        background-color: #F5FAFF;
+    }
+}

@@ -1,0 +1,32 @@
+.card-section {
+    &__block-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    &__block-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        .btn {
+            &:not(:first-child) {
+                margin-left: 16px;
+            }
+
+            &__icon use {
+                fill: $navy-blue;
+            }
+        }
+    }
+}

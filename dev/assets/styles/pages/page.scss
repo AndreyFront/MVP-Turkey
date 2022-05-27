@@ -1,0 +1,10 @@
+.page {
+    flex: 1 0 auto;
+
+    &__content {
+        position: relative;
+        padding: 81px 0 90px 0;
+        border-radius: 50px 50px 0px 0px;
+        background-color: $white;
+    }
+}

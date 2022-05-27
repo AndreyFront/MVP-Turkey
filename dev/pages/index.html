@@ -12,7 +12,10 @@
         <main class="page main-page">
             <!-- @include('./include/components/name.html') -->
             @include('./include/components/main-banner.html')
-            @include('./include/components/product-card.html')
+            <div class="page__content">
+                @include('./include/components/card-section.html')
+                @include('./include/components/popular-cities.html')
+            </div>
         </main>
         <footer class="footer">
             @include('./include/layouts/footer.html')

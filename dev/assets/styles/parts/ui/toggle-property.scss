@@ -1,0 +1,41 @@
+.toggle-property {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 86px);
+    grid-column-gap: 4px;
+    padding: 5px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: $light-blue;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translate(0, -50%);
+        width: 86px;
+        height: 38px;
+        background-color: $white;
+        border-radius: 5px;
+        transition: transform $transition-time;
+    }
+
+    &.active::before {
+        transform: translate(calc(-100% - 4px), -50%);
+    }
+
+    &__block-property {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__name-property {
+        position: relative;
+        font-weight: 600;
+        color: $navy-blue;
+    }
+}

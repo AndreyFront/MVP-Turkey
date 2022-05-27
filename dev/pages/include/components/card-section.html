@@ -1,0 +1,31 @@
+<section class="card-section">
+    <div class="main-container max-width">
+        <div class="card-section__block-head">
+            @include('../ui/title-section.html', {
+                "title": "New real estate properties for sale in Turkey"
+            })
+            @include('../ui/toggle-property.html')
+        </div>
+        <div class="card-section__wrapper-cards">
+            @include('./product-card.html')
+            @include('./product-card.html')
+            @include('./product-card.html')
+            @include('./product-card.html')
+            @include('./product-card.html')
+            @include('./product-card.html')
+            @include('./product-card.html')
+            @include('./product-card.html')
+        </div>
+        <div class="card-section__block-btns">
+            <a href="#" class="btn btn--size-sm btn--theme--navy-blue">
+                <span class="btn__text">Show More</span>
+            </a>
+            <a href="#" class="btn btn--size-sm btn--theme--light-blue">
+                <svg class="btn__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#settings"/>
+                </svg>
+                <span class="btn__text">Filters</span>
+            </a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,73 @@
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: transparent;
+    transition: 
+        opacity $transition-time,
+        background-color $transition-time,
+        border-color $transition-time;
+
+    &:not(:disabled) {
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &--theme--blue[disabled] {
+        opacity: 0.6;
+        background-color: transparent;
+        border-color: rgba(47, 128, 237, 0.17);
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    &--size--md,
+    &--size--sm {
+        border-radius: 6px;
+    }
+
+    &--size--bg {
+        width: 45px;
+        height: 45px;
+        border-radius: 6px;
+    }
+
+    &--size--md {
+        width: 30px;
+        height: 30px;
+    }
+
+    &--size--sm {
+        width: 28px;
+        height: 28px;
+    }
+
+    &--theme--transparent {
+        background-color: rgba(255, 255, 255, 0.3);
+        .arrow {
+            &__icon {
+                use {
+                    stroke: $white;
+                }
+            }
+        }
+    }
+
+    &--theme--blue {
+        background-color: $blue;
+        .arrow {
+            &__icon {
+                use {
+                    stroke: $navy-blue;
+                }
+            }
+        }
+    }
+}
