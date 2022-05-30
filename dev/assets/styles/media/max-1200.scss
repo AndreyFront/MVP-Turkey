@@ -6,4 +6,10 @@
             }
         }
     }
+
+    .card-section {
+        &__wrapper-cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }

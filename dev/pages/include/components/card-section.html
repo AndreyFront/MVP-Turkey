@@ -4,7 +4,14 @@
             @include('../ui/title-section.html', {
                 "title": "New real estate properties for sale in Turkey"
             })
-            @include('../ui/toggle-property.html')
+            <div class="card-section__block-links">
+                @include('../ui/toggle-property.html')
+                <a href="#" class="btn btn--size-sm btn--theme--light-blue">
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#settings"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
         <div class="card-section__wrapper-cards">
             @include('./product-card.html')
@@ -17,10 +24,10 @@
             @include('./product-card.html')
         </div>
         <div class="card-section__block-btns">
-            <a href="#" class="btn btn--size-sm btn--theme--navy-blue">
+            <a href="#" class="btn btn--size-sm btn--theme--navy-blue card-section__btn-more">
                 <span class="btn__text">Show More</span>
             </a>
-            <a href="#" class="btn btn--size-sm btn--theme--light-blue">
+            <a href="#" class="btn btn--size-sm btn--theme--light-blue card-section__btn-filters">
                 <svg class="btn__icon">
                     <use xlink:href="./assets/icons/sprite-svg.svg#settings"/>
                 </svg>
