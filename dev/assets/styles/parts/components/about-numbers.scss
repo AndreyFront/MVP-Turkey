@@ -1,0 +1,30 @@
+.about-numbers {
+
+    &__block-head {}
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__li {
+        display: flex;
+        align-items: center;
+    }
+
+    &__block-number {}
+
+    &__number {
+        @include adaptiv-font(50, 40);
+    }
+
+    &__block-text {
+        margin-left: 28px;
+    }
+
+    &__text {
+        @include adaptiv-font(16, 14);
+    }
+}

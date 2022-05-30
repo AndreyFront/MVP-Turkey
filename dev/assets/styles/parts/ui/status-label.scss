@@ -9,6 +9,11 @@
         color: $white;
     }
 
+    &__icon {
+        width: 14px;
+        height: 14px;
+    }
+
     &--theme--coral {
         background-color: $coral;
     }

@@ -210,6 +210,12 @@
     .status-labels {
         left: 16px;
         width: 75%;
+
+        &__li {
+            &:last-child {
+                display: none;
+            }
+        }
     }
 
     .favorites-icon {

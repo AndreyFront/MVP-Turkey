@@ -1,0 +1,47 @@
+.estate-statistics {
+
+    &__block-info,
+    &__block-slider {
+        position: relative;
+    }
+
+    &__block-text {
+        p {
+            @include adaptiv-font(16, 14);
+        }
+    }
+
+    &__block-slider {
+        display: flex;
+    }
+
+    &__block-slide {
+        &:not(:first-child) {
+            margin-left: 17px;
+        }
+    }
+
+    .slider-btns {
+        margin-top: 50px;
+    }
+
+    .main-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 536px 1fr;
+        grid-column-gap: 119px;
+        align-items: center;
+        padding: 56px 20px 56px 80px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            bottom: 0;
+            width: 80%;
+            border-radius: 16px;
+            background-color: #F5FAFF;
+        }
+    }
+}

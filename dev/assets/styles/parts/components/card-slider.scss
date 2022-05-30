@@ -1,0 +1,19 @@
+.card-slider {
+
+    &__block-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__block-slider {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        margin-top: 30px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}

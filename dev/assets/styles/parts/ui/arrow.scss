@@ -11,16 +11,24 @@
 
     &:not(:disabled) {
         cursor: pointer;
-
-        &:hover {
-            opacity: 0.6;
-        }
     }
 
     &--theme--blue[disabled] {
         opacity: 0.6;
         background-color: transparent;
         border-color: rgba(47, 128, 237, 0.17);
+    }
+
+    &--theme--blue:not([disabled]) {
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
+    &--theme--transparent:not([disabled]) {
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     &__icon {
@@ -61,7 +69,7 @@
     }
 
     &--theme--blue {
-        background-color: $blue;
+        background-color: $very-light-blue;
         .arrow {
             &__icon {
                 use {

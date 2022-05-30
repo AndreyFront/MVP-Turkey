@@ -1,7 +1,37 @@
 <div class="product-card">
     <div class="product-card__block-images">
         @include('../ui/favorites-icon.html')
-        @include('../components/status-labels.html')
+        <div class="status-labels">
+            <ul class="status-labels__list list-reset">
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--coral">
+                        <span class="status-label__text">new</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--green">
+                        <span class="status-label__text">avaliable</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--navy-blue">
+                        <span class="status-label__text">sold</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--purple">
+                        <span class="status-label__text">foreclosure</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--green">
+                        <svg class="status-label__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div class="product-card__wrapper-label-quantity">
             <div class="product-card__block-label-quantity">
                 <div class="product-card__label-quantity">
@@ -57,7 +87,7 @@
                     <span class="product-card__employee-post">Realtor</span>
                 </div>
             </div>
-            <button type="button" class="btn btn--size-sm btn--theme--transparent">
+            <button type="button" class="btn btn--size-sm btn--theme--transparent product-card__btn-contact">
                 <span class="btn__text">Contact</span>
             </button>
         </div>

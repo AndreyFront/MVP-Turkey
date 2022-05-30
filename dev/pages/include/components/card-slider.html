@@ -1,0 +1,13 @@
+<div class="card-slider">
+    <div class="main-container max-width">
+        <div class="card-slider__block-head">
+            @include('../ui/title-section.html', {
+                "title": "Recently viewed"
+            })
+            @include('../ui/slider-btns.html')
+        </div>
+        <div class="card-slider__block-slider">
+            @include('./product-card.html')
+        </div>
+    </div>
+</div>

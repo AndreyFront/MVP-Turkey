@@ -297,11 +297,108 @@
         }
     }
 
-    .popular-cities {
-        &__block-nav-slider {
+    .product-card {
+
+        &:hover {
+            border-radius: 8px;
+        }
+
+        &__wrapper-label-quantity {
             display: none;
         }
 
+        &__block-images {
+            height: 136px;
+        }
+
+        &__block-content {
+            padding: 12px 10px 10px 10px;
+        }
+
+        &__block-info {
+            flex-direction: column;
+        }
+
+        &__price {
+            order: 1;
+        }
+
+        &__address {
+            order: 2;
+            margin-top: 0;
+        }
+
+        &__wrapper-employee,
+        &__block-links {
+            margin-top: 11px;
+        }
+
+        &__btn-contact {
+            display: none;
+        }
+
+        &__block-employee-avatar {
+            width: 34px;
+            height: 34px;
+        }
+
+        &__block-info-employee {
+            margin-left: 8px;
+        }
+
+        &__list-links {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__li-link {
+            &:not(:last-child):after {
+                content: ',';
+                margin-right: 3px;
+                margin-left: -3px;
+                color: $navy-blue;
+            }
+        }
+
+        &__wrapper-btns {
+            display: none;
+        }
+
+        .affiliation-label {
+            order: 3;
+            margin-top: 7px;
+        }
+
+        .status-labels {
+            &__li {
+                &:last-child {
+                    display: flex;
+                }
+
+                &:not(:first-child, :last-child) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .affiliation-label {
+        display: flex;
+        align-items: center;
+        height: 22px;
+    }
+
+    .favorites-icon {
+        width: 24px;
+        height: 24px;
+
+        &__icon {
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    .popular-cities {
         &__block-slider {
             margin-top: 20px;
         }
@@ -334,6 +431,70 @@
         .search {
             margin-top: 18px;
         }
+
+        .slider-btns {
+            display: none;
+        }
+    }
+
+    .estate-statistics {
+        &__block-slider {
+            flex-wrap: wrap;
+            margin: -6px;
+        }
+
+        &__block-slide {
+            padding: 6px;
+
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+        }
+
+        .slider-btns {
+            display: none;
+        }
+
+        .main-container {
+            padding: 32px 20px 100px 20px;
+            margin-bottom: -50px;
+
+            &::before {
+                width: 100%;
+                right: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .about-numbers {
+        &__list {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        &__li {
+            flex-shrink: 0;
+
+            &:not(:first-child) {
+                margin-left: 36px;
+            }
+        }
+
+        &__block-text {
+            margin-left: 16px;
+        }
+    }
+
+    .card-slider {
+        &__block-slider {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 20px;
+        }
+
+        .slider-btns {
+            display: none;
+        }
     }
 
     .page__content {
@@ -341,8 +502,20 @@
     }
 
     .main-page {
-        .popular-cities {
+        .popular-cities,
+        .about-numbers,
+        .estate-statistics {
             margin-top: 40px;
+        }
+    
+        .card-slider {
+            margin-top: 50px;
+        }
+
+        .page {
+            &__content {
+                padding: 24px 0 0 0;
+            }
         }
     }
 }

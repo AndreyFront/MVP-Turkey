@@ -5,9 +5,7 @@
         position: relative;
     }
 
-    &__block-info {
-        // padding-left: 60px;
-    }
+    &__block-info {}
 
     &__block-subtitle {}
 
@@ -122,15 +120,8 @@
             visibility $transition-time;
     }
 
-    &__block-nav-slider {
-        display: flex;
+    .slider-btns {
         margin-top: 53px;
-
-        .arrow {
-            &:not(:first-child) {
-                margin-left: 16px;
-            }
-        }
     }
 
     .main-container {
@@ -149,7 +140,7 @@
             bottom: 0;
             width: 75%;
             border-radius: 16px;
-            background-color: $very-light-blue;
+            background-color: #F5FAFF;
         }
     }
 

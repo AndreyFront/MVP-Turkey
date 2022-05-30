@@ -1,1 +1,8 @@
-@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1440px) {
+    .estate-statistics {
+        .main-container {
+            grid-template-columns: 350px 1fr;
+            grid-column-gap: 40px;
+        }
+    }
+}
