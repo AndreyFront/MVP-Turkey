@@ -1,0 +1,36 @@
+.property-description {
+    &__block-head {}
+
+    &__block-content {}
+
+    &__block-text {
+        p, a {
+            @include adaptiv-font(16, 14);
+        }
+
+        p {
+            line-height: 1.7em;
+        }
+
+        a {
+            color: $navy-blue;
+            font-weight: 600;
+            transition: opacity $transition-time;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &__block-btns {
+        display: flex;
+        margin-top: 8px;
+    }
+
+    .btn {
+        &:not(:first-child) {
+            margin-left: 12px;
+        }
+    }
+}

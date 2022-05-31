@@ -1,4 +1,19 @@
 .title-section {
-    @include adaptiv-font(38, 24);
     font-weight: 600;
+}
+
+h1.title-section {
+    @include adaptiv-font(50, 34);
+}
+
+h2.title-section {
+    @include adaptiv-font(38, 24);
+}
+
+h3.title-section {
+    @include adaptiv-font(30, 20);
+}
+
+h4.title-section {
+    @include adaptiv-font(24, 20);
 }

@@ -15,7 +15,6 @@
 html,
 body {
     width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -23,10 +22,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: $black-text;
+    overflow-x: hidden;
 }
 
 @import './pages/page.scss';
 @import './pages/main-page.scss';
+@import './pages/property-page.scss';
+@import './pages/detailed-product-card-page.scss';
 
 @import './parts/layouts';
 @import './parts/components';

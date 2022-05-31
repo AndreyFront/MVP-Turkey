@@ -30,8 +30,6 @@
     }
 
     &__title {
-        font-weight: 600;
-        @include adaptiv-font(50, 34);
         line-height: 1.3em;
     }
 

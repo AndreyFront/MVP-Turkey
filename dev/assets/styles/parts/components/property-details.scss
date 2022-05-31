@@ -1,0 +1,38 @@
+.property-details {
+    &__block-head {}
+
+    &__block-content {
+        margin-top: 28px;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 328px;
+        margin-left: -80px;
+    }
+
+    &__li {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+        margin: 14px 0 0 80px;
+    }
+
+    &__name-property,
+    &__value-property {
+        @include adaptiv-font(16, 14);
+    }
+
+    &__name-property {
+        color: $light-text;
+        margin-right: 10px;
+    }
+
+    &__value-property {
+        font-weight: 500;
+        width: 280px;
+        flex-shrink: 0;
+    }
+}

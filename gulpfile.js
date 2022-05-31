@@ -128,6 +128,7 @@ gulp.task('fonts', () => {
 
 gulp.task('images', () => {
     return src([
+        `${pathSrc.images}**/*.svg`,
         `${pathSrc.images}**/*.jpg`,
         `${pathSrc.images}**/*.png`,
         `${pathSrc.images}**/*.jpeg`,

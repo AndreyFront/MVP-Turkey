@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "Detailed product card"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page detailed-product-card-page">
+            <!-- @include('./include/components/name.html') -->
+            <div class="page__content">
+                <div class="detailed-product-card-page__block-slider">
+                    <!-- slider -->
+                </div>
+                <div class="detailed-product-card-page__wrapper-info">
+                    <div class="main-container max-width detailed-product-card-page__wrapper-info-main-container">
+                        <div class="detailed-product-card-page__block-info">
+                            @include('./include/components/basic-properties.html')
+                            @include('./include/components/property-description.html')
+                            @include('./include/components/property-details.html')
+                            @include('./include/components/other-features.html')
+                        </div>
+                        @include('./include/components/side-panel.html')
+                    </div>
+                </div>
+
+                <section class="card-slider">
+                    <div class="main-container max-width">
+                        <div class="card-slider__block-head">
+                            <h3 class="title-section title-reset">Similar objects</h3>
+                            @include('./include/ui/slider-btns.html')
+                        </div>
+                        <div class="card-slider__block-slider">
+                            @include('./include/components/product-card.html')
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card-slider">
+                    <div class="main-container max-width">
+                        <div class="card-slider__block-head">
+                            <h3 class="title-section title-reset">Recently viewed</h3>
+                            @include('./include/ui/slider-btns.html')
+                        </div>
+                        <div class="card-slider__block-slider">
+                            @include('./include/components/product-card.html')
+                        </div>
+                    </div>
+                </section>
+
+                <div class="detailed-product-card-page__pagination">
+                    <div class="main-container max-width">
+                        @include('./include/components/pagination.html')
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>

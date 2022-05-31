@@ -1,4 +1,45 @@
 .card-section {
+
+    &--property {
+        .card-section {
+            &__block-head {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &__block-sorting {
+                display: flex;
+                align-items: center;
+                margin-top: 27px;
+            }
+
+            &__wrapper-content {
+                display: grid;
+                grid-template-columns: 1fr 330px;
+                grid-column-gap: 28px;
+            }
+
+            &__wrapper-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &__block-nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 50px;
+            }
+        }
+
+        .sorting {
+            margin-left: 46px;
+        }
+
+        .search-bar {
+
+        }
+    }
+
     &__block-head {
         display: flex;
         align-items: center;

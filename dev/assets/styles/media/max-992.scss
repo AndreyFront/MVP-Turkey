@@ -340,6 +340,15 @@
         &__block-employee-avatar {
             width: 34px;
             height: 34px;
+        
+            &--verified {
+                &::before {
+                    bottom: 0px;
+                    right: 0px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
         }
 
         &__block-info-employee {
@@ -516,6 +525,16 @@
             &__content {
                 padding: 24px 0 0 0;
             }
+        }
+    }
+
+    .property-page {
+        .card-slider {
+            margin-top: 40px;
+        }
+    
+        .estate-statistics {
+            margin-top: 40px;
         }
     }
 }

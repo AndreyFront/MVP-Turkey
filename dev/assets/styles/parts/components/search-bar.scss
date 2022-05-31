@@ -1,4 +1,48 @@
 .search-bar {
+
+    &.search-bar--property .search__block-input {
+        width: 100%;
+    }
+
+    &--property {
+        width: 100%;
+        margin-top: 20px;
+
+        .search-bar {
+            &__block-tab {
+                position: static;
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                padding: 0;
+                background-color: transparent;
+            }
+
+            &__btn-filter {
+                background-color: #F5FAFF;
+            }
+        }
+
+        .search {
+            width: 100%;
+
+            &__block-input {
+                background-color: #F5FAFF;
+            }
+        }
+
+        .select {
+            &:not(:first-child) {
+                margin-left: 6px;
+            }
+
+            &__btn {
+                background-color: #F5FAFF;
+            }
+        }
+    }
+
     &__list-links-tabs {
         display: flex;
     }

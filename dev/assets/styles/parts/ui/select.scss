@@ -1,4 +1,7 @@
 .select {
+    display: flex;
+    align-items: center;
+
     &:hover &__btn {
         background-color: $light-blue;
     }
@@ -21,6 +24,11 @@
                 }
             }
         }
+    }
+
+    &__signature {
+        margin-right: 14px;
+        font-weight: 500;
     }
 
     &__btn {
@@ -53,5 +61,31 @@
         }
     }
 
+    &--theme--blue {
+        .select {
+            &__btn {
+                border: 1px solid $very-light-blue;
+                border-radius: 8px;
+            }
 
+            &__btn-text {
+                font-size: 18px;
+                color: $navy-blue;
+            }
+
+            &__btn-icon {
+                use {
+                    fill: $navy-blue;
+                }
+            }
+        }
+    }
+
+    &--size--sm {
+        .select {
+            &__btn {
+                padding: 10px 11px;
+            }
+        }
+    }
 }

@@ -1,0 +1,9 @@
+.count-objects {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-weight: 500;
+        @include adaptiv-font(16, 14);
+    }
+}

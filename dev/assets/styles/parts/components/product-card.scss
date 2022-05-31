@@ -137,8 +137,25 @@
     }
 
     &__block-employee-avatar {
+        position: relative;
         width: 46px;
         height: 46px;
+
+        &--verified {
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -3px;
+                right: -5px;
+                z-index: 5;
+                width: 20px;
+                height: 20px;
+                background-image: url('../images/green-shield.svg');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
     }
 
     &__employee-avatar {
