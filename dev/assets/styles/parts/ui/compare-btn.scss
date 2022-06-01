@@ -1,0 +1,57 @@
+.compare-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 5px;
+    min-height: 43px;
+    width: 132px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color $transition-time;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &.active {
+        .compare-btn {
+            &__icon,
+            &__text {
+                transform: translateX(0);
+            }
+
+            &__icon {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__icon,
+    &__text {
+        transform: translateX(-10px);
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 
+            opacity $transition-time, 
+            visibility $transition-time,
+            transform $transition-time;
+    }
+
+    &__text {
+        color: $white;
+        font-weight: 600;
+        transition: transform $transition-time;
+    }
+}

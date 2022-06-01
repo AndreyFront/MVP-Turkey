@@ -6,9 +6,9 @@
     })
 </head>
 <body>
-    <main class="dev">
+    <main class="dev links">
         <div class="dev__box-title">
-            <h1 class="dev__title">Links</h1>
+            <h1 class="dev__title">Property-guide MVP Турция</h1>
         </div>
 
         <div class="dev__box">
@@ -18,15 +18,35 @@
             <a href="./property.html" class="dev__link link-reset">Недвижимость</a>
         </div>
         <div class="dev__box">
-            <a href="./detailed-product-card.html" class="dev__link link-reset">Детальная карточка товара</a>
+            <a href="./detailed-card.html" class="dev__link link-reset">Детальная карточка объекта</a>
         </div>
         <div class="dev__box">
+            <a href="#" class="dev__link link-reset" data-modal-link="#more-filters">Модальное окно "Фильтр"</a>
+        </div>
+        <!-- <div class="dev__box">
             <a href="./_components.html" class="dev__link link-reset">Компоненты</a>
         </div>
         <div class="dev__box">
             <a href="./_ui.html" class="dev__link link-reset">Пользовательские элементы</a>
-        </div>
+        </div> -->
+
+        <!-- <div class="modal modal--size--bg" data-modal="modal" id="modal-1">
+            <div class="modal__wrap">
+                <div class="modal__window">
+                    <button data-modal="close" class="modal__close">
+                        <svg class="modal__icon-close">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
+                        </svg>
+                    </button>
+
+                    <h1>content</h1>
+
+                </div>
+            </div>
+        </div> -->
+
     </main>
+    @include('./include/modal-windows/more-filters.html')
     @include('./include/layouts/scripts.html')
 </body>
 </html>

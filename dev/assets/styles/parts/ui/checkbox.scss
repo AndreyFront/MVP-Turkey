@@ -1,0 +1,163 @@
+.checkbox {
+
+    &--theme--default {
+
+        &.active {
+            .checkbox__text::after {
+                opacity: 1;
+            }
+        }
+
+        .checkbox {
+            &__input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                display: none;
+        
+                &:checked + .checkbox__text::after {
+                    opacity: 1;
+                }
+        
+                &:disabled + .checkbox__text {
+                    color: #C3C8CC;
+                    cursor: default;
+                }
+            }
+    
+            &__text {
+                position: relative;
+                padding-left: 27px;
+                cursor: pointer;
+        
+                &::before, 
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+        
+                &::before {
+                    width: 16px;
+                    height: 16px;
+                    left: 0;
+                    border: 1px solid;
+                    border-radius: 3px;
+                    border-color: $light-blue;
+                    transition: border-color $transition-time;
+                }
+        
+                &::after {
+                    width: 10px;
+                    height: 10px;
+                    left: 4px;
+                    background-color: $navy-blue;
+                    opacity: 0;
+                    border-radius: 2px;
+                    border-color: $light-blue;
+                    transition: opacity $transition-time, border $transition-time;
+                }
+            }
+        }
+    }
+
+    &--theme--modified {
+
+        &.active {
+            .checkbox__decore::before {
+                opacity: 1;
+            }
+
+            .checkbox__decore::after {
+                transform: translate(calc(100% - 1px), -50%);
+            }
+        }
+
+        .checkbox {
+
+            &__label {
+                position: relative;
+            }
+        
+            &__input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+                display: none;
+        
+                &:checked ~ .checkbox__decore::before {
+                    opacity: 1;
+                }
+        
+                &:checked ~ .checkbox__decore::after {
+                    transform: translate(calc(100% - 1px), -50%);
+                }
+
+                &:disabled ~ .checkbox__text {
+                    color: #C3C8CC;
+                }
+        
+                &:disabled ~ .checkbox__text,
+                &:disabled ~ .checkbox__decore {
+                    cursor: default;
+                }
+
+                &:not(:disabled) ~ .checkbox__text,
+                &:not(:disabled) ~ .checkbox__decore {
+                    cursor: pointer;
+                }
+            }
+    
+            &__text {
+                padding-right: 52px;
+                @include adaptiv-font(16, 14);
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            &__decore {
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 38px;
+                height: 24px;
+                border-radius: 30px;
+                background-color: #E5E6E9;
+
+                &::before, 
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+        
+                &::before {
+                    width: 100%;
+                    height: 100%;
+                    background-color: $navy-blue;
+                    opacity: 0;
+                    transition: opacity $transition-time;
+                }
+        
+                &::after {
+                    transform: translate(calc(0% + 3px), -50%);
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 100px;
+                    background-color: $white;
+                    transition: transform $transition-time;
+                }
+            }
+        }
+    }
+
+    &__label {}
+
+    &__text {
+        transition: color $transition-time;
+    }
+}

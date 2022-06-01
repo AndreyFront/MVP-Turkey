@@ -1,16 +1,11 @@
 .side-panel {
-    .commercial-block,
-    .need-help {
+    &__content {
         position: sticky;
-    }
-
-    .commercial-block {
-        top: 10px;
         z-index: 1;
+        top: 10px;
     }
 
     .need-help {
         margin-top: 24px;
-        top: 362px;
     }
 }

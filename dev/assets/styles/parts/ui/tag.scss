@@ -1,0 +1,76 @@
+.tag {
+    width: max-content;
+    border: 1px solid $light-blue;
+    border-radius: 10px;
+    transition: background-color $transition-time;
+
+    &:not([disabled]):hover {
+        background-color: $light-blue;
+        cursor: pointer;
+    }
+
+    &[disabled] {
+        cursor: default;
+        
+        .tag__text {
+            color: $light-blue;
+        }
+    }
+
+    &__text {
+        transition: color $transition-time;
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+
+        use {
+            stroke: $light-text;
+            transition: stroke $transition-time;
+        }
+    }
+
+    &--size--sm {
+        padding: 10px 16px;
+    }
+
+    &--size--bg {
+        padding: 10px 33px;
+    }
+
+    &--theme--default {
+
+        &:not([disabled]).active {
+            background-color: $light-blue;
+        }
+
+        .tag {
+            &__text {
+                color: $navy-blue;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &--theme--delete {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 10px;
+        align-items: center;
+
+        &:hover .tag__text {
+            color: $navy-blue;
+        }
+
+        &:hover .tag__icon use {
+            stroke: $navy-blue;
+        }
+
+        .tag {
+            &__text {
+                font-weight: 500;
+            }
+        }
+    }
+}

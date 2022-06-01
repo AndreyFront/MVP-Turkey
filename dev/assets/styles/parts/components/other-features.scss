@@ -1,1 +1,31 @@
-.other-features {}
+.other-features {
+
+    &__block-head {}
+
+    &__block-content {
+        margin-top: 28px;
+    }
+
+    &__block-feature {
+        &:not(:first-child) {
+            margin-top: 24px;
+        }
+    }
+
+    &__name-feature {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 6px -6px -6px -6px;
+    }
+
+    &__li {
+        padding: 6px;
+    }
+
+    .tag {}
+}

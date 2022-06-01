@@ -1,0 +1,80 @@
+.more-filters {
+    &__block-head {}
+
+    &__block-filters {
+        margin-top: 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 94%;
+    }
+
+    &__block-filter {
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    &__block-name-filter {}
+
+    &__name-filter {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__btn-more-properties {
+        margin-top: 20px;
+        font-weight: 600;
+        color: $navy-blue;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__block-filter-tags {}
+
+    &__list-tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 7px -5px -5px -5px;
+    }
+
+    &__li-tag {
+        padding: 5px;
+    }
+
+    &__block-filter-checkbox-default {
+        margin-top: 12px;
+    }
+
+    &__list-checkbox-default {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 12px;
+    }
+
+    &__li-checkbox-default {}
+
+    &__title-other-features {
+        margin-top: 40px;
+    }
+
+    &__list-checkbox-modified {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 53px;
+        grid-row-gap: 30px;
+        margin-top: 40px;
+    }
+
+    .checkbox--theme--modified .checkbox__label {
+        display: block;
+    }
+
+    .modal {
+        &__window {
+            max-height: 800px;
+            height: 100%;
+        }
+    }
+}

@@ -75,4 +75,32 @@
             }
         }
     }
+
+    &--theme--gray {
+        border: none;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        &.active {
+            border-color: transparent;
+            background-color: rgba(255, 255, 255, 0.3);
+
+            .btn-icon__icon use {
+                fill: $white;
+                stroke: $white;
+            }
+        }
+
+        .btn-icon {
+            &__icon {
+                use {
+                    fill: transparent;
+                    stroke: $white;
+                }
+            }
+        }
+    }
 }

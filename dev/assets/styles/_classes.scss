@@ -30,6 +30,10 @@
     list-style-type: none;
 }
 
+a {
+    color: $navy-blue;
+}
+
 .dev {
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +60,18 @@
         transition: border-bottom $transition-time;
 
         &:hover {
-            border-bottom-color: $black-text;
+            border-bottom-color: $navy-blue;
+        }
+    }
+
+    &.links {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .dev {
+            &__box {
+                margin: 15px 0;
+            }
         }
     }
 }

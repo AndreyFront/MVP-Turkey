@@ -1,0 +1,15 @@
+.infrastructure {
+    &__block-head {}
+
+    &__block-content {
+        margin-top: 20px;
+        max-height: 450px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.detailed-product-card-page {
+.detailed-card-page {
 
     &__wrapper-info {
 
@@ -19,10 +19,22 @@
         }
     }
 
+    .main-banner {
+        height: 432px;
+        padding-bottom: 50px;
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+
     .basic-properties,
     .property-description,
     .property-details,
-    .other-features {
+    .other-features,
+    .infrastructure {
         .main-container {
             padding: 0;
         }
@@ -34,7 +46,8 @@
 
     .property-description,
     .property-details,
-    .other-features {
+    .other-features,
+    .infrastructure {
         margin-top: 60px;
     }
 }
