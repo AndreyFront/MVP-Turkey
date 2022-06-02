@@ -6,718 +6,731 @@
                     <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
                 </svg>
             </button>
-            <!-- <div class="more-filters__block-head">
-                <h4 class="title-section title-reset">More Filters</h4>
-            </div> -->
-            <div class="more-filters__block-filters">
-                <h4 class="title-section title-reset">More Filters</h4>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Status</span>
+            <div class="more-filters__wrapper-filters">
+                <div class="more-filters__block-filters">
+                    <h4 class="title-section title-reset">More Filters</h4>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Status</span>
+                        </div>
+                        <div class="more-filters__block-filter-tags">
+                            <ul class="more-filters__list-tags list-reset">
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Available"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Sold"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default active">
+                                        <span class="tag__text">New</span>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default" disabled>
+                                        <span class="tag__text">Foreclosure</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="more-filters__block-filter-tags">
-                        <ul class="more-filters__list-tags list-reset">
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Available"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Sold"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default active">
-                                    <span class="tag__text">New</span>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default" disabled>
-                                    <span class="tag__text">Foreclosure</span>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Property Type</span>
+                        </div>
+                        <div class="more-filters__block-filter-checkbox-default">
+                            <ul class="more-filters__list-checkbox-default list-reset">
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+    
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+                            </ul>
+                            <button type="button" class="more-filters__btn-more-properties">All properties</button>
+                        </div>
                     </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Property Type</span>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Residential complexes</span>
+                        </div>
+                        <div class="more-filters__block-filter-checkbox-default">
+                            <ul class="more-filters__list-checkbox-default list-reset">
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+    
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+                            </ul>
+                            <button type="button" class="more-filters__btn-more-properties">All Residential complexes</button>
+                            <ul class="more-filters__list-checkbox-modified list-reset">
+                                <li class="more-filters__li-checkbox-modified">
+                                    <div class="checkbox checkbox--theme--modified active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="Y">
+                                            <span class="checkbox__text" title="Acqua di Parma">Video Home Tour</span>
+                                            <span class="checkbox__decore"></span>
+                                        </label>
+                                    </div> 
+                                </li>
+                                <li class="more-filters__li-checkbox-modified">
+                                    <div class="checkbox checkbox--theme--modified">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="Y">
+                                            <span class="checkbox__text" title="Acqua di Parma">Available for Loan</span>
+                                            <span class="checkbox__decore"></span>
+                                        </label>
+                                    </div> 
+                                </li>
+                                <li class="more-filters__li-checkbox-modified">
+                                    <div class="checkbox checkbox--theme--modified">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="Y">
+                                            <span class="checkbox__text" title="Acqua di Parma">On site</span>
+                                            <span class="checkbox__decore"></span>
+                                        </label>
+                                    </div> 
+                                </li>
+                                <li class="more-filters__li-checkbox-modified">
+                                    <div class="checkbox checkbox--theme--modified active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="Y">
+                                            <span class="checkbox__text" title="Acqua di Parma">Available for Trade</span>
+                                            <span class="checkbox__decore"></span>
+                                        </label>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="more-filters__block-filter-checkbox-default">
-                        <ul class="more-filters__list-checkbox-default list-reset">
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-                        </ul>
-                        <button type="button" class="more-filters__btn-more-properties">All properties</button>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Building Age</span>
+                        </div>
+                        <div class="more-filters__block-filter-tags">
+                            <ul class="more-filters__list-tags list-reset">
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Zero Building"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "1-5 Years"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default active">
+                                        <span class="tag__text">6-10 Yers</span>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default" disabled>
+                                        <span class="tag__text">11-20 Years</span>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "21 Years and Over"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Residential complexes</span>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Number of floors in the building</span>
+                        </div>
+                        <div class="more-filters__block-filter-tags">
+                            <ul class="more-filters__list-tags list-reset">
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Between 1-5"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Between 6-10"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "11 and above"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="more-filters__block-filter-checkbox-default">
-                        <ul class="more-filters__list-checkbox-default list-reset">
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-                        </ul>
-                        <button type="button" class="more-filters__btn-more-properties">All Residential complexes</button>
-                        <ul class="more-filters__list-checkbox-modified list-reset">
-                            <li class="more-filters__li-checkbox-modified">
-                                <div class="checkbox checkbox--theme--modified active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="Y">
-                                        <span class="checkbox__text" title="Acqua di Parma">Video Home Tour</span>
-                                        <span class="checkbox__decore"></span>
-                                    </label>
-                                </div> 
-                            </li>
-                            <li class="more-filters__li-checkbox-modified">
-                                <div class="checkbox checkbox--theme--modified">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="Y">
-                                        <span class="checkbox__text" title="Acqua di Parma">Available for Loan</span>
-                                        <span class="checkbox__decore"></span>
-                                    </label>
-                                </div> 
-                            </li>
-                            <li class="more-filters__li-checkbox-modified">
-                                <div class="checkbox checkbox--theme--modified">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="Y">
-                                        <span class="checkbox__text" title="Acqua di Parma">On site</span>
-                                        <span class="checkbox__decore"></span>
-                                    </label>
-                                </div> 
-                            </li>
-                            <li class="more-filters__li-checkbox-modified">
-                                <div class="checkbox checkbox--theme--modified active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="Y">
-                                        <span class="checkbox__text" title="Acqua di Parma">Available for Trade</span>
-                                        <span class="checkbox__decore"></span>
-                                    </label>
-                                </div> 
-                            </li>
-                        </ul>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Floor location</span>
+                        </div>
+                        <div class="more-filters__block-filter-tags">
+                            <ul class="more-filters__list-tags list-reset">
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Between 1-5"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Between 6-10"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "11 and above"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Jens"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Penthouse"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Garden Floor"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default active">
+                                        <span class="tag__text">Ground floor</span>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Detached house"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default active">
+                                        <span class="tag__text">Entresol</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Building Age</span>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Heading Type</span>
+                        </div>
+                        <div class="more-filters__block-filter-tags">
+                            <ul class="more-filters__list-tags list-reset">
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Solar energy"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default active">
+                                        <span class="tag__text">Underfloor Heating</span>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    <div class="tag tag--size--bg tag--theme--default active">
+                                        <span class="tag__text">Central System</span>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Air conditioning"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="more-filters__block-filter-tags">
-                        <ul class="more-filters__list-tags list-reset">
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Zero Building"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "1-5 Years"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default active">
-                                    <span class="tag__text">6-10 Yers</span>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default" disabled>
-                                    <span class="tag__text">11-20 Years</span>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "21 Years and Over"
-                                })
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Number of floors in the building</span>
-                    </div>
-                    <div class="more-filters__block-filter-tags">
-                        <ul class="more-filters__list-tags list-reset">
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Between 1-5"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Between 6-10"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "11 and above"
-                                })
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Floor location</span>
-                    </div>
-                    <div class="more-filters__block-filter-tags">
-                        <ul class="more-filters__list-tags list-reset">
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Between 1-5"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Between 6-10"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "11 and above"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Jens"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Penthouse"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Garden Floor"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default active">
-                                    <span class="tag__text">Ground floor</span>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Detached house"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default active">
-                                    <span class="tag__text">Entresol</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Heading Type</span>
-                    </div>
-                    <div class="more-filters__block-filter-tags">
-                        <ul class="more-filters__list-tags list-reset">
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Solar energy"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default active">
-                                    <span class="tag__text">Underfloor Heating</span>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-tag">
-                                <div class="tag tag--size--bg tag--theme--default active">
-                                    <span class="tag__text">Central System</span>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Air conditioning"
-                                })
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Furniture Condition</span>
-                    </div>
-                    <div class="more-filters__block-filter-tags">
-                        <ul class="more-filters__list-tags list-reset">
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Unfurnished"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Just Kitchen"
-                                })
-                            </li>
-                            <li class="more-filters__li-tag">
-                                @include('../ui/tag.html', {
-                                    "text": "Furnished"
-                                })
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h4 class="title-section title-reset more-filters__title-other-features">Other Features</h4>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Exterior Features</span>
-                    </div>
-                    <div class="more-filters__block-filter-checkbox-default">
-                        <ul class="more-filters__list-checkbox-default list-reset">
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-                        </ul>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Furniture Condition</span>
+                        </div>
+                        <div class="more-filters__block-filter-tags">
+                            <ul class="more-filters__list-tags list-reset">
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Unfurnished"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Just Kitchen"
+                                    })
+                                </li>
+                                <li class="more-filters__li-tag">
+                                    @include('../ui/tag.html', {
+                                        "text": "Furnished"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Social Features</span>
+                <div class="more-filters__block-filters">
+                    <h4 class="title-section title-reset">Other Features</h4>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Exterior Features</span>
+                        </div>
+                        <div class="more-filters__block-filter-checkbox-default">
+                            <ul class="more-filters__list-checkbox-default list-reset">
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="more-filters__block-filter-checkbox-default">
-                        <ul class="more-filters__list-checkbox-default list-reset">
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-                        </ul>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Social Features</span>
+                        </div>
+                        <div class="more-filters__block-filter-checkbox-default">
+                            <ul class="more-filters__list-checkbox-default list-reset">
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Landscape Features (Front)</span>
+                        </div>
+                        <div class="more-filters__block-filter-checkbox-default">
+                            <ul class="more-filters__list-checkbox-default list-reset">
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="more-filters__block-filter">
+                        <div class="more-filters__block-name-filter">
+                            <span class="more-filters__name-filter">Landscape Features (View)</span>
+                        </div>
+                        <div class="more-filters__block-filter-checkbox-default">
+                            <ul class="more-filters__list-checkbox-default list-reset">
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Apartment"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Villa"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" disabled>
+                                            <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    <div class="checkbox checkbox--theme--default active">
+                                        <label data-role="" class="checkbox__label">
+                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <span class="checkbox__text" title="Acqua di Parma">Compound</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Duplex"
+                                    })
+                                </li>
+                                <li class="more-filters__li-checkbox-default">
+                                    @include('../ui/checkbox.html', {
+                                        "text": "Half Floor"
+                                    })
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Landscape Features (Front)</span>
-                    </div>
-                    <div class="more-filters__block-filter-checkbox-default">
-                        <ul class="more-filters__list-checkbox-default list-reset">
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="more-filters__block-filter">
-                    <div class="more-filters__block-name-filter">
-                        <span class="more-filters__name-filter">Landscape Features (View)</span>
-                    </div>
-                    <div class="more-filters__block-filter-checkbox-default">
-                        <ul class="more-filters__list-checkbox-default list-reset">
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Apartment"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Villa"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Townhouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="" disabled>
-                                        <span class="checkbox__text" title="Acqua di Parma">Penthouse</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Full Floor</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                <div class="checkbox checkbox--theme--default active">
-                                    <label data-role="" class="checkbox__label">
-                                        <input type="checkbox" class="checkbox__input" name="" value="">
-                                        <span class="checkbox__text" title="Acqua di Parma">Compound</span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Duplex"
-                                })
-                            </li>
-                            <li class="more-filters__li-checkbox-default">
-                                @include('../ui/checkbox.html', {
-                                    "text": "Half Floor"
-                                })
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            </div>
+            <div class="more-filters__block-links">
+                <a href="#" class="btn-icon btn-icon--theme--navy-blue">
+                    <svg class="btn-icon__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#three-stripes"/>
+                    </svg>
+                </a>
+                <a href="#" class="btn-icon btn-icon--theme--navy-blue">
+                    <svg class="btn-icon__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#point"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>

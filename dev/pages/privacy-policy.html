@@ -2,22 +2,19 @@
 <html lang="en">
     <head>
         @include('./include/layouts/head.html', {
-            "title": "Main page"
+            "title": "Privacy policy"
         })
     </head>
     <body>
         <header class="header">
             @include('./include/layouts/header.html')
         </header>
-        <main class="page main-page">
+        <main class="page privacy-policy-page">
             <!-- @include('./include/components/name.html') -->
-            @include('./include/components/main-banner.html')
             <div class="page__content">
-                @include('./include/components/card-section.html')
-                @include('./include/components/popular-cities.html')
-                @include('./include/components/about-numbers.html')
-                @include('./include/components/card-slider.html')
-                @include('./include/components/estate-statistics.html')
+                @include('./include/components/text-document.html', {
+                    "title": "Privacy policy"
+                })
             </div>
         </main>
         <footer class="footer">

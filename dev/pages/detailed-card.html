@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         @include('./include/layouts/head.html', {
             "title": "Detailed product card"
@@ -11,7 +11,21 @@
         </header>
         <main class="page detailed-card-page">
             <!-- @include('./include/components/name.html') -->
-
+            <div class="bread-crumbs bread-crumbs--theme--light">
+                <div class="main-container max-width">
+                    <ul class="bread-crumbs__list list-reset">
+                        <li class="bread-crumbs__li">
+                            <a href="#" class="bread-crumbs__link link-reset">Home</a>
+                        </li>
+                        <li class="bread-crumbs__li">
+                            <a href="#" class="bread-crumbs__link link-reset">For sale</a>
+                        </li>
+                        <li class="bread-crumbs__li">
+                            <a href="##" class="bread-crumbs__link link-reset">11 Foundry Ave 129</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="main-banner">
                 <div class="main-banner__block-bg">
                     <img src="./assets/images/banner-bg-2.jpg" class="main-banner__image-bg" alt="">
@@ -40,9 +54,9 @@
                             </div>
                         </div>
                         <div class="main-banner__block-btns">
-                            <button type="button" class="compare-btn">
+                            <button type="button" class="compare-btn compare-btn--theme--gray">
                                 <svg class="compare-btn__icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#check-mark"/>
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#btn-Check"/>
                                 </svg>
                                 <span class="compare-btn__text">Compare</span>
                             </button>

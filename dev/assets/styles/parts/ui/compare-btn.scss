@@ -14,10 +14,6 @@
     background-color: rgba(255, 255, 255, 0.3);
     transition: background-color $transition-time;
 
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-
     &.active {
         .compare-btn {
             &__icon,
@@ -47,11 +43,55 @@
             opacity $transition-time, 
             visibility $transition-time,
             transform $transition-time;
+
+        use {
+            stroke-width: 2;
+            stroke-lineCap:round;
+        }
     }
 
     &__text {
-        color: $white;
         font-weight: 600;
         transition: transform $transition-time;
+    }
+
+    &--theme--gray {
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .compare-btn {
+
+            &__text {
+                color: $white;
+            }
+
+            &__icon {
+                use {
+                    stroke: $white;
+                }
+            }
+        }
+    }
+
+    &--theme--transparent {
+        background-color: transparent;
+        border: 1px solid $light-blue;
+
+        &:hover {
+            background-color: $light-blue;
+        }
+
+        .compare-btn {
+            &__text {
+                color: $navy-blue;
+            }
+
+            &__icon {
+                use {
+                    stroke: $navy-blue;
+                }
+            }
+        }
     }
 }

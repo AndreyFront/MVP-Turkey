@@ -2,21 +2,21 @@
 <html lang="en">
     <head>
         @include('./include/layouts/head.html', {
-            "title": "Real Estate for Sale"
+            "title": "Search result"
         })
     </head>
     <body>
         <header class="header">
             @include('./include/layouts/header.html')
         </header>
-        <main class="page property-page">
+        <main class="page search-result-page">
             <!-- @include('./include/components/name.html') -->
             <div class="page__content">
                 
                 <section class="card-section card-section--property">
                     <div class="main-container max-width">
                         <div class="card-section__block-head">
-                            <h2 class="title-section title-reset">Real Estate for Sale</h2>
+                            <h2 class="title-section title-reset">For the query "New York" found</h2>
                             <div class="search-bar search-bar--property">
                                 <div class="search-bar__block-tab">
                                     <div class="search">
@@ -104,9 +104,6 @@
                         </div>
                     </div>
                 </section>
-
-                @include('./include/components/card-slider.html')
-                @include('./include/components/estate-statistics.html')
             </div>
         </main>
         <footer class="footer">

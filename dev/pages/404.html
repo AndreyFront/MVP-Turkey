@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "404"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page page-not-found-page">
+            <!-- @include('./include/components/name.html') -->
+            <div class="page__content">
+                <div class="main-container max-width">
+                    <svg class="page-not-found-page__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#404"/>
+                    </svg>
+                    <h2 class="title-section title-reset">Page not found</h2>
+                    <span class="page-not-found-page__subtitle">
+                        We`re sorry, the page you reqursted could not be found Please go back to homepage
+                    </span>
+                    <button type="button" class="btn btn--size-bg btn--theme--navy-blue">
+                        <span class="btn__text">Go to homepage</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>

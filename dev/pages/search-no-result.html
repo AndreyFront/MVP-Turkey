@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "Search no result"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page search-no-result-page">
+            <!-- @include('./include/components/name.html') -->
+            <div class="page__content">
+                
+                <section class="card-section card-section--property">
+                    <div class="main-container max-width">
+                        <div class="card-section__block-head">
+                            <h2 class="title-section title-reset">Nothing was found for the query "cherry strudel"</h2>
+                            <span class="card-section__subtitle">Try to change the wording or use our listing of objects</span>
+                            <button type="button" class="btn btn--size-bg btn--theme--navy-blue">
+                                <span class="btn__text">Go to listing</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card-slider">
+                    <div class="main-container max-width">
+                        <div class="card-slider__block-head">
+                            <h2 class="title-section title-reset">Perhaps you are looking for</h2>
+                            @include('./include/ui/slider-btns.html')
+                        </div>
+                        <div class="card-slider__block-slider">
+                            @include('./include/components/product-card.html')
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>

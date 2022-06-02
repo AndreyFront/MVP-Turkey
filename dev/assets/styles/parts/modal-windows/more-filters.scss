@@ -1,11 +1,16 @@
 .more-filters {
-    &__block-head {}
 
-    &__block-filters {
+    &__wrapper-filters {
         margin-top: 20px;
         overflow-y: auto;
         overflow-x: hidden;
-        height: 94%;
+        height: 89%;
+    }
+
+    &__block-filters {
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
     }
 
     &__block-filter {
@@ -55,10 +60,6 @@
 
     &__li-checkbox-default {}
 
-    &__title-other-features {
-        margin-top: 40px;
-    }
-
     &__list-checkbox-modified {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -67,6 +68,26 @@
         margin-top: 40px;
     }
 
+    &__block-links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: 16px 30px;
+        background-color: $white;
+        box-shadow: 0px -10px 30px -16px rgba(34, 60, 80, 0.2);
+        border-radius: 0 0 10px 10px;
+
+        .btn-icon {
+            &:not(:last-child) {
+                margin-right: 6px;
+            }
+        }
+    }
+    
     .checkbox--theme--modified .checkbox__label {
         display: block;
     }

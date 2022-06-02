@@ -40,11 +40,123 @@
         }
     }
 
+    &--property-map {
+        .card-section {
+            &__block-head {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &__block-sorting {
+                display: flex;
+                align-items: center;
+                margin-top: 27px;
+            }
+
+            &__wrapper-content {
+                display: grid;
+                grid-template-columns: 1fr 644px;
+                grid-column-gap: 19px;
+            }
+
+            &__inner-cards {
+                display: flex;
+                flex-direction: column;
+                padding-right: 50px;
+            }
+
+            &__wrapper-cards {
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                align-self: start;
+            }
+
+            &__block-nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: auto;
+                padding-top: 40px;
+            }
+
+            &__block-map {
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            &__map-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .sorting {
+            margin-left: 46px;
+        }
+
+        .search-bar {
+
+        }
+
+        .product-card {
+            &__block-images {
+                height: 190px;
+            }
+
+            &__address {
+                margin-top: 12px;
+            }
+
+            &__block-content {
+                padding: 12px 14px;
+            }
+
+            &__wrapper-btns {
+                padding: 8px 14px 14px 14px;
+
+                .btn,
+                .compare-btn {
+                    min-height: 38px;
+                }
+
+                .btn-icon {
+                    width: 38px;
+                    height: 38px;
+
+                    &__icon {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+            }
+
+            &__block-links,
+            &__wrapper-employee {
+                margin-top: 18px;
+            }
+        }
+
+        .pagination {
+            &__list {
+                margin: 0;
+            }
+        }
+    }
+
     &__block-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        margin-top: 20px;
+        @include adaptiv-font(18, 16);
     }
     
     &__block-links {

@@ -9,11 +9,11 @@
         <header class="header">
             @include('./include/layouts/header.html')
         </header>
-        <main class="page property-page">
+        <main class="page property-map-page">
             <!-- @include('./include/components/name.html') -->
             <div class="page__content">
                 
-                <section class="card-section card-section--property">
+                <section class="card-section card-section--property-map">
                     <div class="main-container max-width">
                         <div class="card-section__block-head">
                             <h2 class="title-section title-reset">Real Estate for Sale</h2>
@@ -73,33 +73,53 @@
                                 @include('./include/ui/sorting.html')
                             </div>
                         </div>
-                        <div class="card-section__wrapper-content">
+                    </div>
+                    <div class="card-section__wrapper-content">
+                        <div class="card-section__block-map">
+                            <img src="./assets/images/for-sale-map.jpg" class="card-section__map-image" alt="">
+                        </div>
+                        <div class="card-section__inner-cards">
                             <div class="card-section__wrapper-cards">
                                 @include('./include/components/product-card.html')
                                 @include('./include/components/product-card.html')
                                 @include('./include/components/product-card.html')
                                 @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
-                                @include('./include/components/product-card.html')
                             </div>
-                            @include('./include/components/side-panel.html')
-                        </div>
-                        <div class="card-section__block-nav">
-                            @include('./include/components/pagination.html')
-                            <div class="select select--size--sm select--theme--blue">
-                                <span class="select__signature">Show by</span>
-                                <button type="button" class="select__btn">
-                                    <span class="select__btn-text">15</span>
-                                    <svg class="select__btn-icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
-                                    </svg>
-                                </button>
+                            <div class="card-section__block-nav">
+                                <div class="pagination">
+                                    <ul class="pagination__list list-reset">
+                                        <li class="pagination__li active">
+                                            <a href="#" class="pagination__link-number-page link-reset">1</a>
+                                        </li>
+                                        <li class="pagination__li">
+                                            <a href="#" class="pagination__link-number-page link-reset">2</a>
+                                        </li>
+                                        <li class="pagination__li">
+                                            <a href="#" class="pagination__link-number-page link-reset">3</a>
+                                        </li>
+                                        <li class="pagination__li">
+                                            <a href="#" class="pagination__link-number-page link-reset">4</a>
+                                        </li>
+                                        <li class="pagination__li">
+                                            <a href="#" class="pagination__link-number-page link-reset">5</a>
+                                        </li>
+                                        <li class="pagination__li pagination__li--ellipsis">
+                                            <a href="##" class="pagination__link-number-page link-reset">...</a>
+                                        </li>
+                                        <li class="pagination__li">
+                                            <a href="#" class="pagination__link-number-page link-reset">1000</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="select select--size--sm select--theme--blue">
+                                    <span class="select__signature">Show by</span>
+                                    <button type="button" class="select__btn">
+                                        <span class="select__btn-text">15</span>
+                                        <svg class="select__btn-icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

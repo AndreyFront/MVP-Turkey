@@ -460,6 +460,12 @@
             }
         }
 
+        &__block-text {
+            p {
+                line-height: 1.5em;
+            }
+        }
+
         .slider-btns {
             display: none;
         }

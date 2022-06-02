@@ -1,4 +1,6 @@
 .hint {
+    position: relative;
+
     &:hover &__text {
         opacity: 1;
         visibility: visible;
@@ -7,6 +9,7 @@
 
     &__text {
         position: absolute;
+        z-index: 5;
         display: block;
         bottom: 100%;
         left: 50%;
