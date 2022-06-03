@@ -1,8 +1,37 @@
-
-
-<div class="product-card product-card--type--residential-complex"> 
+<div class="product-card product-card--type--apartment">
     <div class="product-card__block-images">
         @include('../ui/favorites-icon.html')
+        <div class="status-labels">
+            <ul class="status-labels__list list-reset">
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--coral">
+                        <span class="status-label__text">new</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--green">
+                        <span class="status-label__text">avaliable</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--navy-blue">
+                        <span class="status-label__text">sold</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--purple">
+                        <span class="status-label__text">foreclosure</span>
+                    </div>
+                </li>
+                <li class="status-labels__li">
+                    <div class="status-label status-label--theme--green">
+                        <svg class="status-label__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div class="product-card__wrapper-label-quantity">
             <div class="product-card__block-label-quantity">
                 <div class="product-card__label-quantity">
@@ -13,51 +42,39 @@
                 </div>
             </div>
             <div class="product-card__block-label-quantity">
-                <a href="#" class="product-card__label-quantity hint">
+                <div class="product-card__label-quantity">
                     <svg class="product-card__label-quantity-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#3D"/>
+                        <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
                     </svg>
-                    <span class="hint__text">3D tour</span>
-                </a>
-                <a href="#" class="product-card__label-quantity hint">
+                    <span class="product-card__label-quantity-count">8</span>
+                </div>
+                <div class="product-card__label-quantity">
                     <svg class="product-card__label-quantity-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#play"/>
+                        <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
                     </svg>
-                    <span class="hint__text">Watch the video</span>
-                </a>
+                    <span class="product-card__label-quantity-count">3</span>
+                </div>
             </div>
         </div>
         <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-        <!-- Slider -->
+	<!-- slider -->
     </div>
     <div class="product-card__block-content">
         <div class="product-card__block-info">
-            <span class="product-card__address">Sunrise Residence</span>
-            <span class="product-card__price">from 5,125,000 TL</span>
+            <span class="product-card__price">5,125,000 TL</span>
+            <div class="affiliation-label affiliation-label--theme--light-colar">
+                <span class="affiliation-label__text">For Rent</span>
+            </div>
+            <span class="product-card__address">227 Major Macke</span>
         </div>
         <div class="product-card__block-links">
             <ul class="product-card__list-links list-reset">
                 <li class="product-card__li-link">
                     <a href="#" class="product-card__links-link link-reset">Harding</a>
                 </li>
-                <!-- <li class="product-card__li-link">
-                    <a href="#" class="product-card__links-link link-reset">Richmond Hill</a>
-                </li>
                 <li class="product-card__li-link">
                     <a href="#" class="product-card__links-link link-reset">Richmond Hill</a>
                 </li>
-                <li class="product-card__li-link">
-                    <a href="#" class="product-card__links-link link-reset">Richmond Hill</a>
-                </li>
-                <li class="product-card__li-link">
-                    <a href="#" class="product-card__links-link link-reset">Richmond Hill</a>
-                </li>
-                <li class="product-card__li-link">
-                    <a href="#" class="product-card__links-link link-reset">Richmond Hill</a>
-                </li>
-                <li class="product-card__li-link">
-                    <a href="#" class="product-card__links-link link-reset">Richmond Hill</a>
-                </li> -->
             </ul>
         </div>
         <div class="product-card__wrapper-employee">
@@ -84,6 +101,12 @@
                 </a>
             </div>
             <div class="product-card__block-btns">
+                <button type="button" class="compare-btn compare-btn--theme--transparent">
+                    <svg class="compare-btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#btn-Check"/>
+                    </svg>
+                    <span class="compare-btn__text">Compare</span>
+                </button>
                 <a href="#" class="btn-icon">
                     <svg class="btn-icon__icon">
                         <use xlink:href="./assets/icons/sprite-svg.svg#point"/>

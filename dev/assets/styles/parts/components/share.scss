@@ -16,6 +16,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: 257px;
         padding: 24px 16px;
         border-radius: 10px;
         background-color: $white;
@@ -27,18 +28,26 @@
             transform $transition-time;
     }
 
-    &__block-link {}
-
-    &__input-link {}
+    &__block-link {
+        margin-top: 16px;
+    }
 
     &__link {
+        display: block;
         margin-top: 10px;
         color: $navy-blue;
+        text-align: center;
         font-weight: 600;
         transition: opacity $transition-time;
 
         &:hover {
             opacity: 0.6;
+        }
+    }
+
+    .input {
+        &__input {
+            color: $light-text;
         }
     }
 

@@ -1,0 +1,53 @@
+.m-form {
+    &__block-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__subtitle {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &__form {
+        margin-top: 24px;
+    }
+
+    &__privacy-policy {
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        color: $light-text;
+        text-align: center;
+
+        a {
+            font-size: inherit;
+            color: $black-text;
+            border-bottom: 1px solid;
+            border-bottom-color: transparent;
+            transition: border-bottom-color $transition-time;
+
+            &:hover {
+                border-bottom-color: $black-text;
+            }
+        }
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .input {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    .textarea {
+        margin-top: 20px;
+    }
+}

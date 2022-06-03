@@ -267,10 +267,9 @@
             &__list-links {
                 display: flex;
                 align-items: center;
-                // white-space: nowrap;
+                white-space: nowrap;
                 overflow: hidden;
-                width: 10%;
-                // text-overflow: ellipsis;
+                text-overflow: ellipsis;
             }
 
             &__li-link {
@@ -279,6 +278,39 @@
                     margin-right: 3px;
                     margin-left: -3px;
                     color: $navy-blue;
+                }
+            }
+
+            &__block-info-residential-complex {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            &__date-info,
+            &__material-info {
+                @include adaptiv-font(14, 10);
+                white-space: nowrap;
+            }
+
+            &__date-info {
+                padding-right: 10px;
+            }
+
+            &__material-info {
+                position: relative;
+                padding-left: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-50%, -50%);
+                    border-radius: 100px;
+                    border: 1px solid $black-text;
                 }
             }
 

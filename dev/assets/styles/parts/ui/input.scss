@@ -1,0 +1,85 @@
+.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #F5FAFF;
+    border-radius: 10px;
+    height: 48px;
+    transition: background-color $transition-time;
+
+    &.active {
+        .input {
+            &__input {
+                padding: 15px 16px 0 16px;
+            }
+
+            &__placeholder {
+                transform: translate(-8%, -110%) scale(0.75);
+                font-weight: 500;
+            }
+
+            &__eye {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+        padding: 0 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        transition: padding $transition-time;
+    }
+
+    &__placeholder {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translate(16px, -50%);
+        color: $light-text;
+        pointer-events: none;
+        transition:
+            font-size $transition-time ease-out,
+            color $transition-time,
+            transform $transition-time,
+            font-weight $transition-time;
+    }
+
+    &__eye {
+        width: 20px;
+        height: 20px;
+        margin-right: 14px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity $transition-time, background-image $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &--open {
+            background-image: url('../images/open-eye.svg');
+        }
+
+        &--close {
+            background-image: url('../images/crossed-out-eye.svg');
+        }
+    }
+
+    &--error {
+        background-color: #FFF6F5;
+        
+        .input__placeholder {
+            color: $coral;
+        }
+    }
+}
