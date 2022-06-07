@@ -1,0 +1,150 @@
+.developer-card {
+    display: grid;
+    grid-template-columns: 1fr 234px;
+    grid-column-gap: 50px;
+    width: 1043px;
+    padding: 24px;
+    background-color: $white;
+    border-radius: 16px;
+
+    &__wrapper-description {
+        display: flex;
+    }
+
+    &__block-logo-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    &__logo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__developer-data {
+        margin-left: 24px;
+    }
+
+    &__wrapper-name {
+        display: flex;
+        align-items: center;
+    }
+
+    &__block-name {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image-verified {
+        margin-right: 8px;
+    }
+
+    &__name {
+        @include adaptiv-font(22, 18);
+        font-weight: 600;
+    }
+
+    &__block-rating {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    &__rating-icon {
+        width: 18px;
+        height: 18px;
+
+        use {
+            fill: #FFB43C;
+        }
+    }
+
+    &__rating-text {
+        font-weight: 600;
+        margin-left: 8px;
+    }
+
+    &__block-date-foundation {
+        margin-top: 2px;
+    }
+
+    &__date-foundation {
+        font-size: 14px;
+        color: $light-text;
+        
+        b {
+            font-size: 14px;
+            font-weight: 400;
+            color: $black-text;
+        }
+    }
+
+    &__block-description {
+        margin-top: 14px;
+
+        p,
+        p a {
+            @include adaptiv-font(16, 14);
+            line-height: 1.7em;
+        }
+
+        p {
+            margin: 0;
+
+            a {
+                font-weight: 600;
+                transition: opacity $transition-time;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    &__wrapper-info {}
+
+    &__list-info {}
+
+    &__li-info {
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:first-child) {
+            margin-top: 8px;
+        }
+
+        &:last-child {
+            margin-top: 19px;
+        }
+    }
+
+    &__name-info {
+        color: $light-text;
+    }
+
+    a.developer-card__value {
+        font-weight: 600;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__value {
+        font-size: 14px;
+        white-space: nowrap;
+        margin-left: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 8px;
+    }
+}

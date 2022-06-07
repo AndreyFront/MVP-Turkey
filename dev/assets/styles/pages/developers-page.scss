@@ -1,0 +1,19 @@
+.developers-page {
+
+    .card-section {
+        &--property {
+            .card-section {
+                &__wrapper-cards {
+                    grid-template-columns: 1fr;
+                    grid-column-gap: 0;
+                    grid-row-gap: 24px;
+                }
+
+                &__block-nav {
+                    grid-column: 1/-1;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

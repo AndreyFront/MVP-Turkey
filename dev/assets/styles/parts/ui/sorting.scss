@@ -1,4 +1,18 @@
 .sorting {
+    position: relative;
+
+    &.active {
+        .sorting {
+            &__block-dropout {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transform: translate(0, 6px);
+                box-shadow: $shadow-three;
+            }
+        }
+    }
+
     &__block {
         display: flex;
         align-items: center;
@@ -20,5 +34,56 @@
         font-weight: 600;
         color: $navy-blue;
         @include adaptiv-font(16, 14);
+    }
+
+    &__block-dropout {
+        position: absolute;
+        z-index: 5;
+        top: 100%;
+        left: 0;
+        transform: translate(0, 0);
+        padding: 16px;
+        max-height: 256px;
+        width: 319px;
+        overflow-y: auto;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px rgba(44, 47, 56, 0.08);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: 
+            transform $transition-time, 
+            box-shadow $transition-time,
+            opacity $transition-time,
+            visibility $transition-time;
+    }
+
+    &__list {}
+
+    &__li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:first-child) {
+            margin-top: 7px;
+        }
+    }
+
+    &__li-text {
+        color: $black-text;
+        font-weight: 500;
+    }
+
+    &__block-btn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+    }
+
+    .arrow {
+        width: 38px;
+        height: 38px;
     }
 }

@@ -1,11 +1,57 @@
-<div class="sorting">
+<div class="sorting" data-sorting="block-sorting">
     <div class="sorting__block">
         <svg class="sorting__icon">
             <use xlink:href="./assets/icons/sprite-svg.svg#up-down-arrows"/>
         </svg>
-        <span class="sorting__text">Newest listings</span>
+        <span class="sorting__text">Alphabetically (A-Z)</span>
     </div>
     <div class="sorting__block-dropout">
-        <!-- dropout -->
+        <ul class="sorting__list list-reset">
+            <li class="sorting__li">
+                <span class="sorting__li-text">Date added</span>
+                <div class="sorting__block-btn">
+                    <button type="button" class="arrow arrow--size--md arrow--theme--blue">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bg-up"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--md arrow--theme--blue">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bg-down"/>
+                        </svg>
+                    </button>
+                </div>
+            </li>
+            <li class="sorting__li">
+                <span class="sorting__li-text">Price per m2</span>
+                <div class="sorting__block-btn">
+                    <button type="button" class="arrow arrow--size--md arrow--theme--blue">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bg-up"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--md arrow--theme--blue">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bg-down"/>
+                        </svg>
+                    </button>
+                </div>
+            </li>
+            <li class="sorting__li">
+                <span class="sorting__li-text">Price</span>
+                <div class="sorting__block-btn">
+                    <button type="button" class="arrow arrow--size--md arrow--theme--blue">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bg-up"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--md arrow--theme--blue">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bg-down"/>
+                        </svg>
+                    </button>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>

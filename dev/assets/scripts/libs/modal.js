@@ -25,6 +25,7 @@ export default function modal() {
             const close = () => {
                 modal.classList.remove('active')
                 blackout.classList.remove('active')
+                document.documentElement.classList.remove('modal__opened')
             }
 
             if (modal) {

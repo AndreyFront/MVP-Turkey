@@ -1,0 +1,11 @@
+.text-block {
+    &__block-text {
+        margin-top: 30px;
+
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

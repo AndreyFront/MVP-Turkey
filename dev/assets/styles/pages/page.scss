@@ -2,6 +2,21 @@
     position: relative;
     flex: 1 0 auto;
 
+    &--theme--light-blue {
+        .page {
+            &__content {
+                background-color: #F5FAFF;
+            }
+        }
+
+        .search-bar--property {
+            .search__block-input,
+            .select__btn {
+                background-color: $white;
+            }
+        }
+    }
+
     &__content {
         position: relative;
         padding: 81px 0 90px 0;

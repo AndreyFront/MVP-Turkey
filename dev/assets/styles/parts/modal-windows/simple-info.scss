@@ -3,11 +3,25 @@
     &__title {
         @include adaptiv-font(22, 24);
         font-weight: 600;
+        text-align: center;
     }
 
     &__subtitle {
         margin-top: 12px;
         font-size: 14px;
+    }
+
+    &__block-btns {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        margin-top: 20px;
+
+
+        .btn {
+            margin-top: 0;
+        }
     }
 
     .btn {

@@ -1,8 +1,8 @@
 .compare-bar {
     position: fixed;
+    z-index: 91;
     display: grid;
     grid-template-rows: 45px 1fr;
-    z-index: 10;
     top: 100%;
     left: 0;
     right: 0;
@@ -137,6 +137,25 @@
         margin-left: 6px;
         font-weight: 600;
         color: $navy-blue;
+    }
+
+    &__blackout {
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 90;
+        border: none;
+        opacity: 0;
+        background-color: #000;
+        transition: opacity $transition-time;
+
+        &.active {
+            pointer-events: auto;
+            opacity: .6;
+        }
     }
 
     .product-card {

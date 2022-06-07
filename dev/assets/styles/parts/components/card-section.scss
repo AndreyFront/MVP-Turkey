@@ -38,6 +38,14 @@
         .search-bar {
 
         }
+
+        .text-block {
+            margin-top: 80px;
+
+            .main-container {
+                padding: 0;
+            }
+        }
     }
 
     &--property-map {
@@ -207,7 +215,8 @@
         }
     }
 
-    .product-card {
+    .product-card,
+    .developer-card {
         width: 100%;
     }
 }
