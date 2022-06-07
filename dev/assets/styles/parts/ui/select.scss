@@ -6,6 +6,10 @@
         background-color: $light-blue;
     }
 
+    &__inner {
+        position: relative;
+    }
+
     &.active {
         .select {
             &__btn {
@@ -22,6 +26,14 @@
                 use {
                     fill: $navy-blue;
                 }
+            }
+
+            &__block-pop-up {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transform: translate(0, 6px);
+                box-shadow: $shadow-three;
             }
         }
     }
@@ -61,6 +73,46 @@
         }
     }
 
+    &__block-pop-up {
+        position: absolute;
+        z-index: 5;
+        top: 100%;
+        left: 0;
+        transform: translate(0, 0);
+        padding: 8px 10px 8px 10px;
+        max-height: 256px;
+        overflow-y: auto;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px rgba(44, 47, 56, 0.08);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: 
+            transform $transition-time, 
+            box-shadow $transition-time,
+            opacity $transition-time,
+            visibility $transition-time;
+    }
+
+    &__list {}
+
+    &__li {}
+
+    &__link {
+        display: block;
+        padding: 12px 77px 12px 16px;
+        border-radius: 10px;
+        color: $black-text;
+        white-space: nowrap;
+        transition: background-color $transition-time, color $transition-time;
+
+        &:hover {
+            background-color: #F5FAFF;
+            color: $navy-blue;
+        }
+    }
+
     &--theme--blue {
         .select {
             &__btn {
@@ -82,9 +134,27 @@
     }
 
     &--size--sm {
+        &.active {
+            .select {    
+                &__block-pop-up {
+                    transform: translate(-50%, 6px);
+                }
+            }
+        }
+        
         .select {
             &__btn {
                 padding: 10px 11px;
+            }
+
+            &__block-pop-up {
+                padding: 10px 6px;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            &__link {
+                padding: 10px 20px;
             }
         }
     }

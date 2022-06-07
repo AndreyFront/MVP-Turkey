@@ -11,6 +11,8 @@
         </header>
         <main class="page property-map-page">
             <!-- @include('./include/components/name.html') -->
+            @include('./include/components/bread-crumbs.html')
+
             <div class="page__content">
                 
                 <section class="card-section card-section--property-map">
@@ -31,21 +33,69 @@
                                         <!-- Результаты поиска -->
                                     </div>
                                     <div class="search-bar__block-buttons">
-                                        <div class="select search-bar__select-residential">
-                                            <button type="button" class="select__btn">
-                                                <span class="select__btn-text">City</span>
-                                                <svg class="select__btn-icon">
-                                                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
-                                                </svg>
-                                            </button>
+                                        <div class="select search-bar__select-residential" data-select="block-select">
+                                            <div class="select__inner">
+                                                <button type="button" class="select__btn" data-select="btn">
+                                                    <span class="select__btn-text">City</span>
+                                                    <svg class="select__btn-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="select__block-pop-up">
+                                                    <ul class="select__list list-reset">
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Toronto</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Downtown Toronto</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Etobicoke</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Aurora</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">North York</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Toronto</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Downtown Toronto</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Etobicoke</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Aurora</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">North York</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="select search-bar__select-residential">
-                                            <button type="button" class="select__btn">
-                                                <span class="select__btn-text">Residential</span>
-                                                <svg class="select__btn-icon">
-                                                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
-                                                </svg>
-                                            </button>
+                                        <div class="select search-bar__select-residential" data-select="block-select">
+                                            <div class="select__inner">
+                                                <button type="button" class="select__btn" data-select="btn">
+                                                    <span class="select__btn-text">Residential</span>
+                                                    <svg class="select__btn-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="select__block-pop-up">
+                                                    <ul class="select__list list-reset">
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Residential</a>
+                                                        </li>
+                                                        <li class="select__li">
+                                                            <a href="#" class="select__link link-reset">Commercial</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                         <a href="#" class="btn btn--size-sm btn--theme--white search-bar__btn-filter">
                                             <svg class="btn__icon">
@@ -111,14 +161,29 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="select select--size--sm select--theme--blue">
+                                <div class="select select--size--sm select--theme--blue" data-select="block-select">
                                     <span class="select__signature">Show by</span>
-                                    <button type="button" class="select__btn">
-                                        <span class="select__btn-text">15</span>
-                                        <svg class="select__btn-icon">
-                                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
-                                        </svg>
-                                    </button>
+                                    <div class="select__inner">
+                                        <button type="button" class="select__btn" data-select="btn">
+                                            <span class="select__btn-text">15</span>
+                                            <svg class="select__btn-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="select__block-pop-up">
+                                            <ul class="select__list list-reset">
+                                                <li class="select__li">
+                                                    <a href="#" class="select__link link-reset">15</a>
+                                                </li>
+                                                <li class="select__li">
+                                                    <a href="#" class="select__link link-reset">30</a>
+                                                </li>
+                                                <li class="select__li">
+                                                    <a href="#" class="select__link link-reset">45</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

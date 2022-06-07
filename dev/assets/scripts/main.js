@@ -6,7 +6,9 @@ import validator from 'validator'
 import modal from './libs/modal'
 import input from './modules/input'
 import textarea from './modules/textarea'
+import select from './modules/select'
 
 modal()
 input()
 textarea()
+select()

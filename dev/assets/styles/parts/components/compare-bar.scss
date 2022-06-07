@@ -1,0 +1,149 @@
+.compare-bar {
+    position: fixed;
+    display: grid;
+    grid-template-rows: 45px 1fr;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: max-content;
+    transform: translate(0, -45px);
+    transition: transform $transition-time;
+
+    &.active {
+        transform: translate(0, -100%);
+
+        .compare-bar {
+            &__btn-compare-icon {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &__btn-compare,
+    &__btn-compare-text,
+    &__btn-compare-icon {
+        position: relative;
+    }
+
+    &__btn-compare {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: $blue-gradient;
+        border-radius: 50px 50px 0 0;
+        border: none;
+        cursor: pointer;
+        color: $white;
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px 50px 0 0;
+            opacity: 0;
+            background: #2F80ED;
+            transition: opacity 0.4s;
+        }
+    }
+
+    &__btn-compare-text {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__btn-compare-count {
+        margin-left: 5px;
+    }
+
+    &__btn-compare-icon {
+        width: 15px;
+        height: 15px;
+        margin-left: 6px;
+        transition: transform $transition-time;
+
+        use {
+            fill: $white;
+        }
+    }
+
+    &__inner {
+        padding: 50px 0 30px 0;
+        background-color: $white;
+    }
+
+    &__block-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    &__block-btns {
+        display: flex;
+
+        .btn {
+            width: 108px;
+
+            &:not(:first-child) {
+                margin-left: 6px;
+            }
+        }
+    }
+
+    &__block-content {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 287px;
+        grid-column-gap: 20px;
+        overflow-x: auto;
+        width: 100vw;
+        margin-top: 30px;
+        padding: 0 50px 36px 50px;
+    }
+
+    &__trashcan {
+        position: absolute;
+        top: calc(100% + 14px);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__trashcan-icon {
+        width: 22px;
+        height: 22px;
+
+        use {
+            fill: $navy-blue;
+        }
+    }
+
+    &__trashcan-text {
+        margin-left: 6px;
+        font-weight: 600;
+        color: $navy-blue;
+    }
+
+    .product-card {
+        width: 100%;
+
+        &:hover {
+            border-radius: 10px;
+        }
+    }
+}
