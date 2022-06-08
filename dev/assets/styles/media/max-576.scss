@@ -1,1 +1,16 @@
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+    .card-slider {
+        &__block-head {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .swiper-slide:first-child.swiper-slide-active {
+            margin-left: 20px;
+        }
+
+        .max-width {
+            padding: 0;
+        }
+    }
+}

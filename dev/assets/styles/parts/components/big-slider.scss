@@ -1,0 +1,130 @@
+.big-slider {
+
+    &__slider-second,
+    &__block-image,
+    &__slider-first .swiper-slide {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__block-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__slider-second {
+        position: relative;
+    }
+
+    &__slider-first {
+        .big-slider {
+            &__block-image {
+                background-color: $white;
+                border-radius: 8px;
+            }
+
+            &__image {
+                border-radius: 10px;
+                overflow: hidden;
+                transition: transform $transition-time;
+            }
+        }
+
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 156px);
+            grid-auto-rows: 156px;
+            grid-column-gap: 13px;
+            grid-row-gap: 13px;
+        }
+
+        .swiper-slide {
+            position: relative;
+            width: 100%;
+            height: 100% !important;
+            cursor: pointer;
+            padding: 2px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                background: $blue-gradient;
+                border-radius: 13px;
+                opacity: 0;
+                transition: opacity $transition-time;
+            }
+        }
+
+        .swiper-slide-thumb-active {
+            &::before {
+                opacity: 1;
+            }
+
+            .big-slider {
+                &__image {
+                    transform: scale(0.95);
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 331px;
+        grid-template-rows: 550px;
+        grid-column-gap: 26px;
+    }
+
+    .toggle-property {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        grid-template-columns: repeat(2, 69px);
+        height: 50px;
+
+        &::before {
+            width: 69px;
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+
+        &[data-big-slider=prev-btn] {
+            left: 30px;
+        }
+
+        &[data-big-slider=next-btn] {
+            right: 30px;
+        }
+
+        &__icon {
+            width: 24px;
+            height: 24px;
+
+            use {
+                stroke-width: 1.5;
+            }
+        }
+    }
+}

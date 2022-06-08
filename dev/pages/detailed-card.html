@@ -54,13 +54,13 @@
                             </div>
                         </div>
                         <div class="main-banner__block-btns">
-                            <button type="button" class="compare-btn compare-btn--theme--gray">
+                            <button type="button" class="compare-btn compare-btn--theme--gray" data-compare-btn="btn">
                                 <svg class="compare-btn__icon">
                                     <use xlink:href="./assets/icons/sprite-svg.svg#btn-Check"/>
                                 </svg>
                                 <span class="compare-btn__text">Compare</span>
                             </button>
-                            <a href="#" class="btn-icon btn-icon--theme--gray hint">
+                            <a href="#" class="btn-icon btn-icon--theme--gray hint" data-favorites-icon="block-icon">
                                 <svg class="btn-icon__icon">
                                     <use xlink:href="./assets/icons/sprite-svg.svg#star"/>
                                 </svg>
@@ -77,7 +77,7 @@
                                     @include('./include/components/social-buttons.html')
                                     <div class="share__block-link">
                                         <div class="input">
-                                            <input type="text" class="input__input" value="https://statusproperty.ru/products/sale">
+                                            <input type="text" class="input__input" value="https://statusproperty.ru/products/sale" readonly>
                                         </div>
                                         <a href="#" class="share__link link-reset">Copy link</a>
                                     </div>
@@ -95,9 +95,7 @@
             </div>
 
             <div class="page__content">
-                <div class="detailed-card-page__block-slider">
-                    <!-- slider -->
-                </div>
+                @include('./include/components/big-slider.html')
                 <div class="detailed-card-page__wrapper-info">
                     <div class="main-container max-width detailed-card-page__wrapper-info-main-container">
                         <div class="detailed-card-page__block-info">
@@ -110,31 +108,96 @@
                         <div class="side-panel">
                             <div class="side-panel__content">
                                 @include('./include/components/commercial-block.html')
+                                @include('./include/components/contact-form.html')
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <section class="card-slider">
+                <section class="card-slider" data-product-card-slider="block-slider">
                     <div class="main-container max-width">
                         <div class="card-slider__block-head">
-                            <h3 class="title-section title-reset">Similar objects</h3>
-                            @include('./include/ui/slider-btns.html')
+                            <h2 class="title-section title-reset">Similar objects</h2>
+                            <div class="slider-btns">
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="prev-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="next-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                         <div class="card-slider__block-slider">
-                            @include('./include/components/product-card.html')
+                            <div class="swiper product-card-slider" data-product-card-slider="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="card-slider">
+                <section class="card-slider" data-product-card-slider="block-slider">
                     <div class="main-container max-width">
                         <div class="card-slider__block-head">
-                            <h3 class="title-section title-reset">Recently viewed</h3>
-                            @include('./include/ui/slider-btns.html')
+                            <h2 class="title-section title-reset">Recently viewed</h2>
+                            <div class="slider-btns">
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="prev-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="next-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                         <div class="card-slider__block-slider">
-                            @include('./include/components/product-card.html')
+                            <div class="swiper product-card-slider" data-product-card-slider="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

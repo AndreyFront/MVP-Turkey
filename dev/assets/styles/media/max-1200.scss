@@ -25,4 +25,17 @@
             }
         }
     }
+
+    .detailed-card-page {
+        &__wrapper-info-main-container {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 40px;
+        }
+    }
+
+    .side-panel {
+        width: 335px;
+        margin: auto;
+    }
 }

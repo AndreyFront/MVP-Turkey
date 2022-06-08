@@ -10,6 +10,10 @@
         grid-column-gap: 30px;
     }
 
+    &__wrapper-info {
+        margin-top: 40px;
+    }
+
     &__pagination {
         margin-top: 80px;
 
@@ -22,6 +26,10 @@
     .main-banner {
         height: 482px;
         padding-bottom: 50px;
+
+        &__inner {
+            margin-top: 70px;
+        }
 
         .main-container {
             display: flex;

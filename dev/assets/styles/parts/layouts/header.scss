@@ -58,12 +58,14 @@
         width: 24px;
         height: 24px;
         padding: 6px 3px;
+        cursor: pointer;
         background-color: transparent;
         border: none;
 
         & span {
             width: 100%;
             border: 1px solid $white;
+            background-color: $white;
             border-radius: 30px;
             transition: transform $transition-time, margin-top $transition-time, opacity $transition-time;
 

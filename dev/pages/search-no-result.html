@@ -27,14 +27,46 @@
                     </div>
                 </section>
 
-                <section class="card-slider">
+                <section class="card-slider" data-product-card-slider="block-slider">
                     <div class="main-container max-width">
                         <div class="card-slider__block-head">
                             <h2 class="title-section title-reset">Perhaps you are looking for</h2>
-                            @include('./include/ui/slider-btns.html')
+                            <div class="slider-btns">
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="prev-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="next-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                         <div class="card-slider__block-slider">
-                            @include('./include/components/product-card.html')
+                            <div class="swiper product-card-slider" data-product-card-slider="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -9,7 +9,6 @@
                     opacity: 1;
                     visibility: visible;
                     pointer-events: auto;
-                    z-index: 100;
                 }
 
                 &__burger-menu {
@@ -49,6 +48,7 @@
 
         &__block-insight {
             position: fixed;
+            z-index: 100;
             top: 0;
             padding-top: 125px;
             height: 100vh;
@@ -378,7 +378,22 @@
             margin-top: 7px;
         }
 
+        .status-labels,
+        .favorites-icon {
+            top: 8px;
+        }
+
+        .favorites-icon {
+            right: 8px;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
         .status-labels {
+            left: 8px;
+
             &__li {
                 &:last-child {
                     display: flex;
@@ -509,6 +524,161 @@
 
         .slider-btns {
             display: none;
+        }
+    }
+
+    .bread-crumbs {
+        display: none;
+    }
+
+    .big-slider {
+        .main-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-column-gap: 0;
+            grid-row-gap: 5px;
+        }
+
+        &__slider-first {
+            .swiper-wrapper {
+                grid-template-columns: 1fr;
+                grid-auto-columns: 1fr;
+                grid-template-rows: 140px;
+                grid-auto-rows: auto;
+                grid-column-gap: 0;
+                grid-row-gap: 0;
+                grid-auto-flow: column;
+            }
+        }
+    }
+
+    .detailed-card-page {
+        &__pagination {
+            margin-top: 24px;
+        }
+
+        &__wrapper-info {
+            margin-top: 30px;
+        }
+
+        .main-banner {
+            height: 360px;
+
+            &__inner {
+                margin-top: 0;
+            }
+
+            &__block-btns {
+                margin-top: 20px;
+            }
+
+            &__block-price {
+                margin-top: 10px;
+            }
+
+            &__block-residential-complex,
+            &__block-info {
+                margin-top: 6px;
+            }
+
+            .main-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .status-labels {
+                margin-bottom: 12px;
+            }
+        }
+
+        .property-description, 
+        .property-details, 
+        .other-features, 
+        .infrastructure,
+        .card-slider {
+            margin-top: 40px;
+        }
+    }
+
+    .side-panel {
+        .contact-form {
+            margin-top: 30px;
+        }
+    }
+
+    .basic-properties {
+        &__list {
+            grid-template-columns: repeat(auto-fill, 163px);
+            grid-row-gap: 6px;
+            grid-column-gap: 10px
+        }
+
+        &__li {
+            padding: 8px 12px;
+        }
+    }
+
+    .property-description {
+        .btn {
+            width: 163px;
+            min-height: 48px;
+
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .property-details {
+        &__list {
+            margin-left: 0;
+            height: auto;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            transition: height $transition-time;
+        }
+
+        &__li {
+            margin: 14px 0 0 0;
+        }
+
+        &__value-property {
+            width: 162px;
+        }
+
+        &__btn-show-more {
+            display: block;
+        }
+    }
+
+    .other-features {
+        &__block-content {
+            margin-top: 24px;
+        }
+
+        &__block-feature {
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+
+        &__list {
+            margin: 7px -5px -5px -5px;
+        }
+
+        &__li {
+            padding: 5px;
+        }
+    }
+
+    .pagination {
+        &__block-arrow,
+        &__li:nth-child(5) {
+            display: none;
+        }
+
+        &__list {
+            margin: 0;
         }
     }
 

@@ -17,4 +17,36 @@
             object-fit: contain;
         }
     }
+
+    .big-slider {
+        &__slider-first {
+            .swiper-wrapper {
+                grid-template-rows: 80px;
+            }
+        }
+
+        .toggle-property {
+            top: 8px;
+            left: 8px;
+        }
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+
+            &[data-big-slider=prev-btn] {
+                left: 8px;
+            }
+
+            &[data-big-slider=next-btn] {
+                right: 8px;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+    }
 }

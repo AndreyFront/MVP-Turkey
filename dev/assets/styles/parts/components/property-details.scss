@@ -16,7 +16,6 @@
     &__li {
         display: flex;
         justify-content: space-between;
-        margin-top: 14px;
         margin: 14px 0 0 80px;
     }
 
@@ -34,5 +33,21 @@
         font-weight: 500;
         width: 280px;
         flex-shrink: 0;
+    }
+
+    &__btn-show-more {
+        display: none;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-top: 14px;
+        font-weight: 600;
+        color: $navy-blue;
+        cursor: pointer;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 }
