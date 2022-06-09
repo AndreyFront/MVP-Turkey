@@ -23,6 +23,14 @@
         }
     }
 
+    &__card-slider {
+        .card-slider {
+            &__block-slider {
+                z-index: 11;
+            }
+        }
+    }
+
     .main-banner {
         height: 482px;
         padding-bottom: 50px;

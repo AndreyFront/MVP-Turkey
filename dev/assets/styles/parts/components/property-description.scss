@@ -4,28 +4,40 @@
     &__block-content {}
 
     &__block-text {
-        p, a {
-            @include adaptiv-font(16, 14);
+        overflow: hidden;
+        transition: height $transition-time;
+        margin-top: 20px;
+        
+        &.active {
+
         }
 
         p {
+            @include adaptiv-font(16, 14);
             line-height: 1.7em;
+            margin: 0;
         }
+    }
 
-        a {
-            color: $navy-blue;
-            font-weight: 600;
-            transition: opacity $transition-time;
+    &__btn-show-more {
+        @include adaptiv-font(16, 14);
+        color: $navy-blue;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: opacity $transition-time;
 
-            &:hover {
-                opacity: 0.6;
-            }
+        &:hover {
+            opacity: 0.6;
         }
     }
 
     &__block-btns {
         display: flex;
-        margin-top: 8px;
+        margin-top: 24px;
     }
 
     .btn {

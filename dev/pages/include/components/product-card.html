@@ -1,4 +1,4 @@
-<div class="product-card product-card--type--apartment">
+<div class="product-card product-card--type--apartment" data-product-card="block-product-card">
     <div class="product-card__block-images">
         @include('../ui/favorites-icon.html')
         <div class="status-labels">
@@ -56,8 +56,50 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-	<!-- slider -->
+        <!-- <img src="./assets/images/card-1.jpg" class="product-card__image" alt=""> -->
+        
+        <div class="swiper product-card__slider" data-product-card="slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card__block-image">
+                        <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card__block-image">
+                        <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card__block-image">
+                        <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card__block-image">
+                        <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card__block-image">
+                        <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="arrow arrow--size--md arrow--theme--transparent" data-product-card="prev-btn">
+                <svg class="arrow__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                </svg>
+            </button>
+            <button type="button" class="arrow arrow--size--md arrow--theme--transparent" data-product-card="next-btn">
+                <svg class="arrow__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                </svg>
+            </button>
+            <div class="swiper-pagination" data-product-card="pagination"></div>
+        </div>
+
     </div>
     <div class="product-card__block-content">
         <div class="product-card__block-info">

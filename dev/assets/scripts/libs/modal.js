@@ -10,7 +10,9 @@ export default function modal() {
     document.body.appendChild(blackout)
 
     linkModal.forEach(elLinkModal => {
-        elLinkModal.addEventListener('click', () => {
+        elLinkModal.addEventListener('click', (event) => {
+            console.log(event)
+            event.preventDefault()
 
             const idLink = elLinkModal.getAttribute('data-modal-link')
 

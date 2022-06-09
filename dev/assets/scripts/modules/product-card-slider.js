@@ -17,6 +17,7 @@ export default function productCardSlider() {
         const swiper = new Swiper(slider, {
             slidesPerView: 2.15,
             spaceBetween: 8,
+            watchSlidesProgress: true,
             navigation: {
               nextEl: nextBtn,
               prevEl: prevBtn,

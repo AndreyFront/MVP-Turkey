@@ -16,6 +16,10 @@ import favoritesIcon from './modules/favorites-icon'
 import propertyDetails from './modules/property-details'
 import productCardSlider from './modules/product-card-slider'
 import bigSlider from './modules/big-slider'
+import scroll from './modules/scroll'
+import propertyDescription from './modules/property-description'
+import productCard from './modules/product-card'
+import mImageGallary from './modules/m-image-gallary'
 
 modal()
 input()
@@ -30,3 +34,7 @@ favoritesIcon()
 propertyDetails()
 productCardSlider()
 bigSlider()
+scroll()
+propertyDescription()
+productCard()
+mImageGallary()

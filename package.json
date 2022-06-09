@@ -33,7 +33,9 @@
   },
   "dependencies": {
     "imask": "^6.4.2",
+    "mdb-ui-kit": "^4.1.0",
     "normalize.css": "^8.0.1",
+    "smooth-scrollbar": "^8.7.4",
     "swiper": "^8.1.4",
     "validator": "^13.7.0"
   }

@@ -16,11 +16,37 @@
         pointer-events: auto;
     }
 
+    &:hover .swiper-pagination,
+    &:hover .arrow {
+        opacity: 1;
+    }
+
+    &:hover .arrow[data-product-card=prev-btn],
+    &:hover .arrow[data-product-card=next-btn] {
+        transform: translate(0, -50%);
+    }
+
+    &:hover .swiper-pagination {
+        transform: translateY(0);
+    }
+
     &__block-images {
         position: relative;
         height: 218px;
         border-radius: 8px 8px 0 0;
     }
+
+    &__slider {
+        overflow: hidden;
+        border-radius: 8px 8px 0 0;
+    }
+
+    &__slider,
+    &__block-image {
+        height: 100%;
+    }
+
+    &__block-image {}
 
     &__image {
         width: 100%;
@@ -344,6 +370,12 @@
         height: 44px;
     }
 
+    .favorites-icon,
+    .status-labels,
+    &__wrapper-label-quantity {
+        z-index: 1;
+    }
+
     .status-labels,
     .favorites-icon {
         position: absolute;
@@ -363,5 +395,51 @@
 
     .favorites-icon {
         right: 16px;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        border-radius: 6px;
+        opacity: 0;
+        transition: opacity $transition-time, transform $transition-time;
+
+        &[data-product-card=prev-btn] {
+            left: 16px;
+            transform: translate(-10px, -50%);
+        }
+
+        &[data-product-card=next-btn] {
+            right: 16px;
+            transform: translate(10px, -50%);
+        }
+
+        &__icon {
+            width: 18px;
+            height: 18px;
+
+            use {
+                stroke-width: 1.9;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        opacity: 0;
+        transform: translateY(5px);
+        transition: opacity $transition-time, transform $transition-time;
+    }
+
+    .swiper-pagination-bullet {
+        height: 2px;
+    }
+
+    .swiper-slide {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
     }
 }

@@ -41,9 +41,9 @@ a {
     color: $navy-blue;
 }
 
-.swiper {
-    overflow: hidden;
-}
+// .swiper {
+//     overflow: hidden;
+// }
 
 .swiper-wrapper {
     display: flex;
@@ -75,6 +75,29 @@ a {
 
 .swiper-pagination-bullet-active {
     background-color: $white;
+}
+
+.scrollbar-track,
+.scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.scrollbar-track {
+    background: #F5FAFF !important;
+}
+
+.scrollbar-track-y,
+.scrollbar-thumb-y {
+    width: 5px !important;
+}
+
+.scrollbar-track-x,
+.scrollbar-thumb-x {
+    height: 5px !important;
+}
+
+.scrollbar-thumb {
+    background: $light-text !important;
 }
 
 .dev {

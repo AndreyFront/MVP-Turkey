@@ -17,12 +17,15 @@ export default function bigSlider() {
         spaceBetween: 5,
         direction: 'horizontal',
         freeMode: true,
+        allowTouchMove: true,
         watchSlidesProgress: true,
         breakpoints: {
             992: {
                 slidesPerView: 6,
                 spaceBetween: 15,
                 direction: 'vertical',
+                watchSlidesProgress: false,
+                allowTouchMove: false,
             }
         }
     })
@@ -40,4 +43,8 @@ export default function bigSlider() {
             swiper: firstSwiper,
         },
     })
+
+    if (window.matchMedia('(max-width: 992px)').matches) {
+        firstSlider.removeAttribute('data-scrollbar')
+    }
 }
