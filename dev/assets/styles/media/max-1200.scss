@@ -25,6 +25,11 @@
         &__wrapper-cards {
             grid-template-columns: repeat(3, minmax(162px, 1fr));
         }
+
+        .text-block {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+        }
     }
 
     .estate-statistics {
@@ -51,5 +56,20 @@
     .side-panel {
         width: 335px;
         margin: auto;
+    }
+
+    .text-document {
+        .main-container {
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+        }
+
+        .side-panel {
+            display: none;
+        }
+    }
+
+    .page {
+        overflow: hidden;
     }
 }

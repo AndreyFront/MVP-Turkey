@@ -8,10 +8,15 @@
     border-radius: 16px;
 
     &__wrapper-description {
-        display: flex;
+        display: grid;
+        grid-column-gap: 24px;
+        grid-template-areas: 
+        "logo data"
+        "logo description";
     }
 
     &__block-logo-image {
+        grid-area: logo;
         width: 120px;
         height: 120px;
         border-radius: 8px;
@@ -27,7 +32,7 @@
     }
 
     &__developer-data {
-        margin-left: 24px;
+        grid-area: data;
     }
 
     &__wrapper-name {
@@ -85,6 +90,7 @@
     }
 
     &__block-description {
+        grid-area: description;
         margin-top: 14px;
 
         p,

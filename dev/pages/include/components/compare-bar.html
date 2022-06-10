@@ -9,554 +9,730 @@
     <div class="compare-bar__inner">
         <div class="compare-bar__block-head">
             <h2 class="title-section title-reset">Selected 2/8 listings to compare</h2>
-            <div class="compare-bar__block-btns">
-                <a href="#" class="btn btn--size-sm btn--theme--navy-blue">
-                    <span class="btn__text">Compare</span>
-                </a>
-                <a href="#" data-modal-link="#m-delete-everything" class="btn btn--size-sm btn--theme--light-blue">
-                    <span class="btn__text">Delete all</span>
-                </a>
-            </div>
+        </div>
+        <div class="compare-bar__block-btns">
+            <a href="#" class="btn btn--size-sm btn--theme--navy-blue">
+                <span class="btn__text">Compare</span>
+            </a>
+            <a href="#" data-modal-link="#m-delete-everything" class="btn btn--size-sm btn--theme--light-blue">
+                <span class="btn__text">Delete all</span>
+            </a>
         </div>
         <div class="compare-bar__block-content">
             <!-- сделать слайдер -->
-            <div class="product-card product-card--type--apartment">
-                <div class="product-card__block-images">
-                    @include('../ui/favorites-icon.html')
-                    <div class="status-labels">
-                        <ul class="status-labels__list list-reset">
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--coral">
-                                    <span class="status-label__text">new</span>
+            <div class="swiper compare-bar__slider" data-compare-bar="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <span class="status-label__text">avaliable</span>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--navy-blue">
-                                    <span class="status-label__text">sold</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--purple">
-                                    <span class="status-label__text">foreclosure</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <svg class="status-label__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__wrapper-label-quantity">
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">12</span>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
                             </div>
-                        </div>
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">8</span>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
                             </div>
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
                                 </svg>
-                                <span class="product-card__label-quantity-count">3</span>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-                <!-- slider -->
-                </div>
-                <div class="product-card__block-content">
-                    <div class="product-card__block-info">
-                        <span class="product-card__price">5,125,000 TL</span>
-                        <div class="affiliation-label affiliation-label--theme--light-colar">
-                            <span class="affiliation-label__text">For Rent</span>
-                        </div>
-                        <span class="product-card__address">227 Major Macke</span>
-                    </div>
-                </div>
-                <div class="compare-bar__trashcan">
-                    <svg class="compare-bar__trashcan-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
-                    </svg>
-                    <span class="compare-bar__trashcan-text">Delete</span>
-                </div>
-            </div>
-            <div class="product-card product-card--type--apartment">
-                <div class="product-card__block-images">
-                    @include('../ui/favorites-icon.html')
-                    <div class="status-labels">
-                        <ul class="status-labels__list list-reset">
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--coral">
-                                    <span class="status-label__text">new</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <span class="status-label__text">avaliable</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--navy-blue">
-                                    <span class="status-label__text">sold</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--purple">
-                                    <span class="status-label__text">foreclosure</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <svg class="status-label__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__wrapper-label-quantity">
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">12</span>
-                            </div>
-                        </div>
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">8</span>
-                            </div>
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">3</span>
+                                <span class="compare-bar__trashcan-text">Delete</span>
                             </div>
                         </div>
                     </div>
-                    <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-                <!-- slider -->
-                </div>
-                <div class="product-card__block-content">
-                    <div class="product-card__block-info">
-                        <span class="product-card__price">5,125,000 TL</span>
-                        <div class="affiliation-label affiliation-label--theme--light-blue">
-                            <span class="affiliation-label__text">For Sale</span>
-                        </div>
-                        <span class="product-card__address">227 Major Macke</span>
-                    </div>
-                </div>
-                <div class="compare-bar__trashcan">
-                    <svg class="compare-bar__trashcan-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
-                    </svg>
-                    <span class="compare-bar__trashcan-text">Delete</span>
-                </div>
-            </div>
-            <div class="product-card product-card--type--apartment">
-                <div class="product-card__block-images">
-                    @include('../ui/favorites-icon.html')
-                    <div class="status-labels">
-                        <ul class="status-labels__list list-reset">
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--coral">
-                                    <span class="status-label__text">new</span>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <span class="status-label__text">avaliable</span>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--navy-blue">
-                                    <span class="status-label__text">sold</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--purple">
-                                    <span class="status-label__text">foreclosure</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <svg class="status-label__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__wrapper-label-quantity">
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">12</span>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
                             </div>
-                        </div>
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">8</span>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
                             </div>
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
                                 </svg>
-                                <span class="product-card__label-quantity-count">3</span>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-                <!-- slider -->
-                </div>
-                <div class="product-card__block-content">
-                    <div class="product-card__block-info">
-                        <span class="product-card__price">5,125,000 TL</span>
-                        <div class="affiliation-label affiliation-label--theme--light-colar">
-                            <span class="affiliation-label__text">For Rent</span>
-                        </div>
-                        <span class="product-card__address">227 Major Macke</span>
-                    </div>
-                </div>
-                <div class="compare-bar__trashcan">
-                    <svg class="compare-bar__trashcan-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
-                    </svg>
-                    <span class="compare-bar__trashcan-text">Delete</span>
-                </div>
-            </div>
-            <div class="product-card product-card--type--apartment">
-                <div class="product-card__block-images">
-                    @include('../ui/favorites-icon.html')
-                    <div class="status-labels">
-                        <ul class="status-labels__list list-reset">
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--coral">
-                                    <span class="status-label__text">new</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <span class="status-label__text">avaliable</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--navy-blue">
-                                    <span class="status-label__text">sold</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--purple">
-                                    <span class="status-label__text">foreclosure</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <svg class="status-label__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__wrapper-label-quantity">
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">12</span>
-                            </div>
-                        </div>
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">8</span>
-                            </div>
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">3</span>
+                                <span class="compare-bar__trashcan-text">Delete</span>
                             </div>
                         </div>
                     </div>
-                    <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-                <!-- slider -->
-                </div>
-                <div class="product-card__block-content">
-                    <div class="product-card__block-info">
-                        <span class="product-card__price">5,125,000 TL</span>
-                        <div class="affiliation-label affiliation-label--theme--light-colar">
-                            <span class="affiliation-label__text">For Rent</span>
-                        </div>
-                        <span class="product-card__address">227 Major Macke</span>
-                    </div>
-                </div>
-                <div class="compare-bar__trashcan">
-                    <svg class="compare-bar__trashcan-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
-                    </svg>
-                    <span class="compare-bar__trashcan-text">Delete</span>
-                </div>
-            </div>
-            <div class="product-card product-card--type--apartment">
-                <div class="product-card__block-images">
-                    @include('../ui/favorites-icon.html')
-                    <div class="status-labels">
-                        <ul class="status-labels__list list-reset">
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--coral">
-                                    <span class="status-label__text">new</span>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <span class="status-label__text">avaliable</span>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--navy-blue">
-                                    <span class="status-label__text">sold</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--purple">
-                                    <span class="status-label__text">foreclosure</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <svg class="status-label__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__wrapper-label-quantity">
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">12</span>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
                             </div>
-                        </div>
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">8</span>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
                             </div>
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
                                 </svg>
-                                <span class="product-card__label-quantity-count">3</span>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-                <!-- slider -->
-                </div>
-                <div class="product-card__block-content">
-                    <div class="product-card__block-info">
-                        <span class="product-card__price">5,125,000 TL</span>
-                        <div class="affiliation-label affiliation-label--theme--light-colar">
-                            <span class="affiliation-label__text">For Rent</span>
-                        </div>
-                        <span class="product-card__address">227 Major Macke</span>
-                    </div>
-                </div>
-                <div class="compare-bar__trashcan">
-                    <svg class="compare-bar__trashcan-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
-                    </svg>
-                    <span class="compare-bar__trashcan-text">Delete</span>
-                </div>
-            </div>
-            <div class="product-card product-card--type--apartment">
-                <div class="product-card__block-images">
-                    @include('../ui/favorites-icon.html')
-                    <div class="status-labels">
-                        <ul class="status-labels__list list-reset">
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--coral">
-                                    <span class="status-label__text">new</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <span class="status-label__text">avaliable</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--navy-blue">
-                                    <span class="status-label__text">sold</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--purple">
-                                    <span class="status-label__text">foreclosure</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <svg class="status-label__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__wrapper-label-quantity">
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">12</span>
-                            </div>
-                        </div>
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">8</span>
-                            </div>
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">3</span>
+                                <span class="compare-bar__trashcan-text">Delete</span>
                             </div>
                         </div>
                     </div>
-                    <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-                <!-- slider -->
-                </div>
-                <div class="product-card__block-content">
-                    <div class="product-card__block-info">
-                        <span class="product-card__price">5,125,000 TL</span>
-                        <div class="affiliation-label affiliation-label--theme--light-colar">
-                            <span class="affiliation-label__text">For Rent</span>
-                        </div>
-                        <span class="product-card__address">227 Major Macke</span>
-                    </div>
-                </div>
-                <div class="compare-bar__trashcan">
-                    <svg class="compare-bar__trashcan-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
-                    </svg>
-                    <span class="compare-bar__trashcan-text">Delete</span>
-                </div>
-            </div>
-            <div class="product-card product-card--type--apartment">
-                <div class="product-card__block-images">
-                    @include('../ui/favorites-icon.html')
-                    <div class="status-labels">
-                        <ul class="status-labels__list list-reset">
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--coral">
-                                    <span class="status-label__text">new</span>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <span class="status-label__text">avaliable</span>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--navy-blue">
-                                    <span class="status-label__text">sold</span>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
+                            </div>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
                                 </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--purple">
-                                    <span class="status-label__text">foreclosure</span>
-                                </div>
-                            </li>
-                            <li class="status-labels__li">
-                                <div class="status-label status-label--theme--green">
-                                    <svg class="status-label__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
-                                    </svg>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-card__wrapper-label-quantity">
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                            </div>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
                                 </svg>
-                                <span class="product-card__label-quantity-count">12</span>
+                                <span class="compare-bar__trashcan-text">Delete</span>
                             </div>
                         </div>
-                        <div class="product-card__block-label-quantity">
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
-                                </svg>
-                                <span class="product-card__label-quantity-count">8</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
                             </div>
-                            <div class="product-card__label-quantity">
-                                <svg class="product-card__label-quantity-icon">
-                                    <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
+                            </div>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
                                 </svg>
-                                <span class="product-card__label-quantity-count">3</span>
+                                <span class="compare-bar__trashcan-text">Delete</span>
                             </div>
                         </div>
                     </div>
-                    <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
-                <!-- slider -->
-                </div>
-                <div class="product-card__block-content">
-                    <div class="product-card__block-info">
-                        <span class="product-card__price">5,125,000 TL</span>
-                        <div class="affiliation-label affiliation-label--theme--light-colar">
-                            <span class="affiliation-label__text">For Rent</span>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
+                            </div>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
+                            </div>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                </svg>
+                                <span class="compare-bar__trashcan-text">Delete</span>
+                            </div>
                         </div>
-                        <span class="product-card__address">227 Major Macke</span>
                     </div>
-                </div>
-                <div class="compare-bar__trashcan">
-                    <svg class="compare-bar__trashcan-icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
-                    </svg>
-                    <span class="compare-bar__trashcan-text">Delete</span>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
+                            </div>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
+                            </div>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                </svg>
+                                <span class="compare-bar__trashcan-text">Delete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
+                            </div>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
+                            </div>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                </svg>
+                                <span class="compare-bar__trashcan-text">Delete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card product-card--type--apartment">
+                            <div class="product-card__block-images">
+                                @include('../ui/favorites-icon.html')
+                                <div class="status-labels">
+                                    <ul class="status-labels__list list-reset">
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--coral">
+                                                <span class="status-label__text">new</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <span class="status-label__text">avaliable</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--navy-blue">
+                                                <span class="status-label__text">sold</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--purple">
+                                                <span class="status-label__text">foreclosure</span>
+                                            </div>
+                                        </li>
+                                        <li class="status-labels__li">
+                                            <div class="status-label status-label--theme--green">
+                                                <svg class="status-label__icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                </svg>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-card__wrapper-label-quantity">
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">12</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__block-label-quantity">
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">8</span>
+                                        </div>
+                                        <div class="product-card__label-quantity">
+                                            <svg class="product-card__label-quantity-icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                            </svg>
+                                            <span class="product-card__label-quantity-count">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                            <!-- slider -->
+                            </div>
+                            <div class="product-card__block-content">
+                                <div class="product-card__block-info">
+                                    <span class="product-card__price">5,125,000 TL</span>
+                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                        <span class="affiliation-label__text">For Rent</span>
+                                    </div>
+                                    <span class="product-card__address">227 Major Macke</span>
+                                </div>
+                            </div>
+                            <div class="compare-bar__trashcan">
+                                <svg class="compare-bar__trashcan-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                </svg>
+                                <span class="compare-bar__trashcan-text">Delete</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

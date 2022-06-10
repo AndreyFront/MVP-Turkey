@@ -50,7 +50,7 @@
             position: fixed;
             z-index: 100;
             top: 0;
-            padding-top: 125px;
+            padding: 125px 0 0 0;
             height: 100vh;
             transform: translateY(-10px);
             opacity: 0;
@@ -296,6 +296,20 @@
         &__btn-more {
             width: 100%;
             height: 48px;
+        }
+
+        .search-bar {
+            &__select-residential {
+                display: none;
+            }
+
+            &__btn-filter {
+                width: 130px;
+
+                .btn__text {
+                    display: block;
+                }
+            }
         }
     }
 
@@ -740,7 +754,7 @@
     }
 
     .page__content {
-        padding: 24px 0 50px 0;
+        padding: 24px 0 0 0;
     }
 
     .main-page {
@@ -845,7 +859,7 @@
                         position: fixed;
                         z-index: 91;
                         display: grid;
-                        grid-template-rows: 49px 631px;
+                        grid-template-rows: 49px 450px;
                         top: 100%;
                         left: 0;
                         right: 0;
@@ -857,7 +871,7 @@
                         transition: transform $transition-time;
 
                         &.active {
-                            transform: translate(0, -680px);
+                            transform: translate(0, -499px);
 
                             .card-section {
                                 &__show-cards-decor {
@@ -911,6 +925,166 @@
         .card-slider,
         .estate-statistics {
             margin-top: 40px;
+        }
+    }
+
+    .compare-bar {
+        &__inner {
+            grid-template-columns: 1fr;
+            padding: 16px 0 20px 0;
+        }
+
+        &__block-head,
+        &__block-btns {
+            padding: 0 20px;
+        }
+
+        &__block-head {
+            order: 1;
+        }
+
+        &__block-btns {
+            order: 3;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            margin-top: 28px;
+
+            .btn {
+                width: 100%;
+                height: 48px;
+            }
+        }
+
+        &__block-content {
+            order: 2;
+            padding: 0 20px 36px 20px;
+            margin-top: 16px;
+        }
+
+        &__slider {
+            width: 90vw;
+        }
+    }
+
+    .text-document {
+        h4 {
+            margin-top: 32px;
+        }
+    }
+
+    .page-not-found-page {
+        &__icon {
+            width: 282px;
+            height: 188px;
+        }
+
+        &__subtitle {
+            margin-top: 3px;
+        }
+
+        .btn {
+            margin-top: 27px;
+            max-width: 335px;
+            width: 100%;
+            min-height: 48px;
+        }
+
+        .page {
+            &__content {
+                padding: 60px 0 118px 0;
+            }
+        }
+    }
+
+    .search-no-result-page {
+        .card-section {
+            .btn {
+                margin-top: 24px;
+                max-width: 335px;
+                width: 100%;
+                min-height: 48px;
+            }
+        }
+
+        .card-slider {
+            margin-top: 40px;
+        }
+    }
+
+    .developers-page {
+        .page {
+            &__content {
+                border-radius: 0;
+            }
+        }
+
+        .search-bar {
+            &__block-buttons,
+            &__select-city,
+            .select__inner,
+            .select__btn {
+                width: 100%;
+            }
+        }
+
+        .select {
+
+            &__btn {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .developer-card {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        padding: 20px;
+
+        &__wrapper-description {
+            grid-template-areas: 
+            "logo data"
+            "description description";
+        }
+
+        &__wrapper-name {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__block-rating {
+            margin-left: 0;
+        }
+
+        &__wrapper-info {
+            margin-top: 16px;
+        }
+
+        &__li-info {
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+    
+            &:last-child {
+                margin-top: 12px;
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+        }
+    }
+
+    .privacy-policy-page,
+    .terms-of-use-page,
+    .search-no-result-page,
+    .search-result-page,
+    .developers-page {
+        .page {
+            &__content {
+                padding: 24px 0 50px 0;
+            }
         }
     }
 }

@@ -21,13 +21,13 @@ export default function cardsMap() {
         blockCardsMap.classList.toggle('active')
         blackout.classList.toggle('active')
 
-        scrollLock(blockCardsMap)
+        // scrollLock(blockCardsMap)
     })
 
     blackout.addEventListener('click', () => {
         blockCardsMap.classList.toggle('active')
         blackout.classList.toggle('active')
 
-        scrollLock(blockCardsMap)
+        // scrollLock(blockCardsMap)
     })
 }

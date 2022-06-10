@@ -338,4 +338,10 @@
     .developer-card {
         width: 100%;
     }
+
+    .text-block {
+        display: grid;
+        grid-template-columns: 1fr 330px;
+        grid-column-gap: 28px;
+    }
 }
