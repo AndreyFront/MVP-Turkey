@@ -128,15 +128,16 @@
                         <div class="card-section__block-map">
                             <img src="./assets/images/for-sale-map.jpg" class="card-section__map-image" alt="">
                         </div>
-                        <div class="card-section__inner-cards">
-                            <button class="card-section__btn-show-cards">
+                        <div class="card-section__inner-cards" data-cards-map="block-cards-map">
+                            <button class="card-section__btn-show-cards" data-cards-map="btn">
                                 <span class="card-section__show-cards-text">Show 98 objects</span>
                                 <svg class="card-section__show-cards-icon">
                                     <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
                                 </svg>
                                 <span class="card-section__show-cards-decor"></span>
                             </button>
-                            <div class="card-section__wrapper-cards">
+                            <div class="card-section__wrapper-cards" data-scrollbar>
+                                @include('./include/components/product-card.html')
                                 @include('./include/components/product-card.html')
                                 @include('./include/components/product-card.html')
                                 @include('./include/components/product-card.html')

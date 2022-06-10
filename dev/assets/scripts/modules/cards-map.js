@@ -1,13 +1,13 @@
-export default function compareBar() {
-    const blockCompareBar = document.querySelector('[data-compare-bar="block-compare-bar"]')
+export default function cardsMap() {
+    const blockCardsMap = document.querySelector('[data-cards-map="block-cards-map"]')
 
-    if (!blockCompareBar) return
+    if (!blockCardsMap) return
+
+    const btn = blockCardsMap.querySelector('[data-cards-map="btn"]')
 
     const blackout = document.createElement('div')
-    blackout.classList.add('compare-bar__blackout')
+    blackout.classList.add('card-section__blackout')
     document.body.appendChild(blackout)
-
-    const btn = blockCompareBar.querySelector('[data-compare-bar="btn"]')
 
     const scrollLock = (elem) => {
         if (elem.classList.contains('active')) {
@@ -18,16 +18,16 @@ export default function compareBar() {
     }
 
     btn.addEventListener('click', () => {
-        blockCompareBar.classList.toggle('active')
+        blockCardsMap.classList.toggle('active')
         blackout.classList.toggle('active')
 
-        scrollLock(blockCompareBar)
+        scrollLock(blockCardsMap)
     })
 
     blackout.addEventListener('click', () => {
-        blockCompareBar.classList.toggle('active')
+        blockCardsMap.classList.toggle('active')
         blackout.classList.toggle('active')
 
-        scrollLock(blockCompareBar)
+        scrollLock(blockCardsMap)
     })
 }

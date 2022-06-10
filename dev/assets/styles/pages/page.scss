@@ -1,6 +1,7 @@
 .page {
     position: relative;
     flex: 1 0 auto;
+    overflow-x: hidden;
 
     &--theme--light-blue {
         .page {

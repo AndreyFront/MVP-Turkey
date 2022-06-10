@@ -822,4 +822,95 @@
             left: auto;
         }
     }
+
+    .property-map-page {
+        .card-section {
+            &--property-map {
+                .card-section {
+                    &__wrapper-content {
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 500px;
+                        grid-column-gap: 0;
+                    }
+
+                    &__block-map {
+                        height: 500px;
+                    }
+
+                    &__block-nav {
+                        display: none;
+                    }
+
+                    &__inner-cards {
+                        position: fixed;
+                        z-index: 91;
+                        display: grid;
+                        grid-template-rows: 49px 631px;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        padding: 0;
+                        height: max-content;
+                        background-color: $white;
+                        border-radius: 50px 50px 0 0;
+                        transform: translate(0, -49px);
+                        transition: transform $transition-time;
+
+                        &.active {
+                            transform: translate(0, -680px);
+
+                            .card-section {
+                                &__show-cards-decor {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    pointer-events: auto;
+                                }
+                            }
+                        }
+                    }
+
+                    &__wrapper-cards {
+                        grid-template-columns: repeat(1, minmax(162px, 1fr));
+                        grid-column-gap: 0;
+                        grid-row-gap: 0;
+                        padding: 0 20px 20px 20px;
+
+                        .scroll-content {
+                            grid-template-columns: repeat(3, minmax(100px, 1fr));
+                            height: 100%;
+                            padding-right: 0;
+                        }
+
+                        .scrollbar-track-y {
+                            right: 10px;
+                        }
+                    }
+
+                    &__btn-show-cards {
+                        display: flex;
+                    }
+                }
+
+                .product-card {
+                    &__block-links,
+                    &__wrapper-employee {
+                        margin-top: 11px;
+                    }
+
+                    &__address {
+                        margin-top: 0;
+                    }
+
+                    &__block-images {
+                        height: 136px;
+                    }
+                }
+            }
+        }
+
+        .card-slider,
+        .estate-statistics {
+            margin-top: 40px;
+        }
+    }
 }

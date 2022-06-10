@@ -143,4 +143,28 @@
         right: 8px;
         bottom: 8px;
     }
+
+    .property-map-page {
+        .card-section {
+            &--property-map {
+                .card-section {
+                    &__wrapper-content {
+                        grid-template-rows: 500px;
+                    }
+
+                    &__block-map {
+                        height: 500px;
+                    }
+
+                    &__wrapper-cards {
+                        .scroll-content {
+                            grid-template-columns: repeat(2, minmax(100px, 1fr));
+                            grid-column-gap: 10px;
+                            grid-row-gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

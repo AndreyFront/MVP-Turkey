@@ -11,56 +11,22 @@
             &--property-map {
                 .card-section {
                     &__wrapper-content {
-                        grid-template-columns: 1fr;
-                        grid-column-gap: 0;
+                        grid-template-columns: 1fr 330px;
+                        grid-column-gap: 28px;
                     }
 
-                    &__block-map {
-                        height: 500px;
+                    &__wrapper-cards {
+                        .scroll-content {
+                            grid-template-columns: repeat(1, minmax(100px, 1fr));
+                        }
+                    }
+
+                    &__inner-cards {
+                        padding-right: 25px;
                     }
 
                     &__block-nav {
                         display: none;
-                    }
-
-                    &__inner-cards {
-                        position: fixed;
-                        z-index: 91;
-                        display: grid;
-                        grid-template-rows: 49px 1fr;
-                        top: 100%;
-                        left: 0;
-                        right: 0;
-                        padding: 0;
-                        height: max-content;
-                        background-color: $white;
-                        border-radius: 50px 50px 0 0;
-                        transform: translate(0, -49px);
-                        transition: transform $transition-time;
-
-                        &.active {
-                            transform: translate(0, -100%);
-
-                            .card-section {
-                                &__show-cards-decor {
-                                    opacity: 1;
-                                    visibility: visible;
-                                    pointer-events: auto;
-                                }
-                            }
-                        }
-                    }
-
-                    &__wrapper-cards {
-                        padding: 0 20px 20px 20px;
-                    }
-
-                    &__wrapper-cards {
-                        grid-template-columns: repeat(4, minmax(100px, 1fr));
-                    }
-
-                    &__btn-show-cards {
-                        display: flex;
                     }
                 }
             }

@@ -65,20 +65,31 @@
             &__wrapper-content {
                 display: grid;
                 grid-template-columns: 1fr 644px;
+                grid-template-rows: 881px;
                 grid-column-gap: 19px;
             }
 
             &__inner-cards {
                 display: flex;
                 flex-direction: column;
-                padding-right: 50px;
+                padding-right: 34px;
             }
 
             &__wrapper-cards {
-                grid-template-columns: repeat(2, minmax(100px, 1fr));
-                grid-column-gap: 20px;
-                grid-row-gap: 20px;
-                align-self: start;
+                height: 100%;
+
+                .scroll-content {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(100px, 1fr));
+                    grid-column-gap: 20px;
+                    grid-row-gap: 20px;
+                    align-self: start;
+                    padding-right: 16px;
+                }
+
+                .scrollbar-track-x {
+                    display: none !important;
+                }
             }
 
             &__block-nav {
@@ -119,7 +130,6 @@
             }
         
             &__btn-show-cards {
-                display: flex;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
@@ -286,6 +296,25 @@
         grid-template-columns: repeat(4, minmax(162px, 1fr));
         grid-column-gap: 30px;
         grid-row-gap: 30px;
+    }
+
+    &__blackout {
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        pointer-events: none;
+        z-index: 90;
+        border: none;
+        opacity: 0;
+        background-color: #000;
+        transition: opacity $transition-time;
+
+        &.active {
+            pointer-events: auto;
+            opacity: .6;
+        }
     }
 
     &__block-btns {

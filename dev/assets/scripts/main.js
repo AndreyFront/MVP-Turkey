@@ -20,6 +20,7 @@ import propertyDescription from './modules/property-description'
 import productCard from './modules/product-card'
 import mImageGallary from './modules/m-image-gallary'
 import popularCities from './modules/popular-cities'
+import cardsMap from './modules/cards-map'
 
 modal()
 input()
@@ -39,3 +40,4 @@ propertyDescription()
 productCard()
 mImageGallary()
 popularCities()
+cardsMap()
