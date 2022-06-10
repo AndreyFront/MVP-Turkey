@@ -239,11 +239,13 @@
         }
 
         &__select-residential .select__btn,
+        &__select-city .select__btn,
         & &__btn-filter {
             min-height: 41px;
         }
 
-        &__select-residential .select__btn {
+        &__select-residential .select__btn,
+        &__select-city .select__btn {
             padding: 5px 12px;
         }
 
@@ -264,7 +266,7 @@
 
     .card-section {
         &__wrapper-cards {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, minmax(162px, 1fr));
             grid-column-gap: 10px;
             grid-row-gap: 10px;
         }
@@ -409,6 +411,10 @@
                 }
             }
         }
+
+        .swiper-slide {
+            width: 100%;
+        }
     }
 
     .affiliation-label {
@@ -428,13 +434,34 @@
     }
 
     .popular-cities {
-        &__block-slider {
+        &__block-info {
+            padding: 0 20px;
+        }
+
+        &__slider {
             margin-top: 20px;
         }
 
         &__block-slide {
             height: 215px;
-            width: 155px;
+
+            &:hover .popular-cities__slide-name {
+                transform: translateY(20px);
+            }
+
+            &:hover .popular-cities__slide-objects,
+            &:hover .arrow {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &:hover .popular-cities__slide-objects {
+                transform: translateY(15px);
+            }
+
+            &:hover .arrow {
+                transform: translateX(15px);
+            }
         }
 
         &__wrapper-slide-info {
@@ -449,12 +476,16 @@
 
         .main-container {
             grid-template-columns: 1fr;
-            padding: 32px 20px 32px 20px;
+            padding: 32px 0;
 
             &::before {
                 width: 100%;
                 left: 0;
             }
+        }
+
+        .swiper-slide:first-child.swiper-slide-active {
+            margin-left: 20px;
         }
 
         .search {
@@ -529,6 +560,10 @@
 
         .slider-btns {
             display: none;
+        }
+
+        .product-card-slider {
+            overflow: hidden;
         }
     }
 
@@ -756,6 +791,35 @@
                 height: 100vh;
                 padding: 20px;
             }
+        }
+    }
+
+    .property-page {
+        .page {
+            &__content {
+                padding: 24px 0 0 0;
+            }
+        }
+
+        .search-bar {
+            &__select-residential {
+                display: none;
+            }
+
+            &__btn-filter {
+                width: 130px;
+
+                .btn__text {
+                    display: block;
+                }
+            } 
+        }
+    }
+
+    .sorting {
+        &__block-dropout {
+            right: 0;
+            left: auto;
         }
     }
 }

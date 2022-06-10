@@ -1,7 +1,6 @@
 .popular-cities {
 
-    &__block-info,
-    &__block-slider {
+    &__block-info {
         position: relative;
     }
 
@@ -18,15 +17,15 @@
         @include adaptiv-font(16, 14);
     }
 
-    &__block-slider {
-        display: flex;
+    &__slider {
+        width: 100%;
+        overflow: hidden;
     }
 
     &__block-slide {
         position: relative;
         overflow: hidden;
         height: 289px;
-        width: 233px;
         border-radius: 16px;
 
         &:hover {
@@ -127,7 +126,7 @@
     .main-container {
         position: relative;
         display: grid;
-        grid-template-columns: 328px 1fr;
+        grid-template-columns: 328px minmax(100px, 1fr);
         grid-column-gap: 50px;
         align-items: center;
         padding: 45px 20px 45px 80px;

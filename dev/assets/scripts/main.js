@@ -1,4 +1,3 @@
-import Swiper from 'swiper'
 import IMask from 'imask'
 import validator from 'validator'
 // https://addmorescripts.github.io/hystModal/index_ru.html
@@ -20,6 +19,7 @@ import scroll from './modules/scroll'
 import propertyDescription from './modules/property-description'
 import productCard from './modules/product-card'
 import mImageGallary from './modules/m-image-gallary'
+import popularCities from './modules/popular-cities'
 
 modal()
 input()
@@ -38,3 +38,4 @@ scroll()
 propertyDescription()
 productCard()
 mImageGallary()
+popularCities()

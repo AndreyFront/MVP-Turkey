@@ -5,8 +5,8 @@ export default function productCard() {
 
     if (!blocksProductCard.length) return
 
-    blocksProductCard.forEach(blockProductCard => {
-        if (window.matchMedia('(min-width: 992px)').matches) {
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        blocksProductCard.forEach(blockProductCard => {
             const slider = blockProductCard.querySelector('[data-product-card="slider"]')
 
             if (slider) {
@@ -27,6 +27,6 @@ export default function productCard() {
                     },
                 })
             }
-        }
-    })
+        })
+    }
 }

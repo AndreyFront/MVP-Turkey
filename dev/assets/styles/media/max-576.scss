@@ -13,4 +13,14 @@
             padding: 0;
         }
     }
+
+    .card-section {
+        &--property {
+            .card-section {
+                &__wrapper-cards {
+                    grid-template-columns: repeat(2, minmax(100px, 1fr));
+                }
+            }
+        }
+    }
 }

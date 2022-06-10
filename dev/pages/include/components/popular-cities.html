@@ -1,4 +1,4 @@
-<div class="popular-cities">
+<div class="popular-cities" data-popular-cities="block-popular-cities">
     <div class="main-container max-width">
         <div class="popular-cities__block-info">
             <h2 class="title-section title-reset">Popular cities</h2>
@@ -16,26 +16,141 @@
                 </div>
                 <!-- Результаты поиска -->
             </div>
-            @include('../ui/slider-btns.html')
+            <div class="slider-btns">
+                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-popular-cities="prev-btn">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-popular-cities="next-btn">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="popular-cities__block-slider">
-            <div class="popular-cities__block-slide">
-                <a href="#" class="link-reset">
-                    <div class="popular-cities__block-slide-bg">
-                        <img src="./assets/images/antalya.jpg" class="popular-cities__slide-bg" alt="">
+        <div class="swiper popular-cities__slider" data-popular-cities="slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="popular-cities__block-slide">
+                        <a href="#" class="link-reset">
+                            <div class="popular-cities__block-slide-bg">
+                                <img src="./assets/images/antalya.jpg" class="popular-cities__slide-bg" alt="">
+                            </div>
+                            <div class="popular-cities__wrapper-slide-info">
+                                <div class="popular-cities__block-slide-info">
+                                    <span class="popular-cities__slide-name">antalya</span>
+                                    <span class="popular-cities__slide-objects">642 objects</span>
+                                </div>
+                                <span href="#" class="arrow arrow--size--sm arrow--theme--transparent">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="popular-cities__wrapper-slide-info">
-                        <div class="popular-cities__block-slide-info">
-                            <span class="popular-cities__slide-name">antalya</span>
-                            <span class="popular-cities__slide-objects">642 objects</span>
-                        </div>
-                        <span href="#" class="arrow arrow--size--sm arrow--theme--transparent">
-                            <svg class="arrow__icon">
-                                <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
-                            </svg>
-                        </span>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popular-cities__block-slide">
+                        <a href="#" class="link-reset">
+                            <div class="popular-cities__block-slide-bg">
+                                <img src="./assets/images/antalya.jpg" class="popular-cities__slide-bg" alt="">
+                            </div>
+                            <div class="popular-cities__wrapper-slide-info">
+                                <div class="popular-cities__block-slide-info">
+                                    <span class="popular-cities__slide-name">antalya</span>
+                                    <span class="popular-cities__slide-objects">642 objects</span>
+                                </div>
+                                <span href="#" class="arrow arrow--size--sm arrow--theme--transparent">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popular-cities__block-slide">
+                        <a href="#" class="link-reset">
+                            <div class="popular-cities__block-slide-bg">
+                                <img src="./assets/images/antalya.jpg" class="popular-cities__slide-bg" alt="">
+                            </div>
+                            <div class="popular-cities__wrapper-slide-info">
+                                <div class="popular-cities__block-slide-info">
+                                    <span class="popular-cities__slide-name">antalya</span>
+                                    <span class="popular-cities__slide-objects">642 objects</span>
+                                </div>
+                                <span href="#" class="arrow arrow--size--sm arrow--theme--transparent">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popular-cities__block-slide">
+                        <a href="#" class="link-reset">
+                            <div class="popular-cities__block-slide-bg">
+                                <img src="./assets/images/antalya.jpg" class="popular-cities__slide-bg" alt="">
+                            </div>
+                            <div class="popular-cities__wrapper-slide-info">
+                                <div class="popular-cities__block-slide-info">
+                                    <span class="popular-cities__slide-name">antalya</span>
+                                    <span class="popular-cities__slide-objects">642 objects</span>
+                                </div>
+                                <span href="#" class="arrow arrow--size--sm arrow--theme--transparent">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popular-cities__block-slide">
+                        <a href="#" class="link-reset">
+                            <div class="popular-cities__block-slide-bg">
+                                <img src="./assets/images/antalya.jpg" class="popular-cities__slide-bg" alt="">
+                            </div>
+                            <div class="popular-cities__wrapper-slide-info">
+                                <div class="popular-cities__block-slide-info">
+                                    <span class="popular-cities__slide-name">antalya</span>
+                                    <span class="popular-cities__slide-objects">642 objects</span>
+                                </div>
+                                <span href="#" class="arrow arrow--size--sm arrow--theme--transparent">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="popular-cities__block-slide">
+                        <a href="#" class="link-reset">
+                            <div class="popular-cities__block-slide-bg">
+                                <img src="./assets/images/antalya.jpg" class="popular-cities__slide-bg" alt="">
+                            </div>
+                            <div class="popular-cities__wrapper-slide-info">
+                                <div class="popular-cities__block-slide-info">
+                                    <span class="popular-cities__slide-name">antalya</span>
+                                    <span class="popular-cities__slide-objects">642 objects</span>
+                                </div>
+                                <span href="#" class="arrow arrow--size--sm arrow--theme--transparent">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

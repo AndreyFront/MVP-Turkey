@@ -18,6 +18,20 @@
         }
     }
 
+    .card-section {
+        &--property {
+            .card-section {
+                &__block-nav {
+                    justify-content: center;
+                    
+                    .select {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
     .big-slider {
         &__slider-first {
             .big-slider {

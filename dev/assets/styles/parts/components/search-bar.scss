@@ -4,6 +4,14 @@
         width: 100%;
     }
 
+    &--default {
+        .select {
+            &__btn {
+                background-color: $white;
+            }
+        }
+    }
+
     &--property {
         width: 100%;
         margin-top: 20px;
@@ -21,6 +29,12 @@
 
             &__btn-filter {
                 background-color: #F5FAFF;
+            }
+
+            .select {            
+                &__btn {
+                    background-color: #F5FAFF;
+                }
             }
         }
 
@@ -120,12 +134,6 @@
     &__btn-search-list,
     &__btn-search-map {
         margin-left: 6px;
-    }
-
-    .select {
-        &__btn {
-            background-color: $white;
-        }
     }
 
     .search {

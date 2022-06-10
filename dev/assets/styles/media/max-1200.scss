@@ -8,8 +8,22 @@
     }
 
     .card-section {
+        &--property {
+            .card-section {
+                &__wrapper-content {
+                    grid-template-columns: minmax(162px, 1fr);
+                    grid-column-gap: 0;
+                    grid-row-gap: 40px;
+                }
+
+                &__block-nav {
+                    margin-top: 24px;
+                }
+            }
+        }
+
         &__wrapper-cards {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(162px, 1fr));
         }
     }
 
