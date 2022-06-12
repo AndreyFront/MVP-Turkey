@@ -1,0 +1,21 @@
+.banner {
+    color: $white;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 390px 370px 209px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 50px;
+        border-radius: 16px;
+        background: $blue-gradient;
+    }
+
+    &__subtitle {
+        line-height: 1.5em;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

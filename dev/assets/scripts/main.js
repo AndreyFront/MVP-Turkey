@@ -21,6 +21,7 @@ import productCard from './modules/product-card'
 import mImageGallary from './modules/m-image-gallary'
 import popularCities from './modules/popular-cities'
 import cardsMap from './modules/cards-map'
+import masterPlan from './modules/master-plan'
 
 modal()
 input()
@@ -41,3 +42,4 @@ productCard()
 mImageGallary()
 popularCities()
 cardsMap()
+masterPlan()

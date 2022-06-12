@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "Detailed product card developer"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page detailed-card-page detailed-card-developer-page">
+            <!-- @include('./include/components/name.html') -->
+            <div class="bread-crumbs bread-crumbs--theme--light">
+                <div class="main-container max-width">
+                    <ul class="bread-crumbs__list list-reset">
+                        <li class="bread-crumbs__li">
+                            <a href="#" class="bread-crumbs__link link-reset">Home</a>
+                        </li>
+                        <li class="bread-crumbs__li">
+                            <a href="#" class="bread-crumbs__link link-reset">For sale</a>
+                        </li>
+                        <li class="bread-crumbs__li">
+                            <a href="##" class="bread-crumbs__link link-reset">11 Foundry Ave 129</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-banner">
+                <div class="main-banner__block-bg">
+                    <img src="./assets/images/banner-bg-2.jpg" class="main-banner__image-bg" alt="">
+                </div>
+                <div class="main-banner__inner">
+                    <div class="main-container max-width">
+                        <div class="main-banner__content">
+                            <div class="main-banner__block-rating">
+                                @include('./include/ui/rating-value.html')
+                                <span class="main-banner__rating-text">Delivery date: October 2023</span>
+                            </div>
+                            <h1 class="title-section title-reset main-banner__title">Sunrise Residence</h1>
+                            <div class="main-banner__block-info">
+                                <div class="main-banner__block-address">
+                                    <svg class="main-banner__icon-address">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#point"/>
+                                    </svg>
+                                    <a href="#" class="link-reset">Harding, Richmond Hill</a>
+                                    <a href="#" class="link-reset">Major Mackenzie</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-banner__block-btns">
+                            <a href="#" class="btn-icon btn-icon--theme--gray hint" data-favorites-icon="block-icon">
+                                <svg class="btn-icon__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#star"/>
+                                </svg>
+                                <span class="hint__text">Add to favorites</span>
+                            </a>
+                            <div class="share">
+                                <a href="#" class="btn-icon btn-icon--theme--gray hint">
+                                    <svg class="btn-icon__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#share-white"/>
+                                    </svg>
+                                    <span class="hint__text">Share</span>
+                                </a>
+                                <div class="share__block-content">
+                                    @include('./include/components/social-buttons.html')
+                                    <div class="share__block-link">
+                                        <div class="input">
+                                            <input type="text" class="input__input" value="https://statusproperty.ru/products/sale" readonly>
+                                        </div>
+                                        <a href="#" class="share__link link-reset">Copy link</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-icon btn-icon--theme--gray hint">
+                                <svg class="btn-icon__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#printer"/>
+                                </svg>
+                                <span class="hint__text">Print</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__content">
+                @include('./include/components/big-slider.html')
+                <div class="detailed-card-page__wrapper-info">
+                    <div class="main-container max-width detailed-card-page__wrapper-info-main-container">
+                        <div class="detailed-card-page__block-info">
+                            <section class="property-description" data-property-description="block-property-description">
+                                <div class="main-container max-width">
+                                    <div class="property-description__block-head">
+                                        <h3 class="title-section title-reset">Property Description</h3>
+                                    </div>
+                                    <div class="property-description__block-content">
+                                        <div class="property-description__block-text" data-property-description="block-text">
+                                            <p>
+                                                Spacious 2 Bedroom + Den Corner Stacked Townhouse In Davenport Village! Open Concept Main Floor With Powder Room And Walk-Out To Private & Sunny Patio. Den Makes For The Perfect Home Office. Steps Away From A (Nearly) Secret Community Tavern, Balzac's Coffee & Davenport Village Park! Short Walk To Shoppers, Food Basics, Transit, & Schools. Spacious 2 Bedroo...
+                                                Spacious 2 Bedroom + Den Corner Stacked Townhouse In Davenport Village! Open Concept Main Floor With Powder Room And Walk-Out To Private & Sunny Patio. Den Makes For The Perfect Home Office. Steps Away From A (Nearly) Secret Community Tavern, Balzac's Coffee & Davenport Village Park! Short Walk To Shoppers, Food Basics, Transit, & Schools. Spacious 2 Bedroo...
+                                                Spacious 2 Bedroom + Den Corner Stacked Townhouse In Davenport Village! Open Concept Main Floor With Powder Room And Walk-Out To Private & Sunny Patio. Den Makes For The Perfect Home Office. Steps Away From A (Nearly) Secret Community Tavern, Balzac's Coffee & Davenport Village Park! Short Walk To Shoppers, Food Basics, Transit, & Schools. Spacious 2 Bedroo...
+                                            </p>
+                                        </div>
+                                        <button class="property-description__btn-show-more" data-property-description="btn">Show More</button>
+                                        <div class="property-description__block-btns">
+                                            <a href="#" class="btn btn--size-bg btn--theme--navy-blue">
+                                                <span class="btn__text">Request Info</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            @include('./include/components/property-details.html')
+                            @include('./include/components/other-features.html')
+                            @include('./include/components/prices-apartments.html')
+                            @include('./include/components/infrastructure.html')
+                            @include('./include/components/master-plan.html')
+                            @include('./include/components/developer.html')
+                        </div>
+                        <div class="side-panel">
+                            <div class="side-panel__content">
+                                @include('./include/components/commercial-block.html')
+                                @include('./include/components/contact-form.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @include('./include/components/banner.html', {
+                    "title": "Do you want to know more?",
+                    "subtitle": "Get a brochure from the developer and find out more about the residential complex",
+                    "text-btn": "Get a brochure"
+                })
+
+                <section class="card-slider" data-product-card-slider="block-slider">
+                    <div class="main-container max-width">
+                        <div class="card-slider__block-head">
+                            <h2 class="title-section title-reset">Objects in this residential complex</h2>
+                            <div class="slider-btns">
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="prev-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="next-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-slider__block-slider">
+                            <div class="swiper product-card-slider" data-product-card-slider="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="detailed-card-page__pagination">
+                    <div class="main-container max-width">
+                        @include('./include/components/pagination.html')
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/modal-windows/m-image-gallary.html')
+        @include('./include/modal-windows/simple-info.html')
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>

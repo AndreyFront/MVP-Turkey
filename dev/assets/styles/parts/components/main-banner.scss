@@ -117,6 +117,30 @@
         }
     }
 
+    &__block-rating {
+        display: flex;
+        align-items: center;
+    }
+
+    &__rating-text {
+        position: relative;
+        padding-left: 12px;
+        @include adaptiv-font(18, 14);
+        font-weight: 500;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            width: 4px;
+            height: 4px;
+            border-radius: 100px;
+            background-color: $white;
+        }
+    }
+
     .btn-icon {
         width: 44px;
         height: 43px;
@@ -130,5 +154,14 @@
 
     .status-labels {
         margin-bottom: 24px;
+    }
+
+    .rating-value {
+        margin-right: 12px;
+
+        &__value {
+            @include adaptiv-font(18, 14);
+            font-weight: 500;
+        }
     }
 }

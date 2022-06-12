@@ -1,0 +1,19 @@
+.rating-value {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+
+        use {
+            fill: #FFB43C;
+        }
+    }
+
+    &__value {
+        font-weight: 600;
+        margin-left: 8px;
+        line-height: 0.5em;
+    }
+}

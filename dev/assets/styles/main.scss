@@ -26,17 +26,18 @@ body {
     overflow-y: auto;
 }
 
-@import './pages/page.scss';
-@import './pages/main-page.scss';
-@import './pages/property-page.scss';
-@import './pages/detailed-card-page.scss';
-@import './pages/page-not-found-page.scss';
-@import './pages/privacy-policy-page.scss';
-@import './pages/terms-of-use-page.scss';
-@import './pages/search-result-page.scss';
-@import './pages/search-no-result-page.scss';
-@import './pages/property-map-page.scss';
-@import './pages/developers-page.scss';
+@import './pages/page';
+@import './pages/main-page';
+@import './pages/property-page';
+@import './pages/detailed-card-page';
+@import './pages/page-not-found-page';
+@import './pages/privacy-policy-page';
+@import './pages/terms-of-use-page';
+@import './pages/search-result-page';
+@import './pages/search-no-result-page';
+@import './pages/property-map-page';
+@import './pages/developers-page';
+@import './pages/detailed-card-developer-page';
 
 @import './parts/layouts';
 @import './parts/components';
