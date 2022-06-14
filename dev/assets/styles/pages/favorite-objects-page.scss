@@ -1,0 +1,59 @@
+.favorite-objects-page {
+
+    .card-section {
+
+        &--property {
+            .card-section {
+                &__block-sorting {
+                    margin-top: 0;
+                }
+
+                &__wrapper-content {
+                    grid-template-columns: 1fr;
+                    grid-column-gap: 0;
+                }
+
+                &__wrapper-cards {
+                    grid-template-columns: repeat(4, minmax(100px, 1fr));
+                }
+
+                &__block-nav {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        &__block-head {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            justify-content: space-between;
+        }
+
+        &__block-sorting {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-column-gap: 44px;
+            grid-auto-flow: column;
+            grid-auto-columns: auto;
+            justify-content: start;
+        }
+
+        &__block-head-btns {
+            .btn {
+                width: 101px;
+
+                &__icon {
+                    display: none;
+                    width: 22px;
+                    height: 22px;
+
+                    use {
+                        fill: $navy-blue;
+                    }
+                }
+            }
+        }
+    }
+}

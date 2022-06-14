@@ -1,0 +1,41 @@
+.documentation {
+    &__block-head {}
+
+    &__block-content {
+        margin-top: 20px;
+    }
+
+    &__list {
+        display: grid;
+        grid-auto-rows: 54px;
+        grid-row-gap: 10px;
+    }
+
+    &__li {
+        display: grid;
+        grid-template-columns: 1fr 54px;
+        grid-column-gap: 10px;
+        align-items: center;
+    }
+
+    &__link-preview {
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        height: 100%;
+        background-color: #F5FAFF;
+        border-radius: 8px;
+        transition: background-color $transition-time;
+        
+        &:hover {
+            background-color: $blue;
+        }
+    }
+
+    &__text-preview {}
+
+    .btn-icon {
+        height: 100%;
+        width: 100%;
+    }
+}

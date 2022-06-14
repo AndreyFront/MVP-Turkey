@@ -167,4 +167,39 @@
             }
         }
     }
+
+    .objects {
+        &__block-cards {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        &__block-head,
+        &__block-btn {
+            padding: 0 20px;
+        }
+
+        &__block-btn {
+            justify-content: stretch;
+            margin: 20px auto 0 auto;
+
+            .btn {
+                width: 100%;
+                min-height: 48px;
+            }
+        }
+
+        .main-container {
+            padding: 0;
+        }
+
+        .product-card {
+            width: 162px;
+            flex-shrink: 0;
+
+            &:first-child {
+                margin-left: 20px;
+            }
+        }
+    }
 }

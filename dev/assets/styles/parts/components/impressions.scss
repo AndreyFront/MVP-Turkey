@@ -1,0 +1,28 @@
+.impressions {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #F5FAFF;
+
+    &__block-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    &__block-link {
+        margin-top: 24px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "Real Estate for Sale"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page favorite-objects-page">
+            <!-- @include('./include/components/name.html') -->
+            @include('./include/components/bread-crumbs.html')
+
+            <div class="page__content">
+                
+                <section class="card-section card-section--property">
+                    <div class="main-container max-width">
+                        <div class="card-section__block-head">
+                            <div class="card-section__block-head-titles">
+                                <h2 class="title-section title-reset active">Favorite objects</h2>
+                                <h2 class="title-section title-reset">Residential complexes</h2>
+                            </div>
+                            <div class="card-section__block-head-btns">
+                                <button type="button" class="btn btn--size-sm btn--theme--light-blue">
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                    </svg>
+                                    <span class="btn__text">Delete all</span>
+                                </button>
+                                <div class="share">
+                                    <a href="#" class="btn-icon btn-icon--theme--light-blue">
+                                        <svg class="btn-icon__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#share"/>
+                                        </svg>
+                                    </a>
+                                    <div class="share__block-content">
+                                        @include('./include/components/social-buttons.html')
+                                        <div class="share__block-link">
+                                            <div class="input">
+                                                <input type="text" class="input__input" value="https://statusproperty.ru/products/sale" readonly>
+                                            </div>
+                                            <a href="#" class="share__link link-reset">Copy link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-section__block-sorting">
+                                @include('./include/ui/count-objects.html')
+                                @include('./include/ui/sorting.html')
+                            </div>
+                        </div>
+                        <div class="card-section__wrapper-content">
+                            <div class="card-section__wrapper-cards">
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                @include('./include/components/product-card.html')
+                                <div class="card-section__block-nav">
+                                    @include('./include/components/pagination.html')
+                                    <div class="select select--size--sm select--theme--blue" data-select="block-select">
+                                        <span class="select__signature">Show by</span>
+                                        <div class="select__inner">
+                                            <button type="button" class="select__btn" data-select="btn">
+                                                <span class="select__btn-text">15</span>
+                                                <svg class="select__btn-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="select__block-pop-up">
+                                                <ul class="select__list list-reset">
+                                                    <li class="select__li">
+                                                        <a href="#" class="select__link link-reset">15</a>
+                                                    </li>
+                                                    <li class="select__li">
+                                                        <a href="#" class="select__link link-reset">30</a>
+                                                    </li>
+                                                    <li class="select__li">
+                                                        <a href="#" class="select__link link-reset">45</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>

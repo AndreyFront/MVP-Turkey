@@ -1,0 +1,85 @@
+.review {
+    padding-bottom: 32px;
+    border-bottom: 1px solid $light-blue;
+
+    &__block-head {
+        display: grid;
+        grid-template-columns: repeat(2, auto) 1fr;
+        justify-content: start;
+        grid-column-gap: 24px;
+        align-items: center;
+    }
+
+    &__list-rating-stars {
+        display: grid;
+        grid-template-columns: repeat(5, 18px);
+        grid-column-gap: 8px;
+    }
+
+    &__li {
+        &.active {
+            .review__icon use {
+                fill: #FFB43C;
+            }
+        }
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+
+        use {
+            fill: #E5E6E9;
+        }
+    }
+
+    &__block-name-user {}
+
+    &__name-user {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__block-date {
+        margin-left: auto;
+    }
+
+    &__date {
+        color: $light-text;
+    }
+
+    &__block-text,
+    &__slider {
+        margin-top: 16px;
+    }
+
+    &__block-text {
+        p {
+            @include adaptiv-font(16, 14);
+            margin: 0;
+        }
+    }
+
+    &__slider {
+        overflow: hidden;
+    }
+
+    &__link {
+        display: block;
+        height: 100px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

@@ -113,9 +113,11 @@
                             @include('./include/components/property-details.html')
                             @include('./include/components/other-features.html')
                             @include('./include/components/prices-apartments.html')
+                            @include('./include/components/layouts.html')
                             @include('./include/components/infrastructure.html')
                             @include('./include/components/master-plan.html')
                             @include('./include/components/developer.html')
+                            @include('./include/components/documentation.html')
                         </div>
                         <div class="side-panel">
                             <div class="side-panel__content">
@@ -126,55 +128,15 @@
                     </div>
                 </div>
 
+                @include('./include/components/customer-reviews.html')
+
                 @include('./include/components/banner.html', {
                     "title": "Do you want to know more?",
                     "subtitle": "Get a brochure from the developer and find out more about the residential complex",
                     "text-btn": "Get a brochure"
                 })
 
-                <section class="card-slider" data-product-card-slider="block-slider">
-                    <div class="main-container max-width">
-                        <div class="card-slider__block-head">
-                            <h2 class="title-section title-reset">Objects in this residential complex</h2>
-                            <div class="slider-btns">
-                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="prev-btn">
-                                    <svg class="arrow__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
-                                    </svg>
-                                </button>
-                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="next-btn">
-                                    <svg class="arrow__icon">
-                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-slider__block-slider">
-                            <div class="swiper product-card-slider" data-product-card-slider="slider">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        @include('./include/components/product-card.html')
-                                    </div>
-                                    <div class="swiper-slide">
-                                        @include('./include/components/product-card.html')
-                                    </div>
-                                    <div class="swiper-slide">
-                                        @include('./include/components/product-card.html')
-                                    </div>
-                                    <div class="swiper-slide">
-                                        @include('./include/components/product-card.html')
-                                    </div>
-                                    <div class="swiper-slide">
-                                        @include('./include/components/product-card.html')
-                                    </div>
-                                    <div class="swiper-slide">
-                                        @include('./include/components/product-card.html')
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                @include('./include/components/objects.html')
 
                 <div class="detailed-card-page__pagination">
                     <div class="main-container max-width">

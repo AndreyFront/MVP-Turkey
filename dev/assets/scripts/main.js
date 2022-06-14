@@ -22,6 +22,8 @@ import mImageGallary from './modules/m-image-gallary'
 import popularCities from './modules/popular-cities'
 import cardsMap from './modules/cards-map'
 import masterPlan from './modules/master-plan'
+import review from './modules/review'
+import layouts from './modules/layouts'
 
 modal()
 input()
@@ -43,3 +45,5 @@ mImageGallary()
 popularCities()
 cardsMap()
 masterPlan()
+review()
+layouts()

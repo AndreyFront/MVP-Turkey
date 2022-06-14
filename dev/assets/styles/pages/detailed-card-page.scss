@@ -54,7 +54,9 @@
     .infrastructure,
     .prices-apartments,
     .developer,
-    .master-plan {
+    .master-plan,
+    .documentation,
+    .layouts {
         .main-container {
             padding: 0;
         }
@@ -71,7 +73,11 @@
     .prices-apartments,
     .developer,
     .card-slider,
-    .master-plan {
+    .master-plan,
+    .documentation,
+    .customer-reviews,
+    .objects,
+    .layouts {
         margin-top: 60px;
     }
 }

@@ -1,0 +1,29 @@
+.objects {
+
+    &__block-head {}
+
+    &__block-content {
+        margin-top: 28px;
+    }
+
+    &__block-cards {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(10px, 1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    &__block-btn {
+        display: grid;
+        justify-content: center;
+        margin: 40px auto 0 auto;
+
+        .btn {
+            width: 206px;
+        }
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}

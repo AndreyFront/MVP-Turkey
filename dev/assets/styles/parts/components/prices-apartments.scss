@@ -4,4 +4,53 @@
     &__block-content {
         margin-top: 20px;
     }
+
+    &__table {
+        display: grid;
+        width: 100%;
+
+        thead tr,
+        tbody tr {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: center;
+            background-color: #F5FAFF;
+        }
+
+        thead td,
+        tbody td {
+            @include adaptiv-font(16, 14);
+        }
+    
+        thead {
+            tr {
+                padding: 6px 12px 6px 30px;
+                border-radius: 6px;
+            }
+        }
+    
+        tbody {
+            margin-top: 12px;
+    
+            tr {
+                padding: 12px 12px 12px 30px;
+                border-radius: 8px;
+    
+                &:not(:first-child) {
+                    margin-top: 8px;
+                }
+
+                td {
+                    &:last-child {
+                        width: max-content;
+                        margin-left: auto;
+                    }
+                }
+            }
+
+            td {
+                font-weight: 500;
+            }
+        }
+    }
 }

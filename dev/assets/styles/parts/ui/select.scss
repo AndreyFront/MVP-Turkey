@@ -133,6 +133,41 @@
         }
     }
 
+    &--theme--light-blue {
+        .select {
+            &__btn {
+                background-color: #F5FAFF;
+                border-radius: 10px;
+                transition: background-color $transition-time;
+
+                &:hover {
+                    background-color: $light-blue;
+                }
+
+                &:hover .select__btn-text {
+                    color: $navy-blue;
+                }
+                
+                &:hover .select__btn-icon use {
+                    fill: $navy-blue;
+                }
+            }
+
+            &__btn-text {
+                font-size: 16px;
+                color: $black-text;
+                transition: color $transition-time;
+            }
+
+            &__btn-icon {
+                use {
+                    fill: $black-text;
+                    transition: fill $transition-time;
+                }
+            }
+        }
+    }
+
     &--size--sm {
         &.active {
             .select {    

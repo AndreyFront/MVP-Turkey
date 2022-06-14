@@ -76,6 +76,30 @@
         }
     }
 
+    &--theme--light-blue {
+        border: none;
+        background-color: $very-light-blue;
+
+        &:hover {
+            background-color: $blue;
+        }
+
+        &.active {
+            border-color: transparent;
+            background-color: $blue;
+        }
+
+        .btn-icon {
+            &__icon {
+                use {
+                    fill: transparent;
+                    stroke: $navy-blue;
+                    fill: $navy-blue;
+                }
+            }
+        }
+    }
+
     &--theme--gray {
         border: none;
         background-color: rgba(255, 255, 255, 0.3);

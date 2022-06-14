@@ -629,6 +629,7 @@
 
             &__inner {
                 margin-top: 0;
+                margin-bottom: 0;
             }
 
             &__block-btns {
@@ -660,6 +661,17 @@
         .infrastructure,
         .card-slider {
             margin-top: 40px;
+        }
+    }
+
+    .detailed-card-developer-page { 
+        .detailed-card-page {
+            .property-details, 
+            .other-features, 
+            .infrastructure,
+            .objects {
+                margin-top: 40px;
+            }
         }
     }
 
@@ -1107,6 +1119,12 @@
         }
     }
 
+    .objects {
+        &__block-content {
+            margin-top: 20px;
+        }
+    }
+
     .text-block {
         &__block-text {
             margin-top: 12px;
@@ -1117,7 +1135,8 @@
     .terms-of-use-page,
     .search-no-result-page,
     .search-result-page,
-    .developers-page {
+    .developers-page,
+    .detailed-card-page {
         .page {
             &__content {
                 padding: 24px 0 50px 0;
