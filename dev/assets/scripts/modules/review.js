@@ -10,10 +10,28 @@ export default function review() {
 
         if (slider) {
             const swiper = new Swiper(slider, {
-                slidesPerView: 9.5,
-                spaceBetween: 10,
+                slidesPerView: 2.5,
+                spaceBetween: 12,
                 freeMode: true,
-            });
+                breakpoints: {
+                    992: {
+                        slidesPerView: 9.5,
+                        spaceBetween: 10,
+                    },
+                    767: {
+                        slidesPerView: 6.5,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        slidesPerView: 4.5,
+                        spaceBetween: 10,
+                    },
+                    420: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 10,
+                    }
+                }
+            })
         }
     })
 }

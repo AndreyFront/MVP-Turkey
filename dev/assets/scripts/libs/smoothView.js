@@ -6,6 +6,16 @@ export default function smoothView(btn, el, startHeight = 0) {
     el.classList.add('not-active')
     el.style.height = `${startHeight}px`
 
+    console.log('startHeight, ', startHeight)
+    console.log('heightEl, ', heightEl)
+
+    if (startHeight > 0) {
+        if (heightEl < startHeight) {
+            el.classList.remove('not-active')
+            el.style.height = `${heightEl}px`
+        }
+    }
+
     const update = () => {
         el.style.height = 'auto'
         setTimeout(() => {

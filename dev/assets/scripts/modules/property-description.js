@@ -10,14 +10,18 @@ export default function propertyDescription() {
     if (window.matchMedia('(min-width: 992px)').matches) {
         smoothView(btn, blockText, 81)
     } else {
-        smoothView(btn, blockText, 335)
+        smoothView(btn, blockText, 168)
     }
 
-    btn.addEventListener('click', () => {
-        if (blockText.classList.contains('not-active')) {
-            btn.textContent = 'Show More'
-        } else {
-            btn.textContent = 'Hide'
-        }
-    })
+    if (blockText.classList.contains('not-active')) {
+        btn.addEventListener('click', () => {
+            if (blockText.classList.contains('not-active')) {
+                btn.textContent = 'Show More'
+            } else {
+                btn.textContent = 'Hide'
+            }
+        })
+    } else {
+        btn.style.display = 'none'
+    }
 }

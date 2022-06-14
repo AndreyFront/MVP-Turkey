@@ -114,4 +114,10 @@
     .slider-btns {
         width: max-content;
     }
+
+    .select {
+        &__btn-text {
+            @include adaptiv-font(16, 14);
+        }
+    }
 }

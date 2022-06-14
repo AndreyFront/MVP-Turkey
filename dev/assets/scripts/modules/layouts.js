@@ -11,11 +11,17 @@ export default function layouts() {
     const nextBtn = blockLayouts.querySelector('[data-layouts="next-btn"]')
 
     const swiper = new Swiper(slider, {
-        slidesPerView: 2,
-        spaceBetween: 30,
+        slidesPerView: 1.3,
+        spaceBetween: 8,
         navigation: {
             nextEl: nextBtn,
             prevEl: prevBtn,
         },
-    });
+        breakpoints: {
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            }
+        }
+    })
 }

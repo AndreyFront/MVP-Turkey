@@ -16,11 +16,6 @@
             align-items: center;
             background-color: #F5FAFF;
         }
-
-        thead td,
-        tbody td {
-            @include adaptiv-font(16, 14);
-        }
     
         thead {
             tr {
@@ -44,6 +39,15 @@
                     &:last-child {
                         width: max-content;
                         margin-left: auto;
+                    }
+
+                    span:not([class]) {
+                        @include adaptiv-font(16, 14);
+
+                        &:first-child {
+                            display: none;
+                            color: $light-text;
+                        }
                     }
                 }
             }

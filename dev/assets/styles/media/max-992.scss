@@ -655,29 +655,155 @@
             }
         }
 
+        .property-details {
+            &__block-content {
+                margin-top: 6px;
+            }
+        }
+
+        .customer-reviews {
+            margin-top: 30px;
+
+            .side-panel {
+                margin-top: 30px;
+            }
+        }
+
+        .banner {
+            margin-top: 30px;
+            
+            &__content {
+                padding: 20px;
+            }
+
+            .btn {
+                min-height: 43px;
+            }
+        }
+
         .property-description, 
         .property-details, 
         .other-features, 
         .infrastructure,
-        .card-slider {
+        .card-slider,
+        .objects,
+        .prices-apartments,
+        .layouts,
+        .master-plan,
+        .developer,
+        .documentation {
             margin-top: 40px;
         }
     }
 
-    .detailed-card-developer-page { 
-        .detailed-card-page {
-            .property-details, 
-            .other-features, 
-            .infrastructure,
-            .objects {
-                margin-top: 40px;
+    .prices-apartments {
+        &__table {
+            thead {
+                display: none;
             }
+
+            tbody {
+                margin-top: 0;
+        
+                tr {
+                    grid-template-columns: 1fr;
+                    grid-row-gap: 14px;
+                    padding: 12px;
+                    border-radius: 8px;
+        
+                    &:not(:first-child) {
+                        margin-top: 12px;
+                    }
+
+                    td {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &:last-child {
+                            width: 100%;
+                            margin-left: auto;
+                        }
+
+                        span:not([class]) {
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 8px;
+        }
+    }
+
+    .detailed-card-developer-page { 
+        .property-description {
+            margin-top: 0;
         }
     }
 
     .side-panel {
         .contact-form {
             margin-top: 30px;
+        }
+    }
+
+    .master-plan {
+        &__block-content {
+            margin-top: 16px;
+        }
+
+        &__slider {
+            border-radius: 8px;
+            height: 236px;
+        }
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+
+            &[data-master-plan=prev-btn] {
+                left: 12px;
+            }
+    
+            &[data-master-plan=next-btn] {
+                right: 12px;
+            }
+        }
+    }
+
+    .developer {
+        &__block-content {
+            margin-top: 16px;
+        }
+    }
+
+    .customer-reviews {
+        &__block-reviews {
+            margin-top: 16px;
+        }
+    }
+
+    .documentation {
+        &__block-content {
+            margin-top: 16px;
+        }
+
+        &__list {
+            grid-row-gap: 8px;
+        }
+
+        &__li {
+            grid-column-gap: 8px;
+        }
+
+        &__link-preview {
+            padding: 0 12px;
         }
     }
 

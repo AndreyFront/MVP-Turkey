@@ -13,9 +13,14 @@
 
     &__subtitle {
         line-height: 1.5em;
+        @include adaptiv-font(16, 14);
     }
 
     .btn {
         width: 100%;
+    }
+
+    .title-section {
+        @include adaptiv-font(30, 18);
     }
 }
