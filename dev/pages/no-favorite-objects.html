@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "Real Estate for Sale"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page favorite-objects-page no-favorite-objects-page">
+            <!-- @include('./include/components/name.html') -->
+            @include('./include/components/bread-crumbs.html')
+
+            <div class="page__content">
+                
+                <section class="card-section card-section--property">
+                    <div class="main-container max-width">
+                        <div class="card-section__block-head">
+                            <div class="card-section__block-head-titles">
+                                <h2 class="title-section title-reset active">Favorite objects</h2>
+                                <h2 class="title-section title-reset">Residential complexes</h2>
+                            </div>
+                            <div class="select" data-select="block-select">
+                                <div class="select__inner">
+                                    <button type="button" class="select__btn" data-select="btn">
+                                        <span class="select__btn-text">Favorite objects</span>
+                                        <svg class="select__btn-icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="select__block-pop-up" data-scrollbar>
+                                        <ul class="select__list list-reset">
+                                            <li class="select__li active">
+                                                <a href="#" class="select__link link-reset">Favorite objects</a>
+                                            </li>
+                                            <li class="select__li">
+                                                <a href="#" class="select__link link-reset">Residential complexes</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-section__wrapper-content">
+                            <h3 class="title-section title-reset card-section__title-content">You don’t have more than one favorite object</h3>
+                            <span class="card-section__subtitle-content">
+                                Click on a star
+                                <div class="favorites-icon" data-favorites-icon="block-icon">
+                                    <svg class="favorites-icon__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#star"></use>
+                                    </svg>
+                                </div>
+                                to save a property and all your favorites will appear here
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card-slider" data-product-card-slider="block-slider">
+                    <div class="main-container max-width">
+                        <div class="card-slider__block-head">
+                            <h2 class="title-section title-reset">Perhaps you are looking for</h2>
+                            <div class="slider-btns">
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="prev-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-product-card-slider="next-btn">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-slider__block-slider">
+                            <div class="swiper product-card-slider" data-product-card-slider="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                    <div class="swiper-slide">
+                                        @include('./include/components/product-card.html')
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>

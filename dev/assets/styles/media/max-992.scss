@@ -206,6 +206,16 @@
     .main-banner {
         height: 518px;
 
+        &__wrapper-achievements {
+            display: none;
+        }
+
+        &__block-logo-developer {
+            width: 62px;
+            height: 62px;
+            margin-bottom: 12px;
+        }
+
         .search-bar {
             margin-top: 46px;
         }
@@ -332,6 +342,15 @@
             opacity: 0;
         }
 
+        &--type--apartment {
+            .product-card {
+                &__list-links {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
         &__wrapper-label-quantity {
             display: none;
         }
@@ -382,11 +401,6 @@
 
         &__block-info-employee {
             margin-left: 8px;
-        }
-
-        &__list-links {
-            display: flex;
-            flex-wrap: wrap;
         }
 
         &__li-link {
@@ -691,8 +705,87 @@
         .layouts,
         .master-plan,
         .developer,
-        .documentation {
+        .documentation,
+        .awards,
+        .objects-map {
             margin-top: 40px;
+        }
+    }
+
+    .awards {
+        &__slider {
+            margin-top: 16px;
+        }
+
+        &__block-image {
+            padding: 10px;
+        }
+
+        .slider-btns {
+            display: none;
+        }
+    }
+
+    .favorite-objects-page {
+        .card-section {
+            &--property {
+                .card-section {
+                    &__wrapper-cards {
+                        grid-template-columns: repeat(3, minmax(100px, 1fr));
+                    }
+
+                    &__block-head-btns {
+                        .btn {
+                            width: 43px;
+
+                            &__icon {
+                                display: block;
+                                margin-right: 0;
+                            }
+
+                            &__text {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .sorting {
+                    margin-left: 0;
+                }
+            }
+
+            &__block-head-titles {
+                display: none;
+            }
+
+            &__block-head {    
+                .select {
+                    display: block;
+                }
+            }
+
+            &__block-sorting {
+                grid-column: 1/-1;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .no-favorite-objects-page {
+        .card-section {
+            &__wrapper-content {
+                padding: 33px 0;
+            }
+
+            &__subtitle-content {
+                flex-wrap: wrap;
+                margin-top: 12px;
+            }
+        }
+
+        .card-slider {
+            margin-top: 32px;
         }
     }
 
@@ -1249,6 +1342,32 @@
         &__block-content {
             margin-top: 20px;
         }
+
+        &__select-deadline,
+        &__select-material {
+            display: none;
+        }
+
+        &__block-navigation {
+            margin-top: 20px;
+
+            .select {
+                &__btn {
+                    min-height: 41px;
+                }
+            }
+
+            .btn {
+                min-height: 41px;
+            }
+        }
+    }
+
+    .objects-map {
+        &__block-content {
+            margin-top: 16px;
+            height: 352px;
+        }
     }
 
     .text-block {
@@ -1257,12 +1376,129 @@
         }
     }
 
+    .compare-page {
+        &__wrapper-info,
+        &__wrapper-navigation {
+            grid-template-columns: minmax(10px, 1fr);
+            grid-column-gap: 0;
+        }
+
+        &__wrapper-feature,
+        &__block-navigation {
+            display: none;
+        }
+
+        &__wrapper-info {
+            margin-top: -12px;
+        }
+
+        &__sign-feature,
+        &__title-value {
+            display: block;
+        }
+
+        &__block-value {
+            margin-top: 32px;
+        }
+
+        &__block-value &__classification {
+            display: block;
+            margin-bottom: 0;
+        }
+
+        &__li-value {
+            padding: 12px 0;
+            min-height: 67px;
+            align-content: center;
+        }
+
+        &__wrapper-compare {
+            margin-top: 16px;
+        }
+
+        &__block-head-btns {
+            .btn {
+                width: 43px;
+
+                &__text {
+                    display: none;
+                }
+
+                &__icon {
+                    display: block;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__wrapper-navigation {
+            padding: 16px 0;
+            width: 100vw;
+            margin-left: 0;
+        }
+
+        &__wrapper-navigation{
+            &.active {
+                .compare-page {
+                    &__slider {
+                        .product-card {
+                            grid-template-columns: 1fr;
+                            height: 75px;
+
+                            &__block-images {
+                                display: none;
+                            }
+
+                            &__block-content {
+                                padding: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__slider {
+            .swiper-slide:first-child.swiper-slide-visible {
+                margin-left: 20px;
+            }
+        }
+
+        &__block-head {
+            padding: 0 20px;
+        }
+
+        .product-card {
+            margin-bottom: 0;
+
+            &__trashcan {
+                display: none;
+            }
+        }
+
+        .page {
+            &__content {
+                .main-container {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .about-developer-page {
+        .property-description {
+            margin-top: 0;
+        }
+    }
+
     .privacy-policy-page,
     .terms-of-use-page,
     .search-no-result-page,
     .search-result-page,
     .developers-page,
-    .detailed-card-page {
+    .detailed-card-page,
+    .favorite-objects-page,
+    .compare-page {
         .page {
             &__content {
                 padding: 24px 0 50px 0;

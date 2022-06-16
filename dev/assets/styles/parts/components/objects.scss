@@ -23,6 +23,41 @@
         }
     }
 
+    &__block-navigation {
+        display: grid;
+        grid-auto-columns: auto;
+        grid-auto-flow: column;
+        justify-content: start;
+        grid-column-gap: 6px;
+        margin-top: 36px;
+
+        .select {
+            &__btn-text {
+                @include adaptiv-font(16, 14);
+            }
+        }
+
+        .btn {
+            &--theme--very-light-blue {
+                &:hover {
+                    .btn {
+                        &__icon {
+                            fill: $navy-blue;
+                        }
+
+                        &__text {
+                            color: $navy-blue;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                @include adaptiv-font(16, 14);
+            }
+        }
+    }
+
     .product-card {
         width: 100%;
     }

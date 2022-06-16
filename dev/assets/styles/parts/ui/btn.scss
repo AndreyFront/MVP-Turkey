@@ -26,6 +26,14 @@
         width: 20px;
         height: 20px;
         margin-right: 5px;
+
+        use {
+            transition: fill $transition-time, stroke $transition-time;
+        }
+    }
+
+    &__text {
+        transition: color $transition-time;
     }
 
     &__text,
@@ -68,6 +76,7 @@
     &--theme--navy-blue,
     &--theme--coral,
     &--theme--light-blue,
+    &--theme--very-light-blue,
     &--theme--light-colar,
     &--theme--white {
         border: none;
@@ -119,6 +128,20 @@
         .btn {
             &__text {
                 color: $navy-blue;
+            }
+        }
+    }
+
+    &--theme--very-light-blue {
+        background-color: #F5FAFF;
+
+        &:hover {
+            background-color: $light-blue;
+        }
+
+        .btn {
+            &__text {
+                color: $black-text;
             }
         }
     }

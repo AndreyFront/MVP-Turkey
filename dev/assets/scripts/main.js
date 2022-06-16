@@ -24,6 +24,8 @@ import cardsMap from './modules/cards-map'
 import masterPlan from './modules/master-plan'
 import review from './modules/review'
 import layouts from './modules/layouts'
+import comparePage from './modules/compare-page'
+import awards from './modules/awards'
 
 modal()
 input()
@@ -47,3 +49,5 @@ cardsMap()
 masterPlan()
 review()
 layouts()
+comparePage()
+awards()

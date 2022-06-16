@@ -1,0 +1,27 @@
+.about-developer-page {
+
+    .property-description {
+        margin-top: 0;
+    }
+
+    .customer-reviews {
+        &__block-content {
+            margin-top: 0;
+        }
+    }
+
+    .side-panel {
+        .commercial-block {
+            margin-top: 24px;
+        }
+    
+        .need-help {
+            margin-top: 0;
+        }
+    }
+    .detailed-card-page {
+        &__wrapper-info {
+            margin-top: 0;
+        }
+    }
+}

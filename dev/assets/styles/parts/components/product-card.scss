@@ -241,6 +241,34 @@
         }
     }
 
+    &__trashcan {
+        position: absolute;
+        top: calc(100% + 14px);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__trashcan-icon {
+        width: 22px;
+        height: 22px;
+
+        use {
+            fill: $navy-blue;
+        }
+    }
+
+    &__trashcan-text {
+        margin-left: 6px;
+        font-weight: 600;
+        color: $navy-blue;
+    }
+
     &--type--apartment {
         .product-card {
             &__block-btns {

@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @include('./include/layouts/head.html', {
+            "title": "Compare"
+        })
+    </head>
+    <body>
+        <header class="header">
+            @include('./include/layouts/header.html')
+        </header>
+        <main class="page compare-page" data-compare-page="block-compare-page">
+            <!-- @include('./include/components/name.html') -->
+            @include('./include/components/bread-crumbs.html')
+
+            <div class="page__content">
+                <div class="main-container max-width">
+                    <div class="compare-page__block-head">
+                        <h2 class="title-section title-reset">Compare</h2>
+                        <div class="compare-page__block-head-btns">
+                            <button type="button" class="btn btn--size-sm btn--theme--light-blue">
+                                <svg class="btn__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                </svg>
+                                <span class="btn__text">Delete all</span>
+                            </button>
+                            <div class="share">
+                                <a href="#" class="btn-icon btn-icon--theme--light-blue">
+                                    <svg class="btn-icon__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#share"/>
+                                    </svg>
+                                </a>
+                                <div class="share__block-content">
+                                    @include('./include/components/social-buttons.html')
+                                    <div class="share__block-link">
+                                        <div class="input">
+                                            <input type="text" class="input__input" value="https://statusproperty.ru/products/sale" readonly>
+                                        </div>
+                                        <a href="#" class="share__link link-reset">Copy link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compare-page__wrapper-compare">
+                        <div class="compare-page__wrapper-navigation" data-compare-page="wrapper-navigation">
+                            <div class="compare-page__block-navigation">
+                                <h4 class="title-section title-reset">Object / Price</h4>
+                                <div class="slider-btns">
+                                    <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-compare-page="prev-btn">
+                                        <svg class="arrow__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left-white"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="arrow arrow--size--bg arrow--theme--blue" data-compare-page="next-btn">
+                                        <svg class="arrow__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right-white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper compare-page__slider" data-compare-page="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="product-card product-card--type--apartment">
+                                            <div class="product-card__block-images">
+                                                @include('./include/ui/favorites-icon.html')
+                                                <div class="status-labels">
+                                                    <ul class="status-labels__list list-reset">
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--coral">
+                                                                <span class="status-label__text">new</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <span class="status-label__text">avaliable</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--navy-blue">
+                                                                <span class="status-label__text">sold</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--purple">
+                                                                <span class="status-label__text">foreclosure</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <svg class="status-label__icon">
+                                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                                </svg>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-card__wrapper-label-quantity">
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">12</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">8</span>
+                                                        </div>
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                                            <!-- slider -->
+                                            </div>
+                                            <div class="product-card__block-content">
+                                                <div class="product-card__block-info">
+                                                    <span class="product-card__price">5,125,000 TL</span>
+                                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                                        <span class="affiliation-label__text">For Rent</span>
+                                                    </div>
+                                                    <span class="product-card__address">227 Major Macke</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__trashcan">
+                                                <svg class="product-card__trashcan-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                                </svg>
+                                                <span class="product-card__trashcan-text">Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card product-card--type--apartment">
+                                            <div class="product-card__block-images">
+                                                @include('./include/ui/favorites-icon.html')
+                                                <div class="status-labels">
+                                                    <ul class="status-labels__list list-reset">
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--coral">
+                                                                <span class="status-label__text">new</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <span class="status-label__text">avaliable</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--navy-blue">
+                                                                <span class="status-label__text">sold</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--purple">
+                                                                <span class="status-label__text">foreclosure</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <svg class="status-label__icon">
+                                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                                </svg>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-card__wrapper-label-quantity">
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">12</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">8</span>
+                                                        </div>
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                                            <!-- slider -->
+                                            </div>
+                                            <div class="product-card__block-content">
+                                                <div class="product-card__block-info">
+                                                    <span class="product-card__price">5,125,000 TL</span>
+                                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                                        <span class="affiliation-label__text">For Rent</span>
+                                                    </div>
+                                                    <span class="product-card__address">227 Major Macke</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__trashcan">
+                                                <svg class="product-card__trashcan-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                                </svg>
+                                                <span class="product-card__trashcan-text">Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card product-card--type--apartment">
+                                            <div class="product-card__block-images">
+                                                @include('./include/ui/favorites-icon.html')
+                                                <div class="status-labels">
+                                                    <ul class="status-labels__list list-reset">
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--coral">
+                                                                <span class="status-label__text">new</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <span class="status-label__text">avaliable</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--navy-blue">
+                                                                <span class="status-label__text">sold</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--purple">
+                                                                <span class="status-label__text">foreclosure</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <svg class="status-label__icon">
+                                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                                </svg>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-card__wrapper-label-quantity">
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">12</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">8</span>
+                                                        </div>
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                                            <!-- slider -->
+                                            </div>
+                                            <div class="product-card__block-content">
+                                                <div class="product-card__block-info">
+                                                    <span class="product-card__price">5,125,000 TL</span>
+                                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                                        <span class="affiliation-label__text">For Rent</span>
+                                                    </div>
+                                                    <span class="product-card__address">227 Major Macke</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__trashcan">
+                                                <svg class="product-card__trashcan-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                                </svg>
+                                                <span class="product-card__trashcan-text">Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card product-card--type--apartment">
+                                            <div class="product-card__block-images">
+                                                @include('./include/ui/favorites-icon.html')
+                                                <div class="status-labels">
+                                                    <ul class="status-labels__list list-reset">
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--coral">
+                                                                <span class="status-label__text">new</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <span class="status-label__text">avaliable</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--navy-blue">
+                                                                <span class="status-label__text">sold</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--purple">
+                                                                <span class="status-label__text">foreclosure</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <svg class="status-label__icon">
+                                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                                </svg>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-card__wrapper-label-quantity">
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">12</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">8</span>
+                                                        </div>
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                                            <!-- slider -->
+                                            </div>
+                                            <div class="product-card__block-content">
+                                                <div class="product-card__block-info">
+                                                    <span class="product-card__price">5,125,000 TL</span>
+                                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                                        <span class="affiliation-label__text">For Rent</span>
+                                                    </div>
+                                                    <span class="product-card__address">227 Major Macke</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__trashcan">
+                                                <svg class="product-card__trashcan-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                                </svg>
+                                                <span class="product-card__trashcan-text">Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card product-card--type--apartment">
+                                            <div class="product-card__block-images">
+                                                @include('./include/ui/favorites-icon.html')
+                                                <div class="status-labels">
+                                                    <ul class="status-labels__list list-reset">
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--coral">
+                                                                <span class="status-label__text">new</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <span class="status-label__text">avaliable</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--navy-blue">
+                                                                <span class="status-label__text">sold</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--purple">
+                                                                <span class="status-label__text">foreclosure</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <svg class="status-label__icon">
+                                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                                </svg>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-card__wrapper-label-quantity">
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">12</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">8</span>
+                                                        </div>
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                                            <!-- slider -->
+                                            </div>
+                                            <div class="product-card__block-content">
+                                                <div class="product-card__block-info">
+                                                    <span class="product-card__price">5,125,000 TL</span>
+                                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                                        <span class="affiliation-label__text">For Rent</span>
+                                                    </div>
+                                                    <span class="product-card__address">227 Major Macke</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__trashcan">
+                                                <svg class="product-card__trashcan-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                                </svg>
+                                                <span class="product-card__trashcan-text">Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-card product-card--type--apartment">
+                                            <div class="product-card__block-images">
+                                                @include('./include/ui/favorites-icon.html')
+                                                <div class="status-labels">
+                                                    <ul class="status-labels__list list-reset">
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--coral">
+                                                                <span class="status-label__text">new</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <span class="status-label__text">avaliable</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--navy-blue">
+                                                                <span class="status-label__text">sold</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--purple">
+                                                                <span class="status-label__text">foreclosure</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="status-labels__li">
+                                                            <div class="status-label status-label--theme--green">
+                                                                <svg class="status-label__icon">
+                                                                    <use xlink:href="./assets/icons/sprite-svg.svg#ellipsis"/>
+                                                                </svg>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-card__wrapper-label-quantity">
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#photo-camera"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">12</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__block-label-quantity">
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bed"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">8</span>
+                                                        </div>
+                                                        <div class="product-card__label-quantity">
+                                                            <svg class="product-card__label-quantity-icon">
+                                                                <use xlink:href="./assets/icons/sprite-svg.svg#bathtub"/>
+                                                            </svg>
+                                                            <span class="product-card__label-quantity-count">3</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <img src="./assets/images/card-1.jpg" class="product-card__image" alt="">
+                                            <!-- slider -->
+                                            </div>
+                                            <div class="product-card__block-content">
+                                                <div class="product-card__block-info">
+                                                    <span class="product-card__price">5,125,000 TL</span>
+                                                    <div class="affiliation-label affiliation-label--theme--light-colar">
+                                                        <span class="affiliation-label__text">For Rent</span>
+                                                    </div>
+                                                    <span class="product-card__address">227 Major Macke</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card__trashcan">
+                                                <svg class="product-card__trashcan-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#trashcan"/>
+                                                </svg>
+                                                <span class="product-card__trashcan-text">Delete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compare-page__wrapper-info">
+                            <div class="compare-page__wrapper-feature">
+                                <div class="compare-page__block-feature" data-compare-page="block-feature">
+                                    <div class="compare-page__block-feature-head" data-compare-page="block-feature-head">
+                                        <h4 class="title-section title-reset">Basic properties</h4>
+                                    </div>
+                                    <ul class="compare-page__list-feature list-reset" data-compare-page="list-feature">
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Gross m²</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Bedrooms</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Available for Loan Available for Loan Available for Loan Available for Loan Available for Loan</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Publication date</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Object ID</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="compare-page__block-feature" data-compare-page="block-feature">
+                                    <div class="compare-page__block-feature-head" data-compare-page="block-feature-head">
+                                        <h4 class="title-section title-reset">Property Details</h4>
+                                    </div>
+                                    <ul class="compare-page__list-feature list-reset" data-compare-page="list-feature">
+                                        <ul class="compare-page__list-feature list-reset">
+                                            <li class="compare-page__li-feature">
+                                                <span class="compare-page__text-feature">Gross m²</span>
+                                            </li>
+                                            <li class="compare-page__li-feature">
+                                                <span class="compare-page__text-feature">Bedrooms</span>
+                                            </li>
+                                            <li class="compare-page__li-feature">
+                                                <span class="compare-page__text-feature">Available for Loan Available for Loan Available for Loan Available for Loan Available for Loan</span>
+                                            </li>
+                                            <li class="compare-page__li-feature">
+                                                <span class="compare-page__text-feature">Publication date</span>
+                                            </li>
+                                            <li class="compare-page__li-feature">
+                                                <span class="compare-page__text-feature">Object ID</span>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="compare-page__block-feature" data-compare-page="block-feature">
+                                    <div class="compare-page__block-feature-head" data-compare-page="block-feature-head">
+                                        <h4 class="title-section title-reset">Other Features</h4>
+                                        <span class="compare-page__classification">Exterior Features</span>
+                                    </div>
+                                    <ul class="compare-page__list-feature list-reset" data-compare-page="list-feature" data-compare-page-count="3">
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Gross m²</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Bedrooms</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Available for Loan Available for Loan Available for Loan Available for Loan Available for Loan</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Publication date</span>
+                                        </li>
+                                        <li class="compare-page__li-feature">
+                                            <span class="compare-page__text-feature">Object ID</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper compare-page__slider" data-compare-page="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" data-compare-page="slide">
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">100</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">200</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-compare-page="slide">
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">100</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">200</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-compare-page="slide">
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">100</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">200</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-compare-page="slide">
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">100</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">200</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-compare-page="slide">
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">100</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">200</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-compare-page="slide">
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">100</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <span class="compare-page__value">200</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <span class="compare-page__value">5+1</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <span class="compare-page__value">No</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <span class="compare-page__value">20.03.22</span>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <span class="compare-page__value">895361853</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="compare-page__block-value" data-compare-page="block-value">
+                                            <span class="compare-page__title-value">Basic properties</span>
+                                            <span class="compare-page__classification">Exterior Features</span>
+                                            <ul class="compare-page__list-value list-reset" data-compare-page="list-value">
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Gross m²</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Bedrooms</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Available for Loan</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Publication date</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-blue-checkmark"/>
+                                                    </svg>
+                                                </li>
+                                                <li class="compare-page__li-value">
+                                                    <span class="compare-page__sign-feature">Object ID</span>
+                                                    <svg class="compare-page__li-icon">
+                                                        <use xlink:href="./assets/icons/sprite-svg.svg#round-red-cross"/>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            @include('./include/layouts/footer.html')
+        </footer>
+        @include('./include/layouts/scripts.html')
+    </body>
+</html>

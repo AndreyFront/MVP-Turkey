@@ -311,6 +311,36 @@
         }
     }
 
+    &__title-content {}
+
+    &__subtitle-content {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 24px;
+        @include adaptiv-font(18, 16);
+        
+        .favorites-icon {
+            background-color: $light-blue;
+            margin: 0 12px;
+
+            &.active {
+                .favorites-icon {
+                    &__icon {
+                        use {
+                            fill: $navy-blue;
+                        }
+                    }
+                }
+            }
+
+            &__icon {
+                use {
+                    stroke: $navy-blue;
+                }
+            }
+        }
+    }
+
     &__subtitle {
         margin-top: 20px;
         @include adaptiv-font(18, 16);

@@ -97,4 +97,33 @@
             grid-row-gap: 8px;
         }
     }
+
+    .favorite-objects-page {
+        .card-section {
+            &--property {
+                .card-section {
+                    &__wrapper-cards {
+                        grid-column-gap: 15px;
+                        grid-row-gap: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .no-favorite-objects-page {
+        .card-section {
+            &--property {
+                .card-section {
+                    &__wrapper-content {
+                        grid-row-gap: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .compare-page {
+        overflow: visible;
+    }
 }

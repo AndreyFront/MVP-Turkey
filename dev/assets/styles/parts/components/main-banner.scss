@@ -141,6 +141,41 @@
         }
     }
 
+    &__block-logo-developer {
+        width: 70px;
+        height: 70px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    &__logo-developer {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__wrapper-achievements {
+        display: grid;
+        grid-auto-columns: auto;
+        grid-column-gap: 90px;
+        grid-auto-flow: column;
+    }
+
+    &__block-achievement {
+        display: grid;
+    }
+
+    &__achievement-title {
+        font-size: 44px;
+        font-weight: 500;
+    }
+
+    &__achievement-subtitle {
+        margin-top: 6px;
+    }
+
     .btn-icon {
         width: 44px;
         height: 43px;

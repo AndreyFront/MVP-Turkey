@@ -20,6 +20,21 @@
                 &__block-nav {
                     margin-top: 20px;
                 }
+
+                &__block-head-btns {
+                    .share {
+
+                        &:hover .share__block-content {
+                            transform: translate(0, 5px);
+                        }
+
+                        &__block-content {
+                            left: auto;
+                            right: 0;
+                            transform: translate(0, 10px);
+                        }
+                    }   
+                }
             }
         }
 
@@ -29,6 +44,55 @@
             grid-column-gap: 20px;
             grid-row-gap: 20px;
             justify-content: space-between;
+
+            .select {
+                display: none;
+
+                &:hover .select__btn {
+                    background-color: transparent;
+                }
+
+                &.active {
+                    .select {
+                        &__btn {
+                            background-color: transparent;
+                        }
+
+                        &__btn-text {
+                            color: $black-text;
+                        }
+
+                        &__btn-icon use {
+                            fill: $black-text;
+                        }
+                    }
+                }
+
+                &__li {
+                    &.active {
+                        .select {
+                            &__link {
+                                color: $navy-blue;
+                            }
+                        }
+                    }
+                }
+
+                &__btn {
+                    padding: 0;
+                }
+
+                &__btn-text {
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                &__btn-icon {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 11px;
+                }
+            }
         }
 
         &__block-sorting {

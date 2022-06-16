@@ -27,4 +27,16 @@
     .side-panel {
         width: 100%;
     }
+
+    .favorite-objects-page {
+        .card-section {
+            &__block-head {
+                .select {
+                    &__block-pop-up {
+                        width: calc(100vw - 40px);
+                    }
+                }
+            }
+        }
+    }
 }
