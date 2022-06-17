@@ -1450,6 +1450,8 @@
                             }
 
                             &__block-content {
+                                display: flex;
+                                align-items: center;
                                 padding: 16px;
                             }
                         }
@@ -1459,13 +1461,28 @@
         }
 
         &__slider {
-            .swiper-slide:first-child.swiper-slide-visible {
+            .swiper-slide:first-child.swiper-slide-active {
                 margin-left: 20px;
+            }
+
+            .swiper-slide {
+                align-self: start;
             }
         }
 
         &__block-head {
             padding: 0 20px;
+        }
+
+        &__block-value {
+            position: relative;
+
+            .btn {
+                position: absolute;
+                z-index: 1;
+                width: calc(100vw - 40px);
+                top: calc(100% + 16px)
+            }
         }
 
         .product-card {
@@ -1489,6 +1506,54 @@
         .property-description {
             margin-top: 0;
         }
+    }
+
+    .m-form {
+        .input:not(:first-child),
+        .textarea {
+            margin-top: 12px;
+        }
+    }
+
+    .modal {
+
+        &__window {
+            padding: 56px 24px 24px 24px;
+        }
+
+        &--size--bg {
+            .modal__window {
+                max-width: none;
+                width: calc(100% - 40px);
+            }
+        }
+
+        &__close {
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+        }
+
+        &__icon-close {
+            width: 15px;
+            height: 15px;
+        }
+
+        .btn {
+            min-height: 48px;
+        }
+    }
+
+    .more-filters {
+        .modal {
+            &__window {
+                padding: 32px 20px 30px 20px;
+            }
+        }
+    }
+
+    .tags {
+        display: none;
     }
 
     .privacy-policy-page,

@@ -290,4 +290,42 @@
             }
         }
     }
+
+    .more-filters {
+        &__list-checkbox-default {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__block-filter:not(:first-child),
+        &__list-checkbox-modified {
+            margin-top: 24px;
+        }
+
+        &__wrapper-block-filter {
+            grid-auto-flow: row;
+            margin-top: 24px;
+
+            .more-filters__block-filter {
+                &:not(:first-child) {
+                    margin-top: 24px;
+                }
+            }
+        }
+
+        &__block-filter-input .more-filters__list-input,
+        &__block-filter-select .more-filters__list-select {
+            grid-column-gap: 11px;
+            grid-row-gap: 11px;
+        }
+
+        &__block-filter-input {
+            .input {
+                &.active {
+                    .input__placeholder {
+                        transform: translate(-1%, -110%) scale(0.75);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -14,6 +14,65 @@
         <div class="dev__box">
             <!-- include ui -->
             <!-- @include('./include/ui/name.html') -->
+
+            <div class="select search-bar__select-deadline" data-select="block-select">
+                <div class="select__inner">
+                    <button type="button" class="select__btn" data-select="btn">
+                        <span class="select__btn-text">Deadline</span>
+                        <svg class="select__btn-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                    <div class="select__block-pop-up" data-scrollbar>
+                        <ul class="select__list list-reset">
+                            <li class="select__li">
+                                @include('./include/ui/checkbox.html', {
+                                    "text": "Was passed"
+                                })
+                            </li>
+                            <li class="select__li">
+                                @include('./include/ui/checkbox.html', {
+                                    "text": "2022"
+                                })
+                            </li>
+                            <li class="select__li">
+                                @include('./include/ui/checkbox.html', {
+                                    "text": "2023"
+                                })
+                            </li>
+                            <li class="select__li">
+                                @include('./include/ui/checkbox.html', {
+                                    "text": "2024"
+                                })
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="select search-bar__select-material" data-select="block-select">
+                <div class="select__inner">
+                    <button type="button" class="select__btn" data-select="btn">
+                        <span class="select__btn-text">Material</span>
+                        <svg class="select__btn-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                    <div class="select__block-pop-up" data-scrollbar>
+                        <ul class="select__list list-reset">
+                            <li class="select__li">
+                                @include('./include/ui/checkbox.html', {
+                                    "text": "Monolithic"
+                                })
+                            </li>
+                            <li class="select__li">
+                                @include('./include/ui/checkbox.html', {
+                                    "text": "Monolithic-brick"
+                                })
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     @include('./include/layouts/scripts.html')

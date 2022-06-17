@@ -100,7 +100,8 @@
 
     &__li {}
 
-    &__link {
+    &__link,
+    .checkbox__label {
         display: block;
         padding: 12px 77px 12px 16px;
         border-radius: 10px;
@@ -196,5 +197,11 @@
 
     [data-scrollbar] {
         position: absolute;
+    }
+
+    .checkbox {
+        &__label {
+            cursor: pointer;
+        }
     }
 }

@@ -1,0 +1,17 @@
+.m-site-evaluation {
+
+    .modal--size--md .modal__window {
+        max-width: 306px;
+    }
+
+    .simple-info {
+        &__block-btns {
+            margin-top: 26px;
+
+            .btn {
+                margin-top: 0;
+                min-height: 43px;
+            }
+        }
+    }
+}

@@ -107,6 +107,31 @@
         overflow: hidden;
     }
 
+    &__block-rating {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-column-gap: 14px;
+        margin-top: 24px;
+        justify-content: center;
+    }
+
+    &__icon-rating {
+        width: 33px;
+        height: 33px;
+        cursor: pointer;
+
+        &.active {
+            use {
+                fill: #FFB43C;
+            }            
+        }
+
+        use {
+            fill: #E5E6E9;
+            transition: fill $transition-time;
+        }
+    }
+
     &__blackout {
         border: none;
         display: block;
@@ -123,5 +148,9 @@
             pointer-events: auto;
             opacity: .6;
         }
+    }
+
+    .title-section {
+        @include adaptiv-font(22, 24);
     }
 }

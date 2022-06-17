@@ -12,6 +12,10 @@
     &__icon {
         width: 14px;
         height: 14px;
+
+        use {
+            fill: $white;
+        }
     }
 
     &--theme--coral {

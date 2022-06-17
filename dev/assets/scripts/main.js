@@ -26,6 +26,8 @@ import review from './modules/review'
 import layouts from './modules/layouts'
 import comparePage from './modules/compare-page'
 import awards from './modules/awards'
+import tags from './modules/tags'
+import smoothScrolling from './modules/smooth-scrolling'
 
 modal()
 input()
@@ -51,3 +53,5 @@ review()
 layouts()
 comparePage()
 awards()
+tags()
+smoothScrolling()

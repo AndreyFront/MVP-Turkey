@@ -39,4 +39,29 @@
             }
         }
     }
+
+    .modal {
+
+        &--size--md {
+            .modal__window {
+                max-width: none;
+                width: calc(100% - 40px);
+            }
+        }
+    }
+
+    .more-filters {
+        &__list-checkbox-default {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__list-checkbox-modified {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
+
+        .scroll-content {
+            width: 94%;
+        }
+    }
 }
